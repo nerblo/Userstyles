@@ -97,6 +97,9 @@
         content: "  ";
         white-space: pre;
     }
+    .tw-stat__value, .ffz-stat-text {
+        color:#d1d1d1 !important;
+    }
     /*
         ## Channel Avatar Static ##
     */

@@ -1,0 +1,108 @@
+/* ==UserStyle==
+@name           twitch.tv Design Fix
+@namespace      nerblo
+@version        1.2.3
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    Fix for Twitch latest Design changes, you should use FFZ!
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_design_fix.user.css
+==/UserStyle== */
+@-moz-document domain("twitch.tv") {
+    body {
+        --color-background-button-primary-default: #6441a5;
+        --old-twitch-color-primary: #784ec6;
+        --old-twitch-color-secondary: #6441a5;
+    }
+    .tw-root--theme-dark .channel-info-bar,
+    .tw-root--theme-dark .chat-room,
+    .tw-root--theme-dark .side-nav__overlay-wrapper,
+    .tw-root--theme-dark .tw-textarea,
+    .root,
+    .video-chat__message-list-wrapper div {
+        background-color: var(--color-background-body) !important;
+    }
+    .hosting-ui__footer .tw-core-button--primary,
+    .channel-info-content .tw-core-button--primary,
+    .chat-input .tw-core-button--primary,
+    .channel-header .tw-core-button--primary,
+    .tw-c-background-accent {
+        background-color: var(--old-twitch-color-secondary) !important;
+    }
+    .chat-input .tw-core-button--primary:hover,
+    .channel-header .tw-core-button--primary:hover,
+    .social-button__icon--copy,
+    .social-button__icon--download {
+        background-color: var(--old-twitch-color-primary) !important;
+    }
+    .channel-header-verified-badge,
+    .tw-svg__asset--verified {
+        color: var(--old-twitch-color-secondary) !important;
+        border-radius: 500px;
+        background: radial-gradient(circle, #FFF 38%, #FFFFFF00 39%, #FFFFFF00 100%);
+    }
+    .tw-tag {
+        background-color: transparent !important;
+    }
+    .chat-input__textarea textarea {
+        font-size: 1.39rem !important;
+    }
+    .hype-train-progress-bar-info-view__level-pill,
+    .hype-train-progress-bar__fill,
+    .hype-train-level-up__container,
+    .hype-train-complete__container,
+    .hype-train-start__container {
+        background-color: var(--old-twitch-color-primary) !important;
+    }
+
+    textarea[data-a-target="chat-input"] {
+        height: 68px !important;
+    }
+
+    .channel-root,
+    .channel-root--home,
+    .channel-root--unanimated,
+    .video-player,
+    .video-player__container,
+    .video-player__video-container,
+    .channel-root__player--with-chat div:nth-child(1) {
+        background-color: transparent !important;
+    }
+
+    .c-te__video-player {
+        background-color: black !important;
+    }
+
+    .tw-animated-glitch-logo {
+        filter: grayscale(.2);
+    }
+    .top-nav .navigation-link__left-border {
+        display: none !important;
+    }
+    #bttv-picture-in-picture {
+        display: none !important;
+    }
+
+    .channel-root__right-column .tw-border-l {
+        border-left: 1px solid rgba(255, 255, 255, 0.01) !important;
+    }
+    /* 
+        ## Stat Text ##
+    */
+    .channel-info-content .tw-svg__asset--live {
+        fill: var(--color-text-live) !important;
+    }
+    .channel-info-content span.tw-animated-number:before {
+        content: "  ";
+        white-space: pre;
+    }
+    /*
+        ## Channel Avatar Static ##
+    */
+    .user-avatar-animated__halo {
+        animation: none !important;
+    }
+    .user-avatar-animated__live::after {
+        animation: none !important;
+    }
+}

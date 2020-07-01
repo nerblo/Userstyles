@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.2.4
+@version        1.2.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -9,7 +9,7 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_design_fix.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
-    
+
     body {
         --color-background-button-primary-default: #6441a5;
         --old-twitch-color-primary: #784ec6;
@@ -97,11 +97,14 @@
         content: "  ";
         white-space: pre;
     }
-    .tw-stat__value, .ffz-stat-text {
-        color:#d1d1d1 !important;
+    .ffz-stat-text,
+    .ffz-i-clock,
+    .ffz-i-gauge,
+    .live-time {
+        color: #d1d1d1 !important;
     }
     /*
-        ## Avatar Static ##
+        ## Channel Avatar Static ##
     */
     .user-avatar-animated__halo {
         animation: none !important;

@@ -97,11 +97,8 @@
         content: "  ";
         white-space: pre;
     }
-    .ffz-stat-text,
-    .ffz-i-clock,
-    .ffz-i-gauge,
-    .live-time {
-        color: #d1d1d1 !important;
+    .channel-info-content .tw-core-button--text{
+        color:#d9d9d9 !important;
     }
     /*
         ## Channel Avatar Static ##

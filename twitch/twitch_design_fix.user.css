@@ -9,6 +9,7 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_design_fix.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
+    
     body {
         --color-background-button-primary-default: #6441a5;
         --old-twitch-color-primary: #784ec6;

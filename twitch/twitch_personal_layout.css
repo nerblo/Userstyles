@@ -1,0 +1,212 @@
+/* ==UserStyle==
+@name           twitch.tv Personal Layout
+@namespace      nerblo
+@version        1.2.3
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    twitch.tv Personal Layout
+@homepageURL    https://github.com/nerblo/Userstyles/twitch
+@updateURL      https://nerblo.github.io/Usersyles/twitch_personal_layout.css
+==/UserStyle== */
+@-moz-document url-prefix("https://www.twitch.tv") {
+
+    /*
+        ## Chat ##
+    */
+    body {
+        --scaling-font-size: calc(var(--ffz-chat-font-size) + 0.65vh - 6.3245px);
+        --scaling-time-font-size: calc(var(--ffz-chat-font-size) + 0.65vh - 7.3245px);
+    }
+    .chat-line__message,
+    .ffz-notice-line {
+        font-size: var(--scaling-font-size) !important;
+    }
+    .chat-line__timestamp {
+        font-family: Source Code Pro;
+        font-size: var(--scaling-time-font-size) !important;
+    }
+
+
+    /*
+        ## Video Player ##
+    */
+    .channel-page__video-player,
+    .channel-root__player,
+    .persistent-player,
+    .video-player__container {
+        max-height: calc(100vh - 10.2rem) !important;
+    }
+
+    /*
+        ## Header ##
+    */
+    .top-nav {
+        height: 26px !important;
+    }
+    .top-nav .navigation-link p {
+        font-size: 1.4rem !important;
+    }
+    .top-nav .tw-input--large,
+    .search-box button {
+        height: 20px !important;
+        font-size: 12px !important;
+    }
+    .top-nav .search-box .tw-icon__svg {
+        transform: scale(0.7) !important;
+    }
+    .top-nav .tw-avatar {
+        transform: scale(0.8) !important;
+    }
+    .top-nav button[data-a-target="user-menu-toggle"] {
+
+        margin-top: -12px !important;
+    }
+    .top-nav button[data-a-target="user-menu-toggle"].tw-c-background-base {
+        background: none !important;
+    }
+    .tw-animated-glitch-logo {
+        margin-top: -13px !important;
+        transform: scale(0.7) !important;
+    }
+    .top-nav .tw-number-badge {
+        margin-top: 8px !important;
+        font-size: 1rem !important;
+    }
+    .ffz-top-nav .tw-pill {
+        margin-top: 8px !important;
+        font-size: 1rem !important;
+        padding: 0.3rem !important;
+    }
+    .top-nav .onsite-notifications__badge {
+        margin-top: 4px !important;
+        font-size: 0.9rem !important;
+    }
+    .top-nav .anon-user button {
+        height: 20px !important;
+        margin-top: -14px;
+    }
+    .top-nav button[data-a-target="top-nav-get-bits-button"] {
+        height: 20px !Important;
+    }
+    .top-nav button[data-a-target="top-nav-get-bits-button"] .tw-core-button-icon {
+        width: 1.4rem;
+    }
+    .top-nav .tw-core-button-icon--large {
+        width: 1.8rem;
+    }
+
+
+    /*
+        ## Footer ##
+    */
+    .channel-root__info--with-chat {
+        background: none !important;
+    }
+
+
+    /* 
+        ## Drops ##
+    */
+    .drops-campaign-details__drops-success::before {
+        position: absolute !important;
+        font-size: 60px !important;
+        content: '•' !important;
+        left: 1px;
+        top: -42px;
+    }
+
+
+    /* 
+        ## Avatar ##
+    */
+    .channel-info-content .tw-avatar {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
+    .user-avatar-animated {
+        margin-top: -4px;
+    }
+    .user-avatar-animated__halo {
+        height: 5.4rem;
+        width: 5.4rem;
+    }
+    .user-avatar-animated__live {
+        transform: scale(.9) !important;
+        bottom: -8px !important;
+    }
+
+
+    /* 
+        ## Channel Info ##
+    */
+    .channel-info-content .tw-flex.tw-full-width.tw-mg-1 {
+        margin-top: 0px !important;
+    }
+    .channel-info-content .tw-border-t {
+        border: none !important;
+    }
+    .channel-info-content .channel-header__right {
+        height: 0.8em;
+        margin-top: 16px !important;
+    }
+    .channel-info-content .tw-mg-t-05 {
+        margin-top: 0px !important;
+    }
+    .channel-info-content .tw-align-items-baseline {
+        align-items: center !important;
+    }
+    .channel-info-content h2 {
+        font-size: 1.6rem !important;
+        line-height: 2.6rem !important;
+    }
+
+
+    /* 
+        ## Stat Text ##
+    */
+    .channel-info-content span.tw-animated-number {
+        font-size: 1.6rem !important;
+        line-height: 5.4rem;
+        font-weight: 400 !important;
+    }
+    .channel-info-content span.live-time {
+        font-size: 1.6rem !important;
+    }
+    .channel-root__info--offline a[data-a-target="hosting-ui-link"],
+    .channel-root__info--offline button[data-a-target="share-button"],
+    .channel-root__info--offline button[data-a-target="report-button-more-button"] {
+        margin-top: 15px !important;
+    }
+    .channel-root__info--offline .ffz-stat {
+        margin-top: 5px !important;
+    }
+    .metadata-layout__split-top {
+        padding-bottom: 3rem !important;
+    }
+
+
+    /* 
+        ## FFZ Stat Text ##
+    */
+    .tw-stat__value,
+    .ffz-stat-text {
+        font-size: 1.6rem !important;
+    }
+    .ffz-stat[data-key="host"] span {
+        font-size: 1.4rem !important;
+    }
+
+
+    /* 
+        ## Side-Nav ##
+    */
+    .side-nav--collapsed:not(.side-nav--hover-exp) {
+        width: 4rem;
+    }
+    .side-nav--collapsed .side-nav-card {
+        padding-left: .5rem !important;
+    }
+    .side-nav--collapsed .collapse-toggle button {
+        margin-left: -.5rem !important;
+    }
+}

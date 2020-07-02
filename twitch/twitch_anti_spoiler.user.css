@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           twitch.tv Anti Spoiler
+@namespace      nerblo
+@version        1.0.0
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    Anti Spoiler - Blur Thumbnails
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_anti_spoiler.user.css
+==/UserStyle== */
+@-moz-document domain("twitch.tv") {
+    .live-channel-card .tw-c-text-overlay img,
+    .preview-card-thumbnail__image img {
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+        background-color: #ccc;
+    }
+    .live-channel-card .tw-c-text-overlay img:hover,
+    .preview-card-thumbnail__image img:hover {
+        filter: blur(0);
+    }
+}

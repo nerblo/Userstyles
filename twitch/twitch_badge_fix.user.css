@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name           twitch.tv Badge Fix
+@namespace      nerblo
+@version        1.0.0
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    Fix Twitch Partner Badges in Chat
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_badge_fix.user.css
+==/UserStyle== */
+@-moz-document domain("twitch.tv") {
+    .ffz-badge[data-badge="partner"][data-version="1"] {
+        background: url(https://cdn.frankerfacez.com/static/badges/twitch/1/partner/1/1.png) transparent;
+        background-size: 1.8rem;
+        background-image: -webkit-image-set(url(https://cdn.frankerfacez.com/static/badges/twitch/1/partner/1/1.png) 1x,
+            url(https://cdn.frankerfacez.com/static/badges/twitch/1/partner/1/2.png) 2x,
+            url(https://cdn.frankerfacez.com/static/badges/twitch/1/partner/1/4.png) 4x);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+    .ffz-badge[data-badge="vip______"][data-version="1"] {
+        background: linear-gradient(rgb(196, 87, 176), rgb(202, 70, 178));
+        -webkit-mask-image: url(https://cdn.frankerfacez.com/static/badges/twitch/2/vip/1/1.png);
+        -webkit-mask-size: 1.8rem 1.8rem;
+        -webkit-mask-image: -webkit-image-set(url(https://cdn.frankerfacez.com/static/badges/twitch/2/vip/1/1.png) 1x, url(https://cdn.frankerfacez.com/static/badges/twitch/2/vip/1/2.png) 2x, url(https://cdn.frankerfacez.com/static/badges/twitch/2/vip/1/4.png) 4x);
+        mask-image: url(https://cdn.frankerfacez.com/static/badges/twitch/2/vip/1/4.png);
+        mask-size: 1.8rem 1.8rem;
+    }
+}

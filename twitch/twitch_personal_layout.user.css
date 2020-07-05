@@ -25,7 +25,9 @@
         font-family: Source Code Pro;
         font-size: var(--scaling-time-font-size) !important;
     }
-
+    .chat-line__message{
+        padding-left:1.5rem !important;
+    }
 
     /*
         ## Video Player ##

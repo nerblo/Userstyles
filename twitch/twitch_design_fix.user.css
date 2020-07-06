@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.2.5
+@version        1.2.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -19,6 +19,8 @@
     .tw-root--theme-dark .chat-room,
     .tw-root--theme-dark .side-nav__overlay-wrapper,
     .tw-root--theme-dark .tw-textarea,
+    .side-nav-search-input,
+    .side-nav-search-input input,
     .root,
     .video-chat__message-list-wrapper div {
         background-color: var(--color-background-body) !important;
@@ -59,7 +61,6 @@
     textarea[data-a-target="chat-input"] {
         height: 68px !important;
     }
-
     .channel-root,
     .channel-root--home,
     .channel-root--unanimated,
@@ -69,11 +70,9 @@
     .channel-root__player--with-chat div:nth-child(1) {
         background-color: transparent !important;
     }
-
     .c-te__video-player {
         background-color: black !important;
     }
-
     .tw-animated-glitch-logo {
         filter: grayscale(.2);
     }
@@ -108,5 +107,24 @@
     }
     .user-avatar-animated__live::after {
         animation: none !important;
+    }
+    /*
+        ## Sidebar - Hide Offline Channels ##
+    */
+    .side-nav-card__avatar--offline,
+    .side-nav-card__avatar--offline ~ div {
+        display:none !important;
+    }
+    .side-nav-card{
+        padding:0 !important;
+    }
+    .side-nav-card__link{
+        height:auto !important;
+        padding-bottom:0 !important;
+        padding-top:0 !important;
+    }
+    .side-nav-card__avatar {
+        padding-bottom:.5rem !important;
+        padding-top:.5rem !important;
     }
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.2.5
+@version        1.2.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -141,6 +141,10 @@
     /* 
         ## Channel Info ##
     */
+    .channel-info-content h1,
+    .channel-info-content a[href*="/"] + div{
+        margin-top:6px !important;
+    }
     .channel-info-content .tw-flex.tw-full-width.tw-mg-1 {
         margin-top: 0px !important;
     }
@@ -176,7 +180,8 @@
     }
     .channel-root__info--offline a[data-a-target="hosting-ui-link"],
     .channel-root__info--offline button[data-a-target="share-button"],
-    .channel-root__info--offline button[data-a-target="report-button-more-button"] {
+    .channel-root__info--offline button[data-a-target="report-button-more-button"],
+    .channel-root__info--offline button[data-a-target="channel-info-bar-edit-button"]{
         margin-top: 15px !important;
     }
     .channel-root__info--offline .ffz-stat {
@@ -210,5 +215,23 @@
     }
     .side-nav--collapsed .collapse-toggle button {
         margin-left: -.5rem !important;
+    }
+    
+    
+    /*
+        ## Hosting Diplay ##
+    */
+    .channel-info-content h2[data-a-target="stream-title"] a::before
+    {
+        position:absolute;
+        left:0px;
+        top:0px;
+        z-index:0;
+        content:"";
+        width:100%;
+        font-size:3px;
+        color:var(--color-background-body);
+        background-color:var(--old-twitch-color-primary);
+        height:2px;
     }
 }

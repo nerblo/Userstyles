@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.2.6
+@version        1.2.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -126,7 +126,7 @@
         height: 4.6rem;
     }
     .user-avatar-animated {
-        margin-top: -4px;
+        margin-top: 0;
     }
     .user-avatar-animated__halo {
         height: 5.4rem;

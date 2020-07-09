@@ -14,8 +14,8 @@
         ## Chat ##
     */
     body {
-        --scaling-font-size: calc(var(--ffz-chat-font-size) + 0.65vh - 6.3245px);
-        --scaling-time-font-size: calc(var(--ffz-chat-font-size) + 0.65vh - 7.3245px);
+        --scaling-font-size: calc(var(--ffz-chat-font-size) + 0.75vh - 7px);
+        --scaling-time-font-size: calc(var(--ffz-chat-font-size) + 0.75vh - 9px);
     }
     .chat-line__message,
     .ffz-notice-line {

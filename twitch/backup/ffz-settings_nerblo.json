@@ -8,6 +8,21 @@
         ],
         "profiles": [
             {
+                "id": 2,
+                "name": "My Channel",
+                "description": "",
+                "context": [
+                    {
+                        "id": "15f94e8a-a99c-4f6b-80cf-aece32fa5e5e",
+                        "type": "Channel",
+                        "data": {
+                            "login": "nerbl0",
+                            "id": "110373723"
+                        }
+                    }
+                ]
+            },
+            {
                 "id": 1,
                 "name": "Moderation",
                 "i18n_key": "setting.profiles.moderation",
@@ -363,7 +378,7 @@
         "p:0:reports.error.include-settings": false,
         "p:0:player.hide-squad-banner": true,
         "p:0:ffzap.core.remove_spaces": true,
-        "p:0:layout.side-nav.show": true,
+        "p:0:layout.side-nav.show": false,
         "p:0:channel.hosting.enable": true,
         "addons.enabled": [
             "ffzap-core",
@@ -402,6 +417,46 @@
         "p:0:player.theatre.metadata": true,
         "p:0:player.mute-click": true,
         "p:0:player.volume-always-shown": true,
-        "p:0:player.compressor.enable": false
+        "p:0:player.compressor.enable": false,
+        "p:2:chat.font-size": 16,
+        "p:0:chat.font-family": "Slate for OnePlus",
+        "p:0:i18n.locale": "en",
+        "p:0:chat.filtering.highlight-basic-terms": [
+            {
+                "v": {
+                    "v": "nerb",
+                    "t": "text",
+                    "c": "",
+                    "remove": false
+                },
+                "id": "1594768885712-0.01707621757424649-1"
+            },
+            {
+                "v": {
+                    "v": "nerbi",
+                    "t": "text",
+                    "c": "",
+                    "remove": false
+                },
+                "id": "1594768890697-0.3099369629354394-2"
+            },
+            {
+                "v": {
+                    "v": "nerblo",
+                    "t": "text",
+                    "c": "",
+                    "remove": false
+                },
+                "id": "1594768894643-0.8114412042574648-3"
+            },
+            {
+                "v": {
+                    "v": "nerbl",
+                    "t": "text",
+                    "c": "",
+                    "remove": false
+                }
+            }
+        ]
     }
 }

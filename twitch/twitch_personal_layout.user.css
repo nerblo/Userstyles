@@ -97,14 +97,12 @@
         width: 1.8rem;
     }
 
-
     /*
         ## Footer ##
     */
     .channel-root__info--with-chat {
         background: none !important;
     }
-
 
     /* 
         ## Drops ##
@@ -116,7 +114,6 @@
         left: 1px;
         top: -42px;
     }
-
 
     /* 
         ## Avatar ##
@@ -136,7 +133,6 @@
         transform: scale(.9) !important;
         bottom: -8px !important;
     }
-
 
     /* 
         ## Channel Info ##
@@ -166,43 +162,27 @@
         line-height: 2.6rem !important;
     }
 
-
     /* 
         ## Stat Text ##
     */
-    .channel-info-content span.tw-animated-number {
+    .channel-info-content .ffz--meta-tray{
+        margin-top:12px;
+    }
+    .channel-info-content span.tw-animated-number,
+    .channel-info-content .ffz-i-viewers{
         font-size: 1.6rem !important;
-        line-height: 5.4rem;
         font-weight: 400 !important;
+    }    
+    .channel-root__info--offline a[data-a-target="hosting-ui-link"]{
+        margin-top: 14px !important;
     }
-    .channel-info-content span.live-time {
-        font-size: 1.6rem !important;
-    }
-    .channel-root__info--offline a[data-a-target="hosting-ui-link"],
-    .channel-root__info--offline button[data-a-target="share-button"],
-    .channel-root__info--offline button[data-a-target="report-button-more-button"],
-    .channel-root__info--offline button[data-a-target="channel-info-bar-edit-button"]{
-        margin-top: 15px !important;
-    }
-    .channel-root__info--offline .ffz-stat {
-        margin-top: 5px !important;
-    }
-    .metadata-layout__split-top {
-        padding-bottom: 3rem !important;
-    }
-
 
     /* 
         ## FFZ Stat Text ##
     */
-    .tw-stat__value,
-    .ffz-stat-text {
+    .channel-info-content .ffz-stat-text {
         font-size: 1.6rem !important;
     }
-    .ffz-stat[data-key="host"] span {
-        font-size: 1.4rem !important;
-    }
-
 
     /* 
         ## Side-Nav ##
@@ -216,7 +196,6 @@
     .side-nav--collapsed .collapse-toggle button {
         margin-left: -.5rem !important;
     }
-    
     
     /*
         ## Hosting Diplay ##

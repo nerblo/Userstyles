@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.3.0
+@version        1.3.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -165,16 +165,14 @@
     /* 
         ## Stat Text ##
     */
-    .channel-info-content .ffz--meta-tray{
-        margin-top:12px;
+    .channel-info-content .ffz--meta-tray,
+    .channel-info-content a.tw-core-button--secondary{
+        margin-top:14px;
     }
     .channel-info-content span.tw-animated-number,
     .channel-info-content .ffz-i-viewers{
         font-size: 1.6rem !important;
         font-weight: 400 !important;
-    }    
-    .channel-root__info--offline a[data-a-target="hosting-ui-link"]{
-        margin-top: 14px !important;
     }
 
     /* 

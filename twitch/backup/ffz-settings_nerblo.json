@@ -418,6 +418,7 @@
         "p:2:chat.font-size": 16,
         "p:0:chat.font-family": "Slate for OnePlus",
         "p:0:i18n.locale": "en",
+        "p:0:chat.lines.padding": true,
         "p:0:chat.filtering.highlight-basic-terms": [
             {
                 "v": {
@@ -454,7 +455,6 @@
                     "remove": false
                 }
             }
-        ],
-        "p:0:chat.lines.padding": true
+        ]
     }
 }

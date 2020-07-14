@@ -380,10 +380,7 @@
         "p:0:ffzap.core.remove_spaces": true,
         "p:0:layout.side-nav.show": false,
         "p:0:channel.hosting.enable": true,
-        "addons.enabled": [
-            "ffzap-core",
-            "ffzap-bttv"
-        ],
+        "addons.enabled": [],
         "p:0:layout.side-nav.show-rec-friends": false,
         "p:0:ffzap.betterttv.gif_emoticons_mode": 2,
         "cfg-collapsed": [],
@@ -457,6 +454,7 @@
                     "remove": false
                 }
             }
-        ]
+        ],
+        "p:0:chat.lines.padding": true
     }
 }

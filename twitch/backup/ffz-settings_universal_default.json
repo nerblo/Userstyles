@@ -402,6 +402,7 @@
         "p:0:player.theatre.metadata": true,
         "p:0:player.mute-click": true,
         "p:0:player.volume-always-shown": true,
-        "p:0:player.compressor.enable": false
+        "p:0:player.compressor.enable": false,
+        "p:0:chat.lines.padding": true
     }
 }

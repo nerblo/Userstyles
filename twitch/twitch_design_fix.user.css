@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.2.6
+@version        1.2.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -27,7 +27,6 @@
     }
     .hosting-ui__footer .tw-core-button--primary,
     .channel-info-content .tw-core-button--primary,
-    .chat-input .tw-core-button--primary,
     .channel-header .tw-core-button--primary,
     .tw-c-background-accent {
         background-color: var(--old-twitch-color-secondary) !important;
@@ -107,24 +106,5 @@
     }
     .user-avatar-animated__live::after {
         animation: none !important;
-    }
-    /*
-        ## Sidebar - Hide Offline Channels ##
-    */
-    .side-nav-card__avatar--offline,
-    .side-nav-card__avatar--offline ~ div {
-        display:none !important;
-    }
-    .side-nav-card{
-        padding:0 !important;
-    }
-    .side-nav-card__link{
-        height:auto !important;
-        padding-bottom:0 !important;
-        padding-top:0 !important;
-    }
-    .side-nav-card__avatar {
-        padding-bottom:.5rem !important;
-        padding-top:.5rem !important;
     }
 }

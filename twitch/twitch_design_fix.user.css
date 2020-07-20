@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.2.7
+@version        1.2.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -85,6 +85,20 @@
     .channel-root__right-column .tw-border-l {
         border-left: 1px solid rgba(255, 255, 255, 0.01) !important;
     }
+
+    /* 
+        ## Channel Rewards ##
+    */
+    .chat-input .community-points-summary button.tw-button--success{
+        background-color: #171717 !important;     
+    }
+    .chat-input .community-points-summary button.tw-button--success:hover{
+         background-color:  #222222 !important;
+    }
+    .chat-input .community-points-summary .claimable-bonus__icon{
+        color:#AAA !important;
+    }
+    
     /* 
         ## Stat Text ##
     */

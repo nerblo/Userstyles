@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           YouTube Player Design Fix
+@namespace      github.com/nerblo/Userstyles
+@version        1.0.0
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    YouTube Player Design Fix
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/misc/youtube_player_controls.css
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+    /* Quelltext hier eingeben... */
+    .ytd-player .ytp-gradient-bottom,
+    .ytd-player .ytp-gradient-top{
+        visibility:hidden !important;
+    }
+    .ytd-player .ytp-left-controls,
+    .ytd-player .ytp-right-controls,
+    .ytd-player .ytp-chapter-container,
+    .ytd-player .ytp-watch-later-button,
+    .ytd-player .ytp-title,
+    .ytd-player .ytp-tooltip-title,
+    .ytd-player .ytp-tooltip-image,
+    .ytd-player .ytp-tooltip-text{
+        filter: drop-shadow( 1px 1px 2px #191919);
+    }
+    
+}

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.3.4
+@version        1.3.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -22,7 +22,7 @@
         font-size: var(--scaling-font-size) !important;
     }
     .chat-line__timestamp {
-        font-family: Source Code Pro;
+        font-family: 'Source Code Pro', 'Courier New', Courier, monospace !important;
         font-size: var(--scaling-time-font-size) !important;
     }
     .chat-line__message{
@@ -85,16 +85,16 @@
     }
     .top-nav .anon-user button {
         height: 20px !important;
-        margin-top: -14px;
+        margin-top: -14px !important;
     }
     .top-nav button[data-a-target="top-nav-get-bits-button"] {
-        height: 20px !Important;
+        height: 20px !important;
     }
     .top-nav button[data-a-target="top-nav-get-bits-button"] .tw-core-button-icon {
-        width: 1.4rem;
+        width: 1.4rem !important;
     }
     .top-nav .tw-core-button-icon--large {
-        width: 1.8rem;
+        width: 1.8rem !important;
     }
 
     /*
@@ -111,23 +111,23 @@
         position: absolute !important;
         font-size: 60px !important;
         content: '•' !important;
-        left: 1px;
-        top: -42px;
+        left: 1px !important;
+        top: -42px !important;
     }
 
     /* 
         ## Avatar ##
     */
     .channel-info-content .tw-avatar {
-        width: 4.6rem;
-        height: 4.6rem;
+        width: 4.6rem !important;
+        height: 4.6rem !important;
     }
     .user-avatar-animated {
-        margin-top: 0;
+        margin-top: 0 !important;
     }
     .user-avatar-animated__halo {
-        height: 5.4rem;
-        width: 5.4rem;
+        height: 5.4rem !important;
+        width: 5.4rem !important;
     }
     .user-avatar-animated__live {
         transform: scale(.9) !important;
@@ -148,7 +148,7 @@
         border: none !important;
     }
     .channel-info-content .channel-header__right {
-        height: 0.8em;
+        height: 0.8em !important;
         margin-top: 16px !important;
     }
     .channel-info-content .tw-mg-t-05 {
@@ -165,6 +165,9 @@
         margin-top:6px !important;
         margin-left:24px  !important;
     }
+    .channel-info-content .ffz--links a{
+        font-size:1.2rem !important;
+    }
     .channel-info-content .tw-accent-region + div .report-button{
         margin-top:16px !important;
     }
@@ -174,7 +177,7 @@
     */
     .channel-info-content .ffz--meta-tray,
     .channel-info-content a.tw-core-button--secondary{
-        margin-top:14px;
+        margin-top:14px !important;
     }
     .channel-info-content span.tw-animated-number,
     .channel-info-content .ffz-i-viewers{
@@ -193,7 +196,7 @@
         ## Side-Nav ##
     */
     .side-nav--collapsed:not(.side-nav--hover-exp) {
-        width: 4rem;
+        width: 4rem !important;
     }
     .side-nav--collapsed .side-nav-card {
         padding-left: .5rem !important;

@@ -161,6 +161,9 @@
         font-size: 1.6rem !important;
         line-height: 2.6rem !important;
     }
+    .channel-info-content .ffz--links{
+        margin-top:6px;
+    }
 
     /* 
         ## Stat Text ##

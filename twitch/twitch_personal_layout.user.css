@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.3.2
+@version        1.3.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -162,7 +162,11 @@
         line-height: 2.6rem !important;
     }
     .channel-info-content .ffz--links{
-        margin-top:6px;
+        margin-top:6px !important;
+        margin-left:24px  !important;
+    }
+    .channel-info-content .tw-accent-region + div .report-button{
+        margin-top:16px !important;
     }
 
     /* 

@@ -163,10 +163,11 @@
     }
     .channel-info-content .ffz--links{
         margin-top:6px !important;
-        margin-left:16px  !important;
+        margin-left:10px  !important;
     }
     .channel-info-content .ffz--links a{
         font-size:1.2rem !important;
+        color:var(--color-text-link) !important;
     }
     .channel-info-content .tw-accent-region + div .report-button{
         margin-top:16px !important;

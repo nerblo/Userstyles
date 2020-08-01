@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.3.7
+@version        1.4.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -111,7 +111,7 @@
         position: absolute !important;
         font-size: 60px !important;
         content: '•' !important;
-        left: 1px !important;
+        left: 2px !important;
         top: -42px !important;
     }
 
@@ -123,7 +123,7 @@
         height: 4.6rem !important;
     }
     .user-avatar-animated {
-        margin-top: 0 !important;
+        margin-top: -8px !important;
     }
     .user-avatar-animated__halo {
         height: 5.4rem !important;
@@ -137,12 +137,8 @@
     /* 
         ## Channel Info ##
     */
-    .channel-info-content h1,
-    .channel-info-content a[href*="/"] + div{
-        margin-top:6px !important;
-    }
     .channel-info-content .tw-flex.tw-full-width.tw-mg-1 {
-        margin-top: 0px !important;
+        margin-top: 9px !important;
     }
     .channel-info-content .tw-border-t {
         border: none !important;
@@ -155,14 +151,15 @@
         margin-top: 0px !important;
     }
     .channel-info-content .tw-align-items-baseline {
-        align-items: center !important;
+        align-items: start !important;
     }
     .channel-info-content h2 {
-        font-size: 1.6rem !important;
-        line-height: 2.6rem !important;
+        
+        margin-top:-6px !important;
+        margin-bottom:-1px !important;
     }
     .channel-info-content .ffz--links{
-        margin-top:6px !important;
+        margin-top:4px !important;
         margin-left:10px  !important;
     }
     .channel-info-content .ffz--links a{
@@ -175,15 +172,15 @@
     .channel-info-content .ffz--links a[href$="/schedule"]{
         display:none !important;
     }
-
-
+    .channel-info-content .tw-tag__content{
+        padding:4;
+        padding-top:8px;
+    }
+    
     /* 
         ## Stat Text ##
     */
-    .channel-info-content .ffz--meta-tray,
-    .channel-info-content a.tw-core-button--secondary{
-        margin-top:14px !important;
-    }
+
     .channel-info-content span.tw-animated-number,
     .channel-info-content .ffz-i-viewers{
         font-size: 1.6rem !important;

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.4.2
+@version        1.4.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -154,7 +154,6 @@
         align-items: start !important;
     }
     .channel-info-content h2 {
-        
         margin-top:-6px !important;
         margin-bottom:-1px !important;
     }
@@ -163,17 +162,16 @@
         margin-left:10px  !important;
     }
     .channel-info-content .ffz--links a{
-        font-size:1.2rem !important;
+        font-size:1.3rem !important;
         color:var(--color-text-link) !important;
     }
     .channel-info-content .ffz--links a[href$="/schedule"]{
         display:none !important;
     }
-    .channel-info-content .tw-tag__content{
-        padding:4;
-        padding-top:8px;
+    .channel-info-content .tw-mg-b-05{
+        margin-bottom:0 !important;
     }
-    
+
     /* 
         ## Stat Text ##
     */

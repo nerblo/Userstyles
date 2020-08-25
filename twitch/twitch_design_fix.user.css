@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.3.1
+@version        1.3.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -49,19 +49,27 @@
         background-color: transparent !important;
     }
 
+    /* 
+        ## Chat ##
+    */
     .chat-input__textarea textarea {
         font-size: 1.39rem !important;
     }
+    textarea[data-a-target="chat-input"] {
+        height: 68px !important;
+    }
+    .chatter-name {
+        word-break: normal !important;
+    }
+    /* 
+        ## Theme ##
+    */
     .hype-train-progress-bar-info-view__level-pill,
     .hype-train-progress-bar__fill,
     .hype-train-level-up__container,
     .hype-train-complete__container,
     .hype-train-start__container {
         background-color: var(--old-twitch-color-primary) !important;
-    }
-
-    textarea[data-a-target="chat-input"] {
-        height: 68px !important;
     }
     .channel-root,
     .channel-root--home,
@@ -75,16 +83,12 @@
     .c-te__video-player {
         background-color: black !important;
     }
-    .tw-animated-glitch-logo {
-        filter: grayscale(.2);
-    }
     .top-nav .navigation-link__left-border {
         display: none !important;
     }
     #bttv-picture-in-picture {
         display: none !important;
     }
-
     .channel-root__right-column .tw-border-l {
         border-left: 1px solid rgba(255, 255, 255, 0.01) !important;
     }
@@ -92,16 +96,16 @@
     /* 
         ## Channel Rewards ##
     */
-    .chat-input .community-points-summary button.tw-button--success{
-        background-color: #171717 !important;     
+    .chat-input .community-points-summary button.tw-button--success {
+        background-color: #171717 !important;
     }
-    .chat-input .community-points-summary button.tw-button--success:hover{
-         background-color:  #222222 !important;
+    .chat-input .community-points-summary button.tw-button--success:hover {
+        background-color: #222222 !important;
     }
-    .chat-input .community-points-summary .claimable-bonus__icon{
-        color:#AAA !important;
+    .chat-input .community-points-summary .claimable-bonus__icon {
+        color: #AAA !important;
     }
-    
+
     /* 
         ## Stat Text ##
     */
@@ -112,9 +116,10 @@
         content: "  ";
         white-space: pre;
     }
-    .channel-info-content .tw-core-button--text{
-        color:#d9d9d9 !important;
+    .channel-info-content .tw-core-button--text {
+        color: #d9d9d9 !important;
     }
+
     /*
         ## Channel Avatar Static ##
     */

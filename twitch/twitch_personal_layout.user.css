@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.4.3
+@version        1.4.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -63,7 +63,7 @@
 
         margin-top: -12px !important;
     }
-    .top-nav button[data-a-target="user-menu-toggle"].tw-c-background-base {
+    .top-nav button[data-a-target="user-menu-toggle"] .tw-c-background-base {
         background: none !important;
     }
     .tw-animated-glitch-logo {

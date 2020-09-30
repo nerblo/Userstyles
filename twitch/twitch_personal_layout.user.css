@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.4.7
+@version        1.4.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -70,17 +70,14 @@
         margin-top: -13px !important;
         transform: scale(0.7) !important;
     }
-    .top-nav .tw-number-badge {
+    .top-nav .tw-number-badge__badge {
         margin-top: 10px !important;
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
     .ffz-top-nav .tw-pill {
         margin-top: 8px !important;
         font-size: 1rem !important;
         padding: 0.3rem !important;
-    }
-    .top-nav .onsite-notifications__badge {
-        font-size: 0.9rem !important;
     }
     .top-nav .anon-user button {
         height: 20px !important;

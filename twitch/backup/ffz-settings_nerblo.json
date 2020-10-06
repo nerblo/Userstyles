@@ -2,606 +2,277 @@
     "version": 2,
     "type": "full",
     "values": {
-        "p:0:chat.filtering.highlight-mentions": true,
-        "p:0:chat.filtering.highlight-tokens": false,
+        "p:0:layout.side-nav.show": false,
+        "p:0:chat.font-family": "Product Sans",
+        "p:0:chat.scroller.freeze": 5,
         "p:0:addon.fs-chat.automatic": true,
-        "p:0:chat.filtering.highlight-basic-terms": [
-            {
-                "v": {
-                    "v": "nerb",
-                    "t": "text",
-                    "c": "",
-                    "remove": false
+        "p:0:i18n.format.date": "DD.MM.YYYY",
+        "directory.game.blocked-games": ["Slots"],
+        "p:1:chat.actions.inline": [{
+            "v": {
+                "action": "ban",
+                "appearance": {
+                    "type": "icon",
+                    "icon": "ffz-i-block",
+                    "color": "#DC0202"
                 },
-                "id": "1594768885712-0.01707621757424649-1"
-            },
-            {
-                "v": {
-                    "v": "nerbi",
-                    "t": "text",
-                    "c": "",
-                    "remove": false
-                },
-                "id": "1594768890697-0.3099369629354394-2"
-            },
-            {
-                "v": {
-                    "v": "nerblo",
-                    "t": "text",
-                    "c": "",
-                    "remove": false
-                },
-                "id": "1594768894643-0.8114412042574648-3"
-            },
-            {
-                "v": {
-                    "v": "nerbl",
-                    "t": "text",
-                    "c": "",
-                    "remove": false
+                "options": {},
+                "display": {
+                    "mod": true,
+                    "mod_icons": true,
+                    "deleted": false
                 }
+            },
+            "id": "1594133979197-0.24751765931805192-0"
+        }, {
+            "v": {
+                "action": "unban",
+                "appearance": {
+                    "type": "icon",
+                    "icon": "ffz-i-ok",
+                    "color": "#33DC00"
+                },
+                "options": {},
+                "display": {
+                    "mod": true,
+                    "mod_icons": true,
+                    "deleted": true
+                }
+            },
+            "id": "1594133979197-0.22540037828710502-1"
+        }, {
+            "v": {
+                "action": "timeout",
+                "appearance": {
+                    "type": "icon",
+                    "icon": "ffz-i-clock",
+                    "color": "#F49207"
+                },
+                "display": {
+                    "mod": true,
+                    "mod_icons": true
+                },
+                "options": {}
+            },
+            "id": "1594133979197-0.07681966818370767-2"
+        }, {
+            "v": {
+                "action": "msg_delete",
+                "appearance": {
+                    "type": "icon",
+                    "icon": "ffz-i-trash",
+                    "color": "#E9E93E"
+                },
+                "options": {},
+                "display": {
+                    "mod": true,
+                    "mod_icons": true
+                }
+            },
+            "id": "1594133979197-0.7555785083461624-3"
+        }],
+        "p:0:channel.hide-not-live-bar": true,
+        "p:0:directory.hide-latest-videos": true,
+        "p:0:reports.error.include-settings": false,
+        "p:0:i18n.format.datetime": "HH:mm:ss DD.MM.YYYY",
+        "addons.enabled": ["deck", "ffzap-core", "ffzap-bttv"],
+        "p:0:layout.side-nav.show-rec-friends": false,
+        "p:0:theme.color.tooltip.text": "#D9D9D9",
+        "p:0:metadata.viewers": true,
+        "p:0:i18n.locale": "en",
+        "cfg-seen": ["i18n.debug.capture", "i18n.debug.transform", "i18n.locale", "socket.use-cluster", "chat.actions.reasons", "chat.actions.inline", "chat.actions.user-context", "chat.actions.room", "chat.actions.room-above", "chat.actions.rules-as-reasons", "chat.badges.version", "chat.badges.fix-colors", "chat.badges.custom-mod", "chat.badges.style", "chat.badges.hidden", "chat.fix-bad-emotes", "chat.click-emotes", "chat.sub-emotes", "chat.emote-dialogs", "chat.scrollback-length", "chat.delay", "chat.pin-resubs", "chat.emoji.style", "chat.font-size", "chat.font-family", "chat.width", "chat.lines.emote-alignment", "chat.timestamp-format", "chat.lines.alternate", "chat.lines.padding", "chat.lines.borders", "chat.rich.enabled", "chat.rich.hide-tokens", "chat.rich.all-links", "chat.rich.minimum-level", "chat.filtering.click-to-reveal", "chat.filtering.process-own", "chat.filtering.deleted-style", "chat.filtering.display-deleted", "chat.filtering.display-mod-action", "chat.filtering.ignore-clear", "chat.filtering.remove-deleted", "chat.automod.delete-messages", "chat.automod.remove-messages", "chat.automod.run-as-mod", "chat.filtering.highlight-basic-users", "chat.filtering.highlight-basic-users-blocked", "chat.filtering.highlight-basic-badges", "chat.filtering.highlight-basic-badges-blocked", "chat.filtering.highlight-basic-terms", "chat.filtering.highlight-basic-blocked", "chat.filtering.clickable-mentions", "chat.filtering.mention-color", "chat.filtering.highlight-mentions", "chat.filtering.highlight-tokens", "tooltip.images", "tooltip.badge-images", "tooltip.emote-sources", "tooltip.emote-images", "tooltip.rich-links", "tooltip.link-interaction", "tooltip.link-images", "tooltip.link-nsfw-images", "chat.adjustment-mode", "chat.adjustment-contrast", "chat.bits.stack", "chat.bits.animated", "chat.bits.show", "chat.bits.show-pinned", "metadata.player-stats", "metadata.stream-delay-warning", "metadata.uptime", "metadata.featured-follow", "metadata.host-button", "layout.display-bits-button", "layout.theatre-navigation", "layout.minimal-navigation", "layout.discover", "layout.prime-offers", "ffz.show-new-settings", "channel.hosting.enable", "channel.raids.no-autojoin", "channel.metadata.force-above", "chat.scroller.freeze", "chat.scroller.freeze-requires-hover", "chat.scroller.hover-delay", "chat.scroller.smooth-scroll", "chat.emote-menu.enabled", "chat.emote-menu.default-tab", "chat.emote-menu.combine-tabs", "chat.emote-menu.icon", "chat.emote-menu.show-heading", "chat.emote-menu.show-search", "chat.emote-menu.reduced-padding", "chat.emote-menu.sort-emotes", "chat.emote-menu.sort-tiers-last", "chat.mru.enabled", "chat.tab-complete.ffz-emotes", "chat.tab-complete.emoji", "chat.tab-complete.emotes-without-colon", "chat.tab-complete.limit-results", "chat.tab-complete.prioritize-favorites", "chat.viewer-cards.highlight-chat", "chat.viewer-cards.color", "chat.hide-community-highlights", "chat.subs.gift-banner", "chat.community-chest.show", "chat.points.custom-rendering", "chat.points.show-callouts", "chat.points.show-button", "chat.points.show-rewards", "chat.bits.show-rewards", "chat.rituals.show", "chat.subs.show", "chat.subs.compact", "chat.subs.merge-gifts", "chat.subs.merge-gifts-visibility", "layout.side-nav.show", "layout.side-nav.show-avatars", "layout.side-nav.show-rec-channels", "layout.side-nav.show-friends", "layout.side-nav.show-rec-friends", "layout.side-nav.hide-offline", "layout.side-nav.rerun-style", "layout.swap-sidebars", "whispers.show", "layout.theme.global-font", "channel.hide-live-indicator", "channel.round-avatars", "channel.hide-not-live-bar", "player.hide-event-bar", "player.hide-rerun-bar", "player.hide-squad-banner", "directory.following.group-hosts", "directory.following.host-menus", "directory.uptime", "directory.show-channel-avatars", "directory.hide-live", "directory.hide-vodcasts", "directory.hide-recommended", "directory.hide-viewing-history", "directory.hide-latest-videos", "layout.portrait", "layout.portrait-invert", "layout.portrait-threshold", "player.theatre.metadata", "player.theatre.no-whispers", "player.theatre.auto-enter", "player.allow-catchup", "player.button.reset", "player.button.pip", "player.hide-mouse", "player.volume-scroll", "player.volume-scroll-steps", "player.volume-always-shown", "player.captions.font-size", "player.captions.font-family", "player.ext-hide", "player.ext-interaction", "player.home.autoplay", "player.no-autoplay", "player.vod.autoplay", "sub-button.prime-notice", "theme.color.background", "theme.color.text", "theme.dark", "chat.video-chat.enabled", "reports.error.enable", "reports.error.include-user", "reports.error.include-settings", "add-ons", "addons.dev.server", "experiments", "i18n.debug.open", "profiles", "backup", "home", "faq", "feedback", "feedback.log", "changelog", "addon-changelog", "legal", "reports.error.example", "ffzap.betterttv.arbitrary_emoticons", "ffzap.betterttv.channel_emoticons", "ffzap.betterttv.gif_emoticons_mode", "ffzap.betterttv.global_emoticons", "ffzap.betterttv.pro_emoticons", "ffzap.core.message_deletion", "ffzap.core.remove_spaces", "ffzap.core.enable_highlight_sound", "ffzap.core.highlight_sound", "ffzap.core.highlight_sound_volume", "ffzap.core.highlight_sound_prevent_own_channel", "chat.points.allow-highlight", "chat.video-chat.timestamps", "player.compressor.enable", "player.compressor.default", "player.compressor.threshold", "player.compressor.knee", "player.compressor.ratio", "player.compressor.attack", "player.compressor.release", "chat.banners.hype-train", "chat.banners.polls", "chat.badges.media-queries", "channel.show-celebrations", "player.mute-click", "chat.filtering.bold-mentions", "metadata.uptime.no-native", "socket.info", "chat.emote-menu.shortcut", "channel.auto-click-chat", "chat.input.show-mod-view", "metadata.viewers", "metadata.viewers.no-native", "directory.hidden.reveal", "directory.hidden.style", "directory.hide-promoted", "addon.fs-chat.bg.blur", "addon.fs-chat.bg.color", "addon.fs-chat.height", "addon.fs-chat.width", "addon.fs-chat.minimal", "addon.fs-chat.automatic", "addon.fs-chat.no-input", "addon.fs-chat.metadata", "addon.fs-chat.round", "channel.extra-links", "channel.hide-unfollow", "metadata.clip-download", "chat.filtering.color-mentions", "channel.panel-tips", "i18n.format.date", "i18n.format.datetime", "i18n.format.time", "theme.color.tooltip.background", "theme.color.tooltip.text", "theme.color.accent", "channel.auto-skip-trailer", "chat.replies.style", "chat.badges.clickable", "chat.filtering.blocked-types", "theme.font.size"],
+        "p:0:chat.timestamp-format": "HH:mm",
+        "p:0:player.ext-hide": 2,
+        "p:0:reports.error.enable": false,
+        "p:0:chat.filtering.highlight-mentions": true,
+        "p:0:chat.width": 384,
+        "p:0:chat.filtering.bold-mentions": true,
+        "cfg-collapsed": [],
+        "p:0:player.hide-squad-banner": true,
+        "p:0:chat.emote-menu.combine-tabs": true,
+        "p:0:layout.side-nav.hide-offline": true,
+        "p:0:chat.filtering.color-mentions": true,
+        "p:0:theme.color.background": "#161614",
+        "profiles": [{
+            "id": 2,
+            "name": "My Channel",
+            "description": "",
+            "context": [{
+                "id": "15f94e8a-a99c-4f6b-80cf-aece32fa5e5e",
+                "type": "Channel",
+                "data": {
+                    "login": "nerbl0",
+                    "id": "110373723"
+                }
+            }]
+        }, {
+            "id": 1,
+            "name": "Moderation",
+            "i18n_key": "setting.profiles.moderation",
+            "description": "Settings that apply when you are a moderator of the current channel.",
+            "context": [{
+                "type": "Moderator",
+                "data": true
+            }]
+        }, {
+            "id": 0,
+            "name": "Default Profile",
+            "i18n_key": "setting.profiles.default",
+            "description": "Settings that apply everywhere on Twitch."
+        }],
+        "p:0:theme.dark": false,
+        "p:0:chat.filtering.remove-deleted": 0,
+        "p:2:chat.font-size": 18,
+        "deck-tabs": [{
+            "id": "ee7898b9-41c5-4ba5-987f-fe9df9e4ad94",
+            "title": "Default Tab",
+            "i18n": "addon.deck.default-tab",
+            "columns": [{
+                "display": {
+                    "max_tags": 3,
+                    "icon": "ffz-i-channels",
+                    "width": 2
+                },
+                "settings": {
+                    "sort": "VIEWER_COUNT",
+                    "lang": null
+                },
+                "type": "live/channels",
+                "id": "aaf01a6e-2c88-4c56-8978-fec1ae157ae5"
+            }, {
+                "display": {
+                    "max_tags": 3,
+                    "icon": "ffz-i-twitch",
+                    "width": 2
+                },
+                "settings": {
+                    "count": 10,
+                    "lang": null
+                },
+                "type": "live/featured",
+                "id": "d1a4e573-f773-44b0-ba8a-5055d0b642bb"
+            }, {
+                "display": {
+                    "max_tags": 3,
+                    "icon": null,
+                    "width": 2,
+                    "title": "LOL"
+                },
+                "settings": {
+                    "sort": "VIEWER_COUNT",
+                    "name": "League of Legends",
+                    "lang": null
+                },
+                "type": "live/category",
+                "id": "a446fc7e-387a-46b1-9295-6c0ded69348c",
+                "cache": {
+                    "displayName": "League of Legends",
+                    "avatar": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-40x56.jpg",
+                    "cover": "https://static-cdn.jtvnw.net/categorydb-production-game-banners/21779/en-us/bd139c1e-d10b-41e0-b8c0-17c12f1c6a96.png"
+                }
+            }, {
+                "display": {
+                    "max_tags": 3,
+                    "icon": "ffz-i-thumbs-up",
+                    "width": 2
+                },
+                "settings": {
+                    "count": 50,
+                    "lang": null
+                },
+                "type": "live/recommended",
+                "id": "ccdcfc26-a040-4189-a4f5-d12f9f730ee5"
+            }, {
+                "display": {
+                    "max_tags": 0,
+                    "icon": "ffz-i-heart",
+                    "width": 2,
+                    "hide_avatars": false
+                },
+                "settings": {
+                    "lang": null
+                },
+                "type": "live/followed",
+                "id": "87664913-57b6-4bd7-a5e9-9b602199fada",
+                "collapsed": false
+            }, {
+                "display": {
+                    "max_tags": 3
+                },
+                "settings": {},
+                "type": "live/search",
+                "id": "8e62848e-21d0-4abb-8703-89f19b400490"
+            }]
+        }],
+        "emote-menu.collapsed": ["twitch-94284683", "twitch-76588774", "twitch-197293483", "twitch-241805976", "twitch-120079562", "twitch-265735182", "twitch-101326028", "ffz-3", "twitch-46374306", "twitch-76007650", "emoji-Travel & Places", "emoji-Food & Drink", "emoji-Symbols", "emoji-Activities", "emoji-Flags", "emoji-Animals & Nature", "emoji-Smileys & People", "emoji-Objects", "twitch-49711509", "twitch-43156178", "twitch-193805205", "twitch-64949289", "twitch-79996922", "BetterTTV-addon--ffzap.betterttv--emotes-global", "twitch-25458544", "twitch-67054208", "twitch-misc", "twitch-488737509", "emoji-smileys-emotion", "emoji-people-body", "emoji-animals-nature", "emoji-food-drink", "emoji-travel-places", "emoji-activities", "emoji-objects", "emoji-symbols", "emoji-flags", "twitch-prime", "twitch-472873131", "twitch-85397463", "twitch-global"],
+        "p:0:addon.fs-chat.no-input": true,
+        "p:0:directory.hide-viewing-history": true,
+        "directory.game.hidden-thumbnails": [],
+        "client-id": "09587793-30af-4141-aad6-3043c9ae6c7a",
+        "p:0:i18n.format.time": "HH:mm:ss",
+        "p:0:theme.color.tooltip.background": "#262626",
+        "p:0:chat.filtering.highlight-basic-terms": [{
+            "v": {
+                "v": "nerb",
+                "t": "text",
+                "c": "",
+                "remove": false
+            },
+            "id": "1594768885712-0.01707621757424649-1"
+        }, {
+            "v": {
+                "v": "nerbi",
+                "t": "text",
+                "c": "",
+                "remove": false
+            },
+            "id": "1594768890697-0.3099369629354394-2"
+        }, {
+            "v": {
+                "v": "nerblo",
+                "t": "text",
+                "c": "",
+                "remove": false
+            },
+            "id": "1594768894643-0.8114412042574648-3"
+        }, {
+            "v": {
+                "v": "nerbl",
+                "t": "text",
+                "c": "",
+                "remove": false
             }
-        ],
-        "p:0:player.home.autoplay": false,
+        }],
+        "emote-menu.hidden-sets": ["twitch-564265402"],
+        "p:0:chat.replies.style": 0,
+        "p:0:channel.metadata.force-above": false,
+        "p:0:player.button.pip": false,
+        "exp-lock": 1594054845003,
+        "p:0:chat.font-size": 16,
+        "p:0:metadata.stream-delay-warning": 9,
+        "p:0:ffzap.betterttv.gif_emoticons_mode": 2,
+        "p:0:ffzap.core.remove_spaces": true,
+        "p:0:layout.side-nav.rerun-style": 0,
         "p:0:layout.display-bits-button": false,
         "p:0:channel.panel-tips": false,
-        "directory.game.blocked-games": [
-            "Slots"
-        ],
-        "profiles": [
-            {
-                "id": 2,
-                "name": "My Channel",
-                "description": "",
-                "context": [
-                    {
-                        "id": "15f94e8a-a99c-4f6b-80cf-aece32fa5e5e",
-                        "type": "Channel",
-                        "data": {
-                            "login": "nerbl0",
-                            "id": "110373723"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": 1,
-                "name": "Moderation",
-                "i18n_key": "setting.profiles.moderation",
-                "description": "Settings that apply when you are a moderator of the current channel.",
-                "context": [
-                    {
-                        "type": "Moderator",
-                        "data": true
-                    }
-                ]
-            },
-            {
-                "id": 0,
-                "name": "Default Profile",
-                "i18n_key": "setting.profiles.default",
-                "description": "Settings that apply everywhere on Twitch."
-            }
-        ],
-        "p:0:channel.hide-unfollow": true,
-        "p:0:channel.auto-click-chat": true,
-        "p:0:chat.width": 384,
-        "p:0:player.button.pip": false,
-        "p:0:reports.error.enable": false,
-        "p:0:theme.dark": false,
-        "deck-tabs": [
-            {
-                "id": "ee7898b9-41c5-4ba5-987f-fe9df9e4ad94",
-                "title": "Default Tab",
-                "i18n": "addon.deck.default-tab",
-                "columns": [
-                    {
-                        "display": {
-                            "max_tags": 3,
-                            "icon": "ffz-i-channels",
-                            "width": 2
-                        },
-                        "settings": {
-                            "sort": "VIEWER_COUNT",
-                            "lang": null
-                        },
-                        "type": "live/channels",
-                        "id": "aaf01a6e-2c88-4c56-8978-fec1ae157ae5"
-                    },
-                    {
-                        "display": {
-                            "max_tags": 3,
-                            "icon": "ffz-i-twitch",
-                            "width": 2
-                        },
-                        "settings": {
-                            "count": 10,
-                            "lang": null
-                        },
-                        "type": "live/featured",
-                        "id": "d1a4e573-f773-44b0-ba8a-5055d0b642bb"
-                    },
-                    {
-                        "display": {
-                            "max_tags": 3,
-                            "icon": null,
-                            "width": 2,
-                            "title": "LOL"
-                        },
-                        "settings": {
-                            "sort": "VIEWER_COUNT",
-                            "name": "League of Legends",
-                            "lang": null
-                        },
-                        "type": "live/category",
-                        "id": "a446fc7e-387a-46b1-9295-6c0ded69348c",
-                        "cache": {
-                            "displayName": "League of Legends",
-                            "avatar": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-40x56.jpg",
-                            "cover": "https://static-cdn.jtvnw.net/categorydb-production-game-banners/21779/en-us/bd139c1e-d10b-41e0-b8c0-17c12f1c6a96.png"
-                        }
-                    },
-                    {
-                        "display": {
-                            "max_tags": 3,
-                            "icon": "ffz-i-thumbs-up",
-                            "width": 2
-                        },
-                        "settings": {
-                            "count": 50,
-                            "lang": null
-                        },
-                        "type": "live/recommended",
-                        "id": "ccdcfc26-a040-4189-a4f5-d12f9f730ee5"
-                    },
-                    {
-                        "display": {
-                            "max_tags": 0,
-                            "icon": "ffz-i-heart",
-                            "width": 2,
-                            "hide_avatars": false
-                        },
-                        "settings": {
-                            "lang": null
-                        },
-                        "type": "live/followed",
-                        "id": "87664913-57b6-4bd7-a5e9-9b602199fada",
-                        "collapsed": false
-                    },
-                    {
-                        "display": {
-                            "max_tags": 3
-                        },
-                        "settings": {},
-                        "type": "live/search",
-                        "id": "8e62848e-21d0-4abb-8703-89f19b400490"
-                    }
-                ]
-            }
-        ],
-        "p:0:chat.points.show-callouts": false,
-        "cfg-seen": [
-            "i18n.debug.capture",
-            "i18n.debug.transform",
-            "i18n.locale",
-            "socket.use-cluster",
-            "chat.actions.reasons",
-            "chat.actions.inline",
-            "chat.actions.user-context",
-            "chat.actions.room",
-            "chat.actions.room-above",
-            "chat.actions.rules-as-reasons",
-            "chat.badges.version",
-            "chat.badges.fix-colors",
-            "chat.badges.custom-mod",
-            "chat.badges.style",
-            "chat.badges.hidden",
-            "chat.fix-bad-emotes",
-            "chat.click-emotes",
-            "chat.sub-emotes",
-            "chat.emote-dialogs",
-            "chat.scrollback-length",
-            "chat.delay",
-            "chat.pin-resubs",
-            "chat.emoji.style",
-            "chat.font-size",
-            "chat.font-family",
-            "chat.width",
-            "chat.lines.emote-alignment",
-            "chat.timestamp-format",
-            "chat.lines.alternate",
-            "chat.lines.padding",
-            "chat.lines.borders",
-            "chat.rich.enabled",
-            "chat.rich.hide-tokens",
-            "chat.rich.all-links",
-            "chat.rich.minimum-level",
-            "chat.filtering.click-to-reveal",
-            "chat.filtering.process-own",
-            "chat.filtering.deleted-style",
-            "chat.filtering.display-deleted",
-            "chat.filtering.display-mod-action",
-            "chat.filtering.ignore-clear",
-            "chat.filtering.remove-deleted",
-            "chat.automod.delete-messages",
-            "chat.automod.remove-messages",
-            "chat.automod.run-as-mod",
-            "chat.filtering.highlight-basic-users",
-            "chat.filtering.highlight-basic-users-blocked",
-            "chat.filtering.highlight-basic-badges",
-            "chat.filtering.highlight-basic-badges-blocked",
-            "chat.filtering.highlight-basic-terms",
-            "chat.filtering.highlight-basic-blocked",
-            "chat.filtering.clickable-mentions",
-            "chat.filtering.mention-color",
-            "chat.filtering.highlight-mentions",
-            "chat.filtering.highlight-tokens",
-            "tooltip.images",
-            "tooltip.badge-images",
-            "tooltip.emote-sources",
-            "tooltip.emote-images",
-            "tooltip.rich-links",
-            "tooltip.link-interaction",
-            "tooltip.link-images",
-            "tooltip.link-nsfw-images",
-            "chat.adjustment-mode",
-            "chat.adjustment-contrast",
-            "chat.bits.stack",
-            "chat.bits.animated",
-            "chat.bits.show",
-            "chat.bits.show-pinned",
-            "metadata.player-stats",
-            "metadata.stream-delay-warning",
-            "metadata.uptime",
-            "metadata.featured-follow",
-            "metadata.host-button",
-            "layout.display-bits-button",
-            "layout.theatre-navigation",
-            "layout.minimal-navigation",
-            "layout.discover",
-            "layout.prime-offers",
-            "ffz.show-new-settings",
-            "channel.hosting.enable",
-            "channel.raids.no-autojoin",
-            "channel.metadata.force-above",
-            "chat.scroller.freeze",
-            "chat.scroller.freeze-requires-hover",
-            "chat.scroller.hover-delay",
-            "chat.scroller.smooth-scroll",
-            "chat.emote-menu.enabled",
-            "chat.emote-menu.default-tab",
-            "chat.emote-menu.combine-tabs",
-            "chat.emote-menu.icon",
-            "chat.emote-menu.show-heading",
-            "chat.emote-menu.show-search",
-            "chat.emote-menu.reduced-padding",
-            "chat.emote-menu.sort-emotes",
-            "chat.emote-menu.sort-tiers-last",
-            "chat.mru.enabled",
-            "chat.tab-complete.ffz-emotes",
-            "chat.tab-complete.emoji",
-            "chat.tab-complete.emotes-without-colon",
-            "chat.tab-complete.limit-results",
-            "chat.tab-complete.prioritize-favorites",
-            "chat.viewer-cards.highlight-chat",
-            "chat.viewer-cards.color",
-            "chat.hide-community-highlights",
-            "chat.subs.gift-banner",
-            "chat.community-chest.show",
-            "chat.points.custom-rendering",
-            "chat.points.show-callouts",
-            "chat.points.show-button",
-            "chat.points.show-rewards",
-            "chat.bits.show-rewards",
-            "chat.rituals.show",
-            "chat.subs.show",
-            "chat.subs.compact",
-            "chat.subs.merge-gifts",
-            "chat.subs.merge-gifts-visibility",
-            "layout.side-nav.show",
-            "layout.side-nav.show-avatars",
-            "layout.side-nav.show-rec-channels",
-            "layout.side-nav.show-friends",
-            "layout.side-nav.show-rec-friends",
-            "layout.side-nav.hide-offline",
-            "layout.side-nav.rerun-style",
-            "layout.swap-sidebars",
-            "whispers.show",
-            "layout.theme.global-font",
-            "channel.hide-live-indicator",
-            "channel.round-avatars",
-            "channel.hide-not-live-bar",
-            "player.hide-event-bar",
-            "player.hide-rerun-bar",
-            "player.hide-squad-banner",
-            "directory.following.group-hosts",
-            "directory.following.host-menus",
-            "directory.uptime",
-            "directory.show-channel-avatars",
-            "directory.hide-live",
-            "directory.hide-vodcasts",
-            "directory.hide-recommended",
-            "directory.hide-viewing-history",
-            "directory.hide-latest-videos",
-            "layout.portrait",
-            "layout.portrait-invert",
-            "layout.portrait-threshold",
-            "player.theatre.metadata",
-            "player.theatre.no-whispers",
-            "player.theatre.auto-enter",
-            "player.allow-catchup",
-            "player.button.reset",
-            "player.button.pip",
-            "player.hide-mouse",
-            "player.volume-scroll",
-            "player.volume-scroll-steps",
-            "player.volume-always-shown",
-            "player.captions.font-size",
-            "player.captions.font-family",
-            "player.ext-hide",
-            "player.ext-interaction",
-            "player.home.autoplay",
-            "player.no-autoplay",
-            "player.vod.autoplay",
-            "sub-button.prime-notice",
-            "theme.color.background",
-            "theme.color.text",
-            "theme.dark",
-            "chat.video-chat.enabled",
-            "reports.error.enable",
-            "reports.error.include-user",
-            "reports.error.include-settings",
-            "add-ons",
-            "addons.dev.server",
-            "experiments",
-            "i18n.debug.open",
-            "profiles",
-            "backup",
-            "home",
-            "faq",
-            "feedback",
-            "feedback.log",
-            "changelog",
-            "addon-changelog",
-            "legal",
-            "reports.error.example",
-            "ffzap.betterttv.arbitrary_emoticons",
-            "ffzap.betterttv.channel_emoticons",
-            "ffzap.betterttv.gif_emoticons_mode",
-            "ffzap.betterttv.global_emoticons",
-            "ffzap.betterttv.pro_emoticons",
-            "ffzap.core.message_deletion",
-            "ffzap.core.remove_spaces",
-            "ffzap.core.enable_highlight_sound",
-            "ffzap.core.highlight_sound",
-            "ffzap.core.highlight_sound_volume",
-            "ffzap.core.highlight_sound_prevent_own_channel",
-            "chat.points.allow-highlight",
-            "chat.video-chat.timestamps",
-            "player.compressor.enable",
-            "player.compressor.default",
-            "player.compressor.threshold",
-            "player.compressor.knee",
-            "player.compressor.ratio",
-            "player.compressor.attack",
-            "player.compressor.release",
-            "chat.banners.hype-train",
-            "chat.banners.polls",
-            "chat.badges.media-queries",
-            "channel.show-celebrations",
-            "player.mute-click",
-            "chat.filtering.bold-mentions",
-            "metadata.uptime.no-native",
-            "socket.info",
-            "chat.emote-menu.shortcut",
-            "channel.auto-click-chat",
-            "chat.input.show-mod-view",
-            "metadata.viewers",
-            "metadata.viewers.no-native",
-            "directory.hidden.reveal",
-            "directory.hidden.style",
-            "directory.hide-promoted",
-            "addon.fs-chat.bg.blur",
-            "addon.fs-chat.bg.color",
-            "addon.fs-chat.height",
-            "addon.fs-chat.width",
-            "addon.fs-chat.minimal",
-            "addon.fs-chat.automatic",
-            "addon.fs-chat.no-input",
-            "addon.fs-chat.metadata",
-            "addon.fs-chat.round",
-            "channel.extra-links",
-            "channel.hide-unfollow",
-            "metadata.clip-download",
-            "chat.filtering.color-mentions",
-            "channel.panel-tips",
-            "i18n.format.date",
-            "i18n.format.datetime",
-            "i18n.format.time",
-            "theme.color.tooltip.background",
-            "theme.color.tooltip.text",
-            "theme.color.accent",
-            "channel.auto-skip-trailer",
-            "chat.replies.style",
-            "chat.badges.clickable",
-            "chat.filtering.blocked-types"
-        ],
-        "p:0:player.compressor.enable": false,
-        "p:0:chat.filtering.remove-deleted": 0,
-        "p:0:directory.hidden.reveal": true,
-        "p:0:chat.points.allow-highlight": false,
-        "p:0:metadata.stream-delay-warning": 9,
-        "p:0:chat.viewer-cards.highlight-chat": true,
-        "p:0:chat.badges.media-queries": true,
-        "p:0:chat.font-size": 14,
-        "p:0:channel.hide-not-live-bar": true,
-        "p:0:theme.color.tooltip.background": "#262626",
-        "p:0:player.vod.autoplay": false,
-        "emote-menu.collapsed": [
-            "twitch-94284683",
-            "twitch-76588774",
-            "twitch-197293483",
-            "twitch-241805976",
-            "twitch-120079562",
-            "twitch-265735182",
-            "twitch-101326028",
-            "ffz-3",
-            "twitch-46374306",
-            "twitch-76007650",
-            "emoji-Travel & Places",
-            "emoji-Food & Drink",
-            "emoji-Symbols",
-            "emoji-Activities",
-            "emoji-Flags",
-            "emoji-Animals & Nature",
-            "emoji-Smileys & People",
-            "emoji-Objects",
-            "twitch-49711509",
-            "twitch-43156178",
-            "twitch-193805205",
-            "twitch-global",
-            "twitch-64949289",
-            "twitch-79996922",
-            "BetterTTV-addon--ffzap.betterttv--emotes-global",
-            "twitch-85397463",
-            "twitch-67054208",
-            "twitch-misc",
-            "twitch-prime",
-            "emoji-smileys-emotion",
-            "emoji-people-body",
-            "emoji-animals-nature",
-            "emoji-food-drink",
-            "emoji-travel-places",
-            "emoji-activities",
-            "emoji-objects",
-            "emoji-symbols",
-            "emoji-flags",
-            "twitch-472873131",
-            "twitch-488737509"
-        ],
-        "p:0:chat.filtering.ignore-clear": true,
-        "p:0:directory.hide-promoted": true,
-        "p:0:chat.filtering.color-mentions": true,
-        "p:0:i18n.format.time": "HH:mm:ss",
-        "p:0:layout.side-nav.hide-offline": true,
-        "directory.game.hidden-thumbnails": [],
-        "exp-lock": 1594054845003,
-        "p:0:layout.side-nav.rerun-style": 0,
-        "p:0:chat.emote-menu.default-tab": "all",
-        "p:0:theme.color.background": "#191919",
-        "p:0:i18n.locale": "en",
-        "p:0:chat.timestamp-format": "HH:mm",
-        "p:0:chat.font-family": "Slate for OnePlus",
-        "p:2:chat.font-size": 16,
-        "p:0:channel.metadata.force-above": false,
-        "p:0:directory.hide-recommended": true,
-        "p:0:i18n.format.datetime": "HH:mm:ss DD.MM.YYYY",
-        "p:0:metadata.viewers": true,
-        "p:0:directory.hide-viewing-history": true,
-        "p:1:chat.actions.inline": [
-            {
-                "v": {
-                    "action": "ban",
-                    "appearance": {
-                        "type": "icon",
-                        "icon": "ffz-i-block",
-                        "color": "#DC0202"
-                    },
-                    "options": {},
-                    "display": {
-                        "mod": true,
-                        "mod_icons": true,
-                        "deleted": false
-                    }
-                },
-                "id": "1594133979197-0.24751765931805192-0"
-            },
-            {
-                "v": {
-                    "action": "unban",
-                    "appearance": {
-                        "type": "icon",
-                        "icon": "ffz-i-ok",
-                        "color": "#33DC00"
-                    },
-                    "options": {},
-                    "display": {
-                        "mod": true,
-                        "mod_icons": true,
-                        "deleted": true
-                    }
-                },
-                "id": "1594133979197-0.22540037828710502-1"
-            },
-            {
-                "v": {
-                    "action": "timeout",
-                    "appearance": {
-                        "type": "icon",
-                        "icon": "ffz-i-clock",
-                        "color": "#F49207"
-                    },
-                    "display": {
-                        "mod": true,
-                        "mod_icons": true
-                    },
-                    "options": {}
-                },
-                "id": "1594133979197-0.07681966818370767-2"
-            },
-            {
-                "v": {
-                    "action": "msg_delete",
-                    "appearance": {
-                        "type": "icon",
-                        "icon": "ffz-i-trash",
-                        "color": "#E9E93E"
-                    },
-                    "options": {},
-                    "display": {
-                        "mod": true,
-                        "mod_icons": true
-                    }
-                },
-                "id": "1594133979197-0.7555785083461624-3"
-            }
-        ],
-        "p:0:player.ext-hide": 2,
-        "p:0:reports.error.include-settings": false,
-        "p:0:player.hide-squad-banner": true,
-        "p:0:ffzap.core.remove_spaces": true,
-        "p:0:chat.filtering.clickable-mentions": true,
-        "p:0:directory.hide-latest-videos": true,
         "p:0:metadata.player-stats": true,
-        "p:0:chat.replies.style": 0,
-        "p:0:layout.side-nav.show": false,
-        "p:0:channel.hosting.enable": true,
-        "p:0:addon.fs-chat.no-input": true,
-        "addons.enabled": [
-            "deck",
-            "ffzap-core",
-            "ffzap-bttv"
-        ],
-        "p:0:layout.side-nav.show-rec-friends": false,
-        "p:0:ffzap.betterttv.gif_emoticons_mode": 2,
-        "p:0:i18n.format.date": "DD.MM.YYYY",
-        "p:0:chat.filtering.bold-mentions": true,
-        "p:0:player.volume-always-shown": true,
-        "p:0:chat.scroller.freeze": 5,
-        "p:0:player.theatre.metadata": true,
         "p:0:chat.badges.clickable": false,
-        "p:0:channel.show-celebrations": false,
-        "emote-menu.hidden-sets": [
-            "twitch-564265402",
-            "twitch-488737509",
-            "twitch-472873131"
-        ],
-        "cfg-collapsed": [],
-        "p:0:player.mute-click": true,
-        "p:0:theme.color.tooltip.text": "#D9D9D9",
+        "p:0:chat.filtering.ignore-clear": true,
+        "p:0:chat.filtering.display-deleted": "DETAILED",
+        "p:0:chat.points.allow-highlight": false,
+        "p:0:chat.points.show-callouts": false,
+        "p:0:chat.emote-menu.default-tab": "all",
         "p:0:chat.tab-complete.prioritize-favorites": true,
-        "client-id": "09587793-30af-4141-aad6-3043c9ae6c7a",
-        "p:0:chat.emote-menu.combine-tabs": true,
-        "p:0:chat.filtering.display-deleted": "DETAILED"
+        "p:0:chat.viewer-cards.highlight-chat": true,
+        "p:0:chat.filtering.clickable-mentions": true,
+        "p:0:directory.hide-promoted": true,
+        "p:0:directory.hidden.reveal": true,
+        "p:0:directory.hide-recommended": true,
+        "p:0:player.home.autoplay": false,
+        "p:0:player.vod.autoplay": false,
+        "p:0:player.theatre.metadata": true,
+        "p:0:player.mute-click": true,
+        "p:0:player.volume-always-shown": true,
+        "p:0:player.compressor.enable": false
     }
 }

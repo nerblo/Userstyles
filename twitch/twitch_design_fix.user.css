@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.4.0
+@version        1.4.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -88,6 +88,12 @@
     }
     .tw-root--theme-dark .tw-textarea.focus-visible{
         filter: brightness(100%);
+    }
+    .tw-root--theme-dark .tw-textarea::placeholder {
+        color: #ffffff80;
+    }
+    .tw-root--theme-dark .tw-textarea.focus-visible::placeholder{
+        color: #ffffff70;
     }
 
     /* 

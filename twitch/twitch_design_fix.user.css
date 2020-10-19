@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.4.2
+@version        1.4.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -22,6 +22,7 @@
     .tw-root--theme-dark .channel-info-bar,
     .tw-root--theme-dark .chat-room,
     .tw-root--theme-dark .side-nav__overlay-wrapper,
+    .tw-root--theme-dark .side-nav,
     .side-nav-search-input,
     .side-nav-search-input input,
     .root,

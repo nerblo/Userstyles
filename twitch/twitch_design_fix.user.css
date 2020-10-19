@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.4.1
+@version        1.4.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -121,6 +121,10 @@
     }
     .channel-info-content .tw-core-button--text {
         color: #d9d9d9 !important;
+    }
+    .ffz-stat--fix-padding{
+        margin-top:0 !important;
+        margin-bottom:0 !important;
     }
 
     /*

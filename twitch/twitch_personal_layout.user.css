@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.4.12
+@version        1.4.13
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -145,7 +145,7 @@
         margin-top: 16px !important;
     }
     .channel-info-content .tw-mg-t-05 {
-        margin-top: 0px !important;
+        margin-top: 1px !important;
     }
     .channel-info-content .tw-align-items-baseline {
         align-items: start !important;

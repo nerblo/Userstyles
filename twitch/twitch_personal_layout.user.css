@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.4.13
+@version        1.5.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
 @homepageURL    https://github.com/nerblo/Userstyles/
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_personal_layout.user.css
 ==/UserStyle== */
-@-moz-document domain("twitch.tv") {
+@-moz-document  url-prefix("https://www.twitch.tv"), url-prefix("https://dashboard.twitch.tv/") {
 
     /*
         ## Chat ##

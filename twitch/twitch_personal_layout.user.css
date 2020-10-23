@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.5.1
+@version        1.5.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -95,6 +95,9 @@
     }
     .top-nav .tw-core-button-icon--large {
         width: 1.8rem !important;
+    }
+    .consent-banner{
+        display: none !important;
     }
 
     /*

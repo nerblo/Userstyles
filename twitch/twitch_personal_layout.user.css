@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.5.2
+@version        1.5.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -43,6 +43,12 @@
         width:auto !important;
     }
 
+    /*
+        ## Soundtrack Display ##
+    */
+    .video-player .tw-flex.tw-justify-content-center.tw-root--hover.tw-root--theme-dark{
+        display:none !important;
+    }
     /*
         ## Header ##
     */

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.5.4
+@version        1.5.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -38,11 +38,7 @@
     .video-player__container {
         max-height: calc(100vh - 10.2rem) !important;
     }
-    .persistent-player .video-player video{
-        right:0px !important;
-        width:auto !important;
-    }
-
+    
     /*
         ## Soundtrack Display ##
     */

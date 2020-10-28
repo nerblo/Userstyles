@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.4.5
+@version        1.4.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -19,14 +19,18 @@
     /* 
         ## Colors ##
     */
-    .tw-root--theme-dark .channel-info-bar,
-    .tw-root--theme-dark .chat-room,
-    .tw-root--theme-dark .side-nav__overlay-wrapper,
-    .tw-root--theme-dark .side-nav,
-    .side-nav-search-input,
-    .side-nav-search-input input,
-    .root,
-    .video-chat__message-list-wrapper div {
+    .dark-theme .channel-info-bar,
+    .dark-theme .chat-room,
+    .dark-theme .side-nav__overlay-wrapper,
+    .dark-theme .side-nav,
+    .dark-theme .side-nav-search-input input,
+    .dark-theme .whispers-open-threads input,
+    .dark-theme .chat-room .tw-c-background-base,
+    .dark-theme .stream-chat-header,
+    .dark-theme .channel-leaderboard-header-rotating,
+    .dark-theme .root,
+    .dark-theme .video-chat__message-list-wrapper div,
+    .dark-theme .tw-c-background-base{
         background-color: var(--color-background-body) !important;
     }
     .hosting-ui__footer .tw-core-button--primary,
@@ -74,7 +78,7 @@
         display: none !important;
     }
     .channel-root__right-column .tw-border-l {
-        border-left: 1px solid rgba(255, 255, 255, 0.01) !important;
+        border-left: none !important;
     }
 
     /* 
@@ -83,18 +87,24 @@
     .chatter-name {
         word-break: normal !important;
     }
-    .tw-root--theme-dark .tw-textarea{
+    .dark-theme .tw-textarea{
         background-color: var(--color-background-body) !important;
         filter: brightness(130%);
     }
-    .tw-root--theme-dark .tw-textarea.focus-visible{
+    .dark-theme .tw-textarea.focus-visible{
         filter: brightness(100%);
     }
-    .tw-root--theme-dark .tw-textarea::placeholder {
+    .dark-theme .tw-textarea::placeholder {
         color: #ffffff80;
     }
-    .tw-root--theme-dark .tw-textarea.focus-visible::placeholder{
+    .dark-theme .tw-textarea.focus-visible::placeholder{
         color: #ffffff70;
+    }
+    .stream-chat-header,
+    .bits-leaderboard-expanded__header,
+    .bits-leaderboard-expanded__scrollable .tw-border-t,
+    .channel-leaderboard .tw-border-b{
+        border:none !important;
     }
 
     /* 

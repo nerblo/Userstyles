@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.4.6
+@version        1.5.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -14,23 +14,27 @@
         --color-background-button-primary-default: #6441a5;
         --old-twitch-color-primary: #784ec6;
         --old-twitch-color-secondary: #6441a5;
+        --color-background-input:rgba(255,255,255,0.05);
     }
     
     /* 
         ## Colors ##
     */
-    .dark-theme .channel-info-bar,
-    .dark-theme .chat-room,
-    .dark-theme .side-nav__overlay-wrapper,
-    .dark-theme .side-nav,
-    .dark-theme .side-nav-search-input input,
-    .dark-theme .whispers-open-threads input,
-    .dark-theme .chat-room .tw-c-background-base,
-    .dark-theme .stream-chat-header,
-    .dark-theme .channel-leaderboard-header-rotating,
-    .dark-theme .root,
-    .dark-theme .video-chat__message-list-wrapper div,
-    .dark-theme .tw-c-background-base{
+    .tw-root--theme-dark .channel-info-bar,
+    .tw-root--theme-dark .chat-room,
+    .tw-root--theme-dark .side-nav__overlay-wrapper,
+    .tw-root--theme-dark .side-nav,
+    .tw-root--theme-dark .side-nav-search-input input,
+    .tw-root--theme-dark .whispers-open-threads input,
+    .tw-root--theme-dark .chat-room .tw-c-background-base,
+    .tw-root--theme-dark .stream-chat-header,
+    .tw-root--theme-dark .channel-leaderboard-header-rotating,
+    .tw-root--theme-dark .root,
+    .tw-root--theme-dark .video-chat__message-list-wrapper div,
+    .tw-root--theme-dark .tw-c-background-base,
+    .tw-root--theme-dark .moderation-view-page-widget,
+    .tw-root--theme-dark .stream-chat .tw-c-background-alt,
+    .tw-root--theme-dark .accordion-section__header{
         background-color: var(--color-background-body) !important;
     }
     .hosting-ui__footer .tw-core-button--primary,
@@ -80,6 +84,9 @@
     .channel-root__right-column .tw-border-l {
         border-left: none !important;
     }
+    .search-box input:not(.focus-visible){
+        border-color:  var(--color-background-input) !important;
+    }
 
     /* 
         ## Chat ##
@@ -87,17 +94,17 @@
     .chatter-name {
         word-break: normal !important;
     }
-    .dark-theme .tw-textarea{
+    .tw-root--theme-dark .tw-textarea{
         background-color: var(--color-background-body) !important;
         filter: brightness(130%);
     }
-    .dark-theme .tw-textarea.focus-visible{
+    .tw-root--theme-dark .tw-textarea.focus-visible{
         filter: brightness(100%);
     }
-    .dark-theme .tw-textarea::placeholder {
+    .tw-root--theme-dark .tw-textarea::placeholder {
         color: #ffffff80;
     }
-    .dark-theme .tw-textarea.focus-visible::placeholder{
+    .tw-root--theme-dark .tw-textarea.focus-visible::placeholder{
         color: #ffffff70;
     }
     .stream-chat-header,

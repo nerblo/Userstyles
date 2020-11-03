@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Player Controls
 @namespace      nerblo
-@version        1.0.0
+@version        1.0.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Player Control Inferface slim clean Desgin
@@ -24,5 +24,8 @@
     }
     .player-controls button[data-a-target="player-clip-button"]{
         display:none !important;;
+    }
+    .player-controls .tw-pill{
+        background-color: var(--color-background-tooltip) !important;
     }
 }

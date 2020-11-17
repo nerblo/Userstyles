@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        1.0.0
+@version        1.0.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -80,6 +80,7 @@
     .top-nav .tw-number-badge__badge {
         margin-top: 15px !important;
         font-size: 0.7rem !important;
+        margin-right: 4px !important;
     }
     .ffz-top-nav .tw-pill {
         margin-top: 13px !important;

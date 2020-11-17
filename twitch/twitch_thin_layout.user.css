@@ -1,12 +1,12 @@
 /* ==UserStyle==
-@name           twitch.tv thin Layout
+@name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        0.1.0 Beta
+@version        0.1.1 beta
 @author         nerblo
 @license        CC-BY-SA-4.0
-@description    twitch.tv thin Layout
+@description    twitch.tv Thin Layout
 @homepageURL    https://github.com/nerblo/Userstyles/
-@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_this_layout.user.css
+@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_thin_layout.user.css
 ==/UserStyle== */
 @-moz-document  url-prefix("https://www.twitch.tv"), url-prefix("https://dashboard.twitch.tv/") {
 
@@ -38,7 +38,7 @@
     .channel-root__player,
     .persistent-player,
     .video-player__container {
-        max-height: calc(100vh - 10.2rem) !important;
+        max-height: calc(100vh - 8rem) !important;
     }
     
     /*
@@ -51,59 +51,72 @@
         ## Header ##
     */
     .top-nav {
-        height: 26px !important;
+        height: 20px !important;
     }
     .top-nav .navigation-link p {
-        font-size: 1.4rem !important;
+        font-size: 1.35rem !important;
     }
     .top-nav .tw-input--large,
     .search-box button {
-        height: 20px !important;
-        font-size: 12px !important;
+        height: 16px !important;
+        font-size: 10px !important;
     }
     .top-nav .search-box .tw-icon__svg {
         transform: scale(0.7) !important;
     }
     .top-nav .tw-avatar {
-        transform: scale(0.8) !important;
+        transform: scale(0.6) !important;
     }
     .top-nav button[data-a-target="user-menu-toggle"] {
-
-        margin-top: -12px !important;
+        margin-top: -15px !important;
     }
     .top-nav button[data-a-target="user-menu-toggle"] .tw-c-background-base {
         background: none !important;
     }
     .tw-animated-glitch-logo {
-        margin-top: -13px !important;
-        transform: scale(0.7) !important;
+        margin-top: -16px !important;
+        transform: scale(0.6) !important;
     }
     .top-nav .tw-number-badge__badge {
-        margin-top: 10px !important;
-        font-size: 0.9rem !important;
+        margin-top: 15px !important;
+        font-size: 0.7rem !important;
     }
     .ffz-top-nav .tw-pill {
-        margin-top: 8px !important;
-        font-size: 1rem !important;
+        margin-top: 13px !important;
+        font-size: .8rem !important;
         padding: 0.3rem !important;
     }
     .top-nav .anon-user button {
-        height: 20px !important;
+        height: 16px !important;
         margin-top: -14px !important;
+        font-size: 1.2rem !important;
     }
     .top-nav button[data-a-target="top-nav-get-bits-button"] {
-        height: 20px !important;
+        height: 16px !important;
+        font-size: 1.2rem !important;
     }
     .top-nav button[data-a-target="top-nav-get-bits-button"] .tw-core-button-icon {
         width: 1.4rem !important;
     }
     .top-nav .tw-core-button-icon--large {
-        width: 1.8rem !important;
+        width: 1.6rem !important;
     }
     .consent-banner{
         display: none !important;
     }
-
+    .top-nav button[data-a-target="ellipsis-button"]{
+        height:2.0rem !important;
+        margin-top:5px !important;
+    }
+    .top-nav .prime-offers,
+    .top-nav .ffz-top-nav,
+    .top-nav .ffz-top-nav button,
+    .top-nav button[data-a-target="whisper-box-button"] {
+        transform: scale(0.85) !important;
+    }
+    .top-nav .tw-mg-x-05{
+        margin-right:0 !important;
+    }
     /*
         ## Footer ##
     */
@@ -127,18 +140,18 @@
         ## Avatar ##
     */
     .channel-info-content .tw-avatar {
-        width: 4.6rem !important;
-        height: 4.6rem !important;
+        width: 3.6rem !important;
+        height: 3.6rem !important;
     }
     .user-avatar-animated {
         margin-top: -8px !important;
     }
     .user-avatar-animated__halo {
-        height: 5.4rem !important;
-        width: 5.4rem !important;
+        height: 4.4rem !important;
+        width: 4.4rem !important;
     }
     .user-avatar-animated__live {
-        transform: scale(.9) !important;
+        transform: scale(.6) !important;
         bottom: -8px !important;
     }
 
@@ -146,31 +159,27 @@
         ## Channel Info ##
     */
     .channel-info-content .tw-flex.tw-full-width.tw-mg-1 {
-        margin-top: 9px !important;
+        margin-top: 5px !important;
     }
     .channel-info-content .tw-border-t {
         border: none !important;
     }
-    .channel-info-content .channel-header__right {
-        height: 0.8em !important;
-        margin-top: 16px !important;
-    }
     .channel-info-content .tw-mg-t-05 {
-        margin-top: 1px !important;
+        margin-top: -4px !important;
     }
     .channel-info-content .tw-align-items-baseline {
         align-items: start !important;
     }
     .channel-info-content h2 {
-        margin-top:-6px !important;
-        margin-bottom:-1px !important;
+        margin-top:-9px !important;
+        margin-bottom:-3px !important;
+        font-size:1.35rem !important;
     }
     .channel-info-content .ffz--links{
-        margin-top:4px !important;
-        margin-left:10px  !important;
+        margin-top:2px !important;
     }
     .channel-info-content .ffz--links a{
-        font-size:1.3rem !important;
+        font-size:1.2rem !important;
         color:var(--color-text-link) !important;
     }
     .channel-info-content .ffz--links a[href$="/schedule"]{
@@ -231,6 +240,7 @@
     }
     .onsite-notifications button .tw-button-icon__icon{
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='tw-svg__asset tw-svg__asset--inherit tw-svg__asset--notificationbell' width='20px' height='20px' version='1.1' viewBox='0 0 20 20' x='0px' y='0px'%3E%3Cg%3E%3Cpath d='M17 14v-2c-1-.5-1.75-1-2-2-.095-.38-.154-.905-.221-1.506C14.49 5.936 14.049 2 10 2 5.95 2 5.509 5.936 5.221 8.494 5.154 9.095 5.095 9.62 5 10c-.25 1-1 1.5-2 2v2h14zm-9.002 2h4-4zm4 0v.012V16zm-5.766-4h7.536a4.262 4.262 0 01-.708-1.515c-.129-.513-.2-1.154-.26-1.684a32.48 32.48 0 00-.009-.083c-.152-1.355-.314-2.606-.78-3.535-.21-.423-.447-.692-.703-.862C11.063 4.158 10.673 4 10 4s-1.063.158-1.308.32c-.256.171-.492.44-.704.863-.465.929-.627 2.18-.78 3.535L7.2 8.8c-.06.53-.131 1.171-.26 1.684-.15.603-.402 1.1-.708 1.515zm1.766 4a2.001 2.001 0 004 .012' fill-rule='evenodd' fill='white' clip-rule='evenodd'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+        transform: scale(0.75) !important;
     }
     .onsite-notifications .ScIconSVG-sc-1bgeryd-1{
         visibility:hidden !important;

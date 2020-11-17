@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        0.1.1 beta
+@version        1.0.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -140,26 +140,26 @@
         ## Avatar ##
     */
     .channel-info-content .tw-avatar {
-        width: 3.6rem !important;
-        height: 3.6rem !important;
+        width: 4.2rem !important;
+        height: 4.2rem !important;
     }
     .user-avatar-animated {
         margin-top: -8px !important;
     }
     .user-avatar-animated__halo {
-        height: 4.4rem !important;
-        width: 4.4rem !important;
+        height: 4.8rem !important;
+        width: 4.8rem !important;
     }
     .user-avatar-animated__live {
         transform: scale(.6) !important;
-        bottom: -8px !important;
+        bottom: -9px !important;
     }
 
     /* 
         ## Channel Info ##
     */
     .channel-info-content .tw-flex.tw-full-width.tw-mg-1 {
-        margin-top: 5px !important;
+        margin-top: 4px !important;
     }
     .channel-info-content .tw-border-t {
         border: none !important;

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        1.0.1
+@version        1.0.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -165,7 +165,7 @@
     .channel-info-content .tw-border-t {
         border: none !important;
     }
-    .channel-info-content .tw-mg-t-05 {
+    .channel-info-content .tw-mg-t-05:not(.tw-inline-flex) {
         margin-top: -4px !important;
     }
     .channel-info-content .tw-align-items-baseline {
@@ -191,6 +191,11 @@
     }
     .channel-info-content .tw-flex-wrap-reverse{
         flex-wrap:nowrap !important;
+    }
+    .channel-info-content .tw-tag__content{
+        margin-top:-2px !important;
+        padding-bottom:0 !important;
+        padding-top:0 !important;
     }
 
     /* 

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.0
+@version        1.5.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -20,6 +20,12 @@
     /* 
         ## Colors ##
     */
+    body,
+    .video-player__container,
+    .c-te__video-player{
+        background-color: #161614 !important;
+    }
+    
     .tw-root--theme-dark .channel-info-bar,
     .tw-root--theme-dark .chat-room,
     .tw-root--theme-dark .side-nav__overlay-wrapper,
@@ -72,9 +78,6 @@
     .channel-root__player--with-chat div:nth-child(1) {
         background-color: transparent !important;
     }
-    .c-te__video-player {
-        background-color: black !important;
-    }
     .top-nav .navigation-link__left-border {
         display: none !important;
     }
@@ -86,6 +89,9 @@
     }
     .search-box input:not(.focus-visible){
         border-color:  var(--color-background-input) !important;
+    }
+    .celebration__overlay {
+        display:none !important;
     }
 
     /* 

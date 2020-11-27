@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.1
+@version        1.5.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -36,11 +36,12 @@
     .tw-root--theme-dark .stream-chat-header,
     .tw-root--theme-dark .channel-leaderboard-header-rotating,
     .tw-root--theme-dark .root,
-    .tw-root--theme-dark .video-chat__message-list-wrapper div,
+    .tw-root--theme-dark .vod-message,
     .tw-root--theme-dark .tw-c-background-base,
     .tw-root--theme-dark .moderation-view-page-widget,
     .tw-root--theme-dark .stream-chat .tw-c-background-alt,
-    .tw-root--theme-dark .accordion-section__header{
+    .tw-root--theme-dark .accordion-section__header,
+    .tw-root--theme-dark .video-chat__header{
         background-color: var(--color-background-body) !important;
     }
     .hosting-ui__footer .tw-core-button--primary,

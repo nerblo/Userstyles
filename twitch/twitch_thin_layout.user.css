@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        1.0.2
+@version        1.0.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -221,7 +221,7 @@
     .side-nav--collapsed:not(.side-nav--hover-exp) {
         width: 4rem !important;
     }
-    .side-nav--collapsed .side-nav-card {
+    .side-nav-card[data-test-selector="side-nav-card-collapsed"] a.side-nav-card {
         padding-left: .5rem !important;
     }
     .side-nav--collapsed .collapse-toggle button {

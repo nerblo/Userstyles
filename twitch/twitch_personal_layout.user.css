@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.6.1
+@version        1.6.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -206,7 +206,7 @@
     .side-nav--collapsed:not(.side-nav--hover-exp) {
         width: 4rem !important;
     }
-    .side-nav--collapsed .side-nav-card {
+    .side-nav-card[data-test-selector="side-nav-card-collapsed"] a.side-nav-card {
         padding-left: .5rem !important;
     }
     .side-nav--collapsed .collapse-toggle button {

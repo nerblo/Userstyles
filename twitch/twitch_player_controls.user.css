@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Player Controls
 @namespace      nerblo
-@version        1.0.3
+@version        1.0.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Player Control Inferface slim clean Desgin
@@ -26,7 +26,8 @@
     .player-controls button[aria-label="Soundtrack Info"]{
         display:none !important;
     }
-    .player-controls .tw-pill{
+    .player-controls .tw-pill,
+    .ffz-stat{
         background-color: #161614 !important;
     }
 }

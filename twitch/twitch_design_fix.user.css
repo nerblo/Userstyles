@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.5
+@version        1.5.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
 
-    body {
+    body, .gocjHQ {
         --color-background-button-primary-default: #6441a5 !important;
         --old-twitch-color-primary: #784ec6;
         --old-twitch-color-secondary: #6441a5;
@@ -49,9 +49,7 @@
     .hosting-ui__footer .tw-core-button--primary,
     .channel-info-content .tw-core-button--primary,
     .channel-header .tw-core-button--primary,
-    .tw-c-background-accent,
-    .jCxFvU     /* Channel Button Color Problem inc #TODO */
-    {
+    .tw-c-background-accent {
         background-color: var(--old-twitch-color-secondary) !important;
     }
     .chat-input .tw-core-button--primary:hover,

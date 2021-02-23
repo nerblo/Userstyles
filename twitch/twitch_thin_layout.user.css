@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        1.0.3
+@version        1.0.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -123,6 +123,9 @@
     */
     .channel-root__info--with-chat {
         background: none !important;
+    }
+    main.twilight-main .tw-bottom-0.tw-full-width.tw-mg-y-1{
+        margin: 0 !important;
     }
 
     /* 

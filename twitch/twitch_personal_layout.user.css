@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.6.4
+@version        1.6.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -135,9 +135,8 @@ url-prefix("https://dashboard.twitch.tv/") {
         height: 4.6rem !important;
     }
     .user-avatar-animated,
-    .channel-info-content .AccentRegion-viq0je-0 .bjHjAJ,
-    .channel-info-content .bjHjAJ {
-        margin-top: -7px !important;
+    .channel-info-content .AccentRegion-viq0je-0 {
+        margin-top: -8px !important;
     }
     .user-avatar-animated__halo,
     .channel-info-content .tw-halo,

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.6.5
+@version        1.6.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -62,7 +62,7 @@ url-prefix("https://dashboard.twitch.tv/") {
         height: 20px !important;
         font-size: 12px !important;
     }
-    .top-nav .search-box .tw-icon__svg {
+    .top-nav .search-box .ScIconSVG-sc-1bgeryd-1 {
         transform: scale(0.7) !important;
     }
     .top-nav .tw-avatar {
@@ -135,7 +135,7 @@ url-prefix("https://dashboard.twitch.tv/") {
         height: 4.6rem !important;
     }
     .user-avatar-animated,
-    .channel-info-content .AccentRegion-viq0je-0 {
+    .channel-info-content .tw-halo {
         margin-top: -8px !important;
     }
     .user-avatar-animated__halo,
@@ -148,7 +148,6 @@ url-prefix("https://dashboard.twitch.tv/") {
     .channel-info-content .live-indicator-container {
         transform: scale(.9) !important;
         bottom: -8px !important;
-        margin-left: 1px !important;
     }
 
     /* 

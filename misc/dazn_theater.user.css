@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name           DAZN Theater Mode
+@namespace      nerblo
+@version        1.1.3
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    DAZN Theater Mode
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/misc/dazn_theater.user.css
+==/UserStyle== */
+@-moz-document domain("dazn.com") {
+    div[class^="masthead__wrapper-"] {
+        display: none !important;
+    }
+    div[class^="app__page"] {
+        margin-top: 0 !important;
+    }
+    div[class^="page-layout__background-element-container"],
+    .category__video-content-container--3oveg,
+    .video-content__video-content-container--376eu{
+        max-height: calc(100vh) !important;
+        max-width: calc(177.7777vh) !important;
+    }
+    .main__player-container-with-stats-enabled--1DS8m{
+        height: 100vh !important;
+    }
+}

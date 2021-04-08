@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.6
+@version        1.5.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -10,14 +10,16 @@
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
 
-    body, .gocjHQ {
+    body,
+    .gocjHQ {
         --color-background-button-primary-default: #6441a5 !important;
+        --color-background-button-primary-hover: #784ec6 !important;
         --old-twitch-color-primary: #784ec6;
         --old-twitch-color-secondary: #6441a5;
         --color-background-input: rgba(255, 255, 255, 0.05);
         --color-text-live: rgb(236, 74, 74) !important;
         --color-text-accessible-red: var(--color-text-live) !important;
-}
+    }
 
     /* 
         ## Colors ##

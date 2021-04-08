@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.6.7
+@version        1.6.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -243,19 +243,16 @@ url-prefix("https://dashboard.twitch.tv/") {
     }
 
     /*
-        ## Slow Mode Display ##
+        ## Chat Mode Display ##
     */
-    .chat-input-tray__open--persistent:not(.tw-border-t) {
-        border-top: 5px solid #7d7b7b;
-        height: 8px !important;
-        margin-bottom: -5px !important;
-        border-radius: 200px !important;
+    .chat-input-tray__clickable {
+        background-color: #262424;
     }
-    .chat-input-container__open--persistent:not(.tw-border-bottom-right-radius-large) .chat-input-container__input-wrapper {
-        margin: 0 !important;
+    .chat-input-tray__clickable .tw-pd-b-05 {
+        padding-bottom: .3rem !important;
     }
-    .chat-input-tray__open--persistent:not(.tw-border-t) div[data-test-selector="chat-input-tray"] .tw-tooltip-wrapper,
-    .chat-input-tray__open--persistent:not(.tw-border-t) div[data-test-selector="chat-input-tray"] span {
-        display: none !important;
+    .chat-input-tray__clickable .tw-mg-05 {
+        margin: .4rem !important;
+        margin-bottom: .3rem !important;
     }
 }

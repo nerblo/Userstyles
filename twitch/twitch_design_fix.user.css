@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.7
+@version        1.5.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -9,7 +9,6 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_design_fix.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
-
     body,
     .gocjHQ {
         --color-background-button-primary-default: #6441a5 !important;
@@ -134,7 +133,7 @@
         margin-left: 5px !important;
     }
     .chat-rules-content {
-        width: calc( var(--ffz-chat-width, 340px) - 10px);
+        width: calc(var(--ffz-chat-width, 340px) - 10px);
     }
 
     /* 
@@ -147,7 +146,7 @@
         background-color: #222222 !important;
     }
     .chat-input .community-points-summary .claimable-bonus__icon {
-        color: #AAA !important;
+        color: #aaa !important;
     }
 
     /* 

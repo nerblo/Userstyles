@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Anti Spoiler
 @namespace      nerblo
-@version        1.2.1
+@version        1.2.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Anti Spoiler - Blur Thumbnails with Transitions
@@ -9,7 +9,7 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_anti_spoiler.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
-    a[data-a-target="preview-card-image-link"] img{
+    a[data-a-target="preview-card-image-link"] img {
         -webkit-filter: blur(30px);
         -moz-filter: blur(30px);
         -o-filter: blur(30px);
@@ -19,7 +19,7 @@
         -o-transition: 0.2s -o-filter ease-out 0.4s;
         transition: 0.2s filter ease-out 0.4s;
     }
-    a[data-a-target="preview-card-image-link"] img:hover{
+    a[data-a-target="preview-card-image-link"] img:hover {
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
         -o-filter: blur(0px);

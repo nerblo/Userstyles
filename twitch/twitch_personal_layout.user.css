@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.6.9
+@version        1.6.10
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -9,8 +9,8 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_personal_layout.user.css
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.twitch.tv"),
-url-prefix("https://dashboard.twitch.tv/") {
-
+url-prefix("https://dashboard.twitch.tv/")
+{
     /*
         ## Chat ##
     */
@@ -22,7 +22,7 @@ url-prefix("https://dashboard.twitch.tv/") {
     .chat-line__message,
     .ffz-notice-line {
         font-size: var(--scaling-font-size) !important;
-        line-height: var( --scaling-line-height) !important;
+        line-height: var(--scaling-line-height) !important;
     }
     .chat-line__timestamp {
         font-family: "Hack", "Source Code Pro", "Consolas", "Courier New", Courier, monospace !important;
@@ -69,7 +69,6 @@ url-prefix("https://dashboard.twitch.tv/") {
         transform: scale(0.8) !important;
     }
     .top-nav button[data-a-target="user-menu-toggle"] {
-
         margin-top: -12px !important;
     }
     .top-nav button[data-a-target="user-menu-toggle"] .tw-c-background-base {
@@ -122,7 +121,7 @@ url-prefix("https://dashboard.twitch.tv/") {
         position: absolute !important;
         font-size: 40px !important;
         font-family: "monospace" !important;
-        content: '•' !important;
+        content: "•" !important;
         left: 8px !important;
         top: -18px !important;
     }
@@ -146,7 +145,7 @@ url-prefix("https://dashboard.twitch.tv/") {
     }
     .user-avatar-animated__live,
     .channel-info-content .live-indicator-container {
-        transform: scale(.9) !important;
+        transform: scale(0.9) !important;
         bottom: -8px !important;
     }
 
@@ -214,10 +213,10 @@ url-prefix("https://dashboard.twitch.tv/") {
         width: 4rem !important;
     }
     .side-nav-card[data-test-selector="side-nav-card-collapsed"] a.side-nav-card {
-        padding-left: .5rem !important;
+        padding-left: 0.5rem !important;
     }
     .side-nav--collapsed .collapse-toggle button {
-        margin-left: -.5rem !important;
+        margin-left: -0.5rem !important;
     }
 
     /*
@@ -249,10 +248,10 @@ url-prefix("https://dashboard.twitch.tv/") {
         background-color: #262424;
     }
     .chat-input-tray__clickable .tw-pd-b-05 {
-        padding-bottom: .3rem !important;
+        padding-bottom: 0.3rem !important;
     }
     .chat-input-tray__clickable .tw-mg-05 {
-        margin: .4rem !important;
-        margin-bottom: .3rem !important;
+        margin: 0.4rem !important;
+        margin-bottom: 0.3rem !important;
     }
 }

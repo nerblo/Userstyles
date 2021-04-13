@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Player Controls
 @namespace      nerblo
-@version        1.0.5
+@version        1.0.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Player Control Inferface slim clean Desgin
@@ -20,14 +20,14 @@
     .pl-controls-top,
     .player-controls,
     .pl-controls-bottom .player-volume {
-        filter: drop-shadow( 2px 2px 1px black);
+        filter: drop-shadow(2px 2px 1px black);
     }
     .player-controls button[data-a-target="player-clip-button"],
-    .player-controls button[aria-label="Soundtrack Info"]{
-        display:none !important;
+    .player-controls button[aria-label="Soundtrack Info"] {
+        display: none !important;
     }
     .player-controls .tw-pill,
-    .player-controls .ffz-stat{
+    .player-controls .ffz-stat {
         background-color: #161614 !important;
     }
 }

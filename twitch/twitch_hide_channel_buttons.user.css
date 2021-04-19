@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Hide Channel Buttons
 @namespace      nerblo
-@version        1.0.3
+@version        1.0.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Hide Channel Button - Follow and Celebration
@@ -17,11 +17,5 @@
     }
     .metadata-layout__support .tw-flex.tw-pd-r-1.tw-relative {
         display: none !important;
-    }
-    .chat-input__badge-carousel {
-        display: none !important;
-    }
-    .chat-input__textarea textarea {
-        padding-left: 1rem !important;
     }
 }

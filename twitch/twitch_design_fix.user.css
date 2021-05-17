@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.10
+@version        1.5.11
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -10,7 +10,9 @@
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
     body,
-    .gocjHQ {
+    .gocjHQ,
+    .dNLNqU,
+    .jozAOk {
         --color-background-button-primary-default: #6441a5 !important;
         --color-background-button-primary-hover: #784ec6 !important;
         --old-twitch-color-primary: #784ec6;
@@ -25,10 +27,7 @@
     */
     body,
     .video-player__container,
-    .c-te__video-player {
-        background-color: #161614 !important;
-    }
-
+    .c-te__video-player,
     .tw-root--theme-dark .channel-info-bar,
     .tw-root--theme-dark .chat-room,
     .tw-root--theme-dark .side-nav__overlay-wrapper,
@@ -44,7 +43,12 @@
     .tw-root--theme-dark .moderation-view-page-widget,
     .tw-root--theme-dark .stream-chat .tw-c-background-alt,
     .tw-root--theme-dark .accordion-section__header,
-    .tw-root--theme-dark .video-chat__header {
+    .tw-root--theme-dark .video-chat__header,
+    .drMKSw,
+    .gSGTgD,
+    .jXoEUS,
+    .cPVNOL,
+    .hDxvGD {
         background-color: var(--color-background-body) !important;
     }
     .hosting-ui__footer .tw-core-button--primary,
@@ -98,6 +102,9 @@
         display: none !important;
     }
 
+    .cPVNOL {
+        box-shadow: none !important;
+    }
     /* 
         ## Chat ##
     */
@@ -120,7 +127,8 @@
     .stream-chat-header,
     .bits-leaderboard-expanded__header,
     .bits-leaderboard-expanded__scrollable .tw-border-t,
-    .channel-leaderboard .tw-border-b {
+    .channel-leaderboard .tw-border-b,
+    .gSGTgD {
         border: none !important;
     }
 

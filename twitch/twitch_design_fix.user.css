@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.11
+@version        1.5.12
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -102,9 +102,14 @@
         display: none !important;
     }
 
-    .cPVNOL {
-        box-shadow: none !important;
+    /*
+        ## Footer ##
+    */
+    .social-media-space,
+    .social-media-space--content {
+        background: none !important;
     }
+
     /* 
         ## Chat ##
     */

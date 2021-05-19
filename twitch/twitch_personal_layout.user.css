@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.7.1
+@version        1.7.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -132,10 +132,6 @@ url-prefix("https://dashboard.twitch.tv/")
     /* 
         ## Channel Info ##
     */
-    .channel-info-content .ffz--links a {
-        font-size: 1.3rem !important;
-        color: var(--color-text-link) !important;
-    }
     .channel-info-content .ffz--links a[href$="/schedule"] {
         display: none !important;
     }

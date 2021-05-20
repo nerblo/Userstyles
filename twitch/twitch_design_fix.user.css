@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.12
+@version        1.5.14
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -20,6 +20,7 @@
         --color-background-input: rgba(255, 255, 255, 0.05);
         --color-text-live: rgb(236, 74, 74) !important;
         --color-text-accessible-red: var(--color-text-live) !important;
+        --color-background-base: var(--color-background-body) !important;
     }
 
     /* 
@@ -152,14 +153,14 @@
     /* 
         ## Channel Rewards ##
     */
-    .chat-input .community-points-summary button.tw-button--success {
-        background-color: #171717 !important;
+    .community-points-summary button.VGQNd:hover {
+        background-color: var(--color-background-button-text-hover) !important;
     }
-    .chat-input .community-points-summary button.tw-button--success:hover {
-        background-color: #222222 !important;
+    .community-points-summary .claimable-bonus__icon {
+        color: var(--color-text-alt-2) !important;
     }
-    .chat-input .community-points-summary .claimable-bonus__icon {
-        color: #aaa !important;
+    .community-points-summary {
+        --color-background-button-success: none !important;
     }
 
     /* 

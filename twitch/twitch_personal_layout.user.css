@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.7.2
+@version        1.7.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -143,10 +143,13 @@ url-prefix("https://dashboard.twitch.tv/")
         background: none;
     }
     .channel-info-content .metadata-layout__support {
-        margin-top: -8px !important;
+        margin-top: -14px !important;
     }
-    .metadata-layout__support [data-target="channel-header-right"] {
-        height: 1.4em !important;
+    .sc-AxjAm .fAqNuL {
+        height: 1.3em !important;
+    }
+    .sc-AxjAm .csVLZG {
+        margin-top: 8px !important;
     }
 
     /* 

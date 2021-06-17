@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        1.0.7
+@version        1.0.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -9,7 +9,8 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_thin_layout.user.css
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.twitch.tv"),
-url-prefix("https://dashboard.twitch.tv/") {
+url-prefix("https://dashboard.twitch.tv/")
+{
     /*
         ## Chat ##
     */
@@ -103,10 +104,10 @@ url-prefix("https://dashboard.twitch.tv/") {
         height: 2rem !important;
         margin-top: 5px !important;
     }
-    .top-nav .prime-offers,
     .top-nav .ffz-top-nav,
     .top-nav .ffz-top-nav button,
-    .top-nav button[data-a-target="whisper-box-button"] {
+    .top-nav button[data-a-target="whisper-box-button"],
+    .top-nav .iyLrol {
         transform: scale(0.85) !important;
     }
     .top-nav .tw-mg-x-05 {

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.0.4
+@version        1.0.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -9,10 +9,12 @@
 @updateURL      https://nerblo.github.io/Userstyles/misc/youtube_design_fix.user.css
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-    /* Quelltext hier eingeben... */
     .ytd-player .ytp-gradient-bottom,
-    .ytd-player .ytp-gradient-top{
-        visibility:hidden !important;
+    .ytd-player .ytp-gradient-top {
+        background: rgba(0, 0, 0, 0.01) !important;
+    }
+    #content #clarify-box {
+        display: none !important;
     }
     .ytd-player .ytp-left-controls,
     .ytd-player .ytp-right-controls,
@@ -21,10 +23,7 @@
     .ytd-player .ytp-title,
     .ytd-player .ytp-tooltip-title,
     .ytd-player .ytp-tooltip-image,
-    .ytd-player .ytp-tooltip-text{
-        filter: drop-shadow( 1px 1px 2px #191919);
-    }
-    #content #clarify-box{
-        display:none !important;
+    .ytd-player .ytp-tooltip-text {
+        filter: drop-shadow(1px 1px 2px #191717);
     }
 }

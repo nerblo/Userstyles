@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.18
+@version        1.5.19
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -46,6 +46,7 @@
     .tw-root--theme-dark .stream-chat .tw-c-background-alt,
     .tw-root--theme-dark .accordion-section__header,
     .tw-root--theme-dark .video-chat__header,
+    .tw-root--theme-dark .chat-viewers__header,
     .drMKSw,
     .gSGTgD,
     .jXoEUS,
@@ -139,7 +140,7 @@
         border: none !important;
     }
     .user-notice-line {
-        background-color: rgba(255, 255, 255, 0.06) !important;
+        background-color: rgba(255, 255, 255, 0.05) !important;
     }
 
     /* 

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.17
+@version        1.5.18
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -207,5 +207,12 @@
     */
     .channel-root__player-background {
         background: none !important;
+    }
+
+    /*
+        ## Follow Bait Prompt ##
+    */
+    .follow-prompt {
+        display: none !important;
     }
 }

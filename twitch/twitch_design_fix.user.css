@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.20
+@version        1.5.21
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -222,5 +222,13 @@
     */
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] {
         display: none !important;
+    }
+
+    /*
+       ## Cheer Highlight Line##
+    */
+    .ffz-notice-line.ffz--ritual-line .tw-c-text-alt-2 {
+        color: #af85ff !important;
+        font-weight: bold !important;
     }
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.22
+@version        1.5.23
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -22,6 +22,8 @@
         --color-text-accessible-red: var(--color-text-live) !important;
         --color-background-base: var(--color-background-body) !important;
         --color-background-interactable-alpha-hover: hsla(0, 0%, 100%, 0.1);
+        --color-text-alt: rgba(255, 255, 255, 0.9);
+        --color-text-alt-2: rgba(255, 255, 255, 0.8);
     }
 
     /* 
@@ -69,7 +71,9 @@
     .tw-tag {
         background-color: transparent !important;
     }
-
+    .about-panel--content div:not(.social-media-link__container) > a {
+        color: var(--color-text-link);
+    }
     /* 
         ## Theme ##
     */
@@ -225,7 +229,7 @@
     }
 
     /*
-       ## Cheer Highlight Line##
+       ## Cheer Highlight Line ##
     */
     .ffz-notice-line.ffz--ritual-line .tw-c-text-alt-2 {
         color: #af85ff !important;

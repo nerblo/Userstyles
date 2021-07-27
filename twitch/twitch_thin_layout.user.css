@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        1.0.9
+@version        1.0.10
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -168,9 +168,8 @@ url-prefix("https://dashboard.twitch.tv/")
     .channel-info-content .metadata-layout__support {
         margin-top: -17px !important;
     }
-    .channel-info-content div[data-target="channel-header-right"],
-    .channel-info-content .ljTcde {
-        height: 0.4em !important;
+    .channel-info-content .metadata-layout__support .gTJdSw {
+        height: 1.3em !important;
     }
     .channel-info-content .esDcYx {
         margin-top: 6px !important;
@@ -189,7 +188,7 @@ url-prefix("https://dashboard.twitch.tv/")
         font-size: 3px;
         color: var(--color-background-body);
         background-color: var(--old-twitch-color-primary);
-        height: 2px;
+        height: 3px;
     }
 
     /* 

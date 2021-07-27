@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.23
+@version        1.5.24
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -12,7 +12,8 @@
     body,
     .gocjHQ,
     .dNLNqU,
-    .jozAOk {
+    .jozAOk,
+    .jGyqKK {
         --color-background-button-primary-default: #6441a5 !important;
         --color-background-button-primary-hover: #784ec6 !important;
         --old-twitch-color-primary: #784ec6;

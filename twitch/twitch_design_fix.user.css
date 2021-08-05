@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.25
+@version        1.5.26
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -235,7 +235,8 @@
     /*
        ## Animated Emotes Notification ##
     */
-    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .sc-AxiKw.cKrHLn {
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .sc-AxiKw.cKrHLn,
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .sc-AxiKw.hKoACr {
         display: none !important;
     }
 

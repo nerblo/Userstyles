@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.5.24
+@version        1.5.25
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -207,6 +207,9 @@
     .upsell-bottom-banner__with-chat {
         display: none !important;
     }
+    #twilight-sticky-footer-root {
+        display: none !important;
+    }
 
     /*
         ## Player Background Image ##
@@ -223,9 +226,16 @@
     }
 
     /*
+        ## Cookies Banner ##
+    */
+    .consent-banner {
+        display: none !important;
+    }
+
+    /*
        ## Animated Emotes Notification ##
     */
-    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .sc-AxjAm.heaSCI {
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .sc-AxiKw.cKrHLn {
         display: none !important;
     }
 

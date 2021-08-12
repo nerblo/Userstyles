@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DAZN Theater Mode
 @namespace      nerblo
-@version        1.1.4
+@version        1.1.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    DAZN Theater Mode
@@ -23,5 +23,19 @@
     }
     div[class^="main__player-container-"] {
         height: 100vh !important;
+    }
+    section[class^="main__player-layout-"] {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    div[class^="event-options__options-container-"] {
+        display: none !important;
+    }
+    div[class*="video-content__video-content-container-with-panel-"] {
+        height: 100vh !important;
+        width: calc(100vw - 340px) !important;
+    }
+    aside[class^="main__player-aside-"] {
+        margin: 0 !important;
     }
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Player Controls
 @namespace      nerblo
-@version        1.0.7
+@version        1.0.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Player Control Inferface slim clean Desgin
@@ -32,5 +32,6 @@
     .player-controls .tw-pill,
     .player-controls .ffz-stat {
         background-color: #161614 !important;
+        color: #fff !important;
     }
 }

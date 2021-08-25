@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.6.2
+@version        1.6.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -247,7 +247,8 @@
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .cKrHLn,
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .hKoACr,
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .dlgPzd,
-    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .fWWDCN {
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .fWWDCN,
+    .channel-info-content .feIbTB  {
         display: none !important;
     }
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] {

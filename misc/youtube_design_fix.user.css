@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.0.6
+@version        1.0.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -32,14 +32,14 @@
     */
 
     button.yt-icon-button {
-        color: #ddd !important;
+        color: #909090 !important;
     }
     html {
-        --yt-button-icon-button-text-color: #ddd !important;
-        --ytd-video-primary-info-renderer-title-color: #ddd !important;
-        --yt-spec-text-primary: #ddd !important;
+        --yt-button-icon-button-text-color: #aaa !important;
+        --ytd-video-primary-info-renderer-title-color: #efefef !important;
+        --yt-spec-text-primary: #efefef !important;
     }
     #like-bar.ytd-sentiment-bar-renderer {
-        background-color: #ddd !important;
+        background-color: #909090 !important;
     }
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Thin Layout
 @namespace      nerblo
-@version        1.0.11
+@version        1.0.12
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Thin Layout
@@ -169,10 +169,13 @@ url-prefix("https://dashboard.twitch.tv/")
         margin-top: -17px !important;
     }
     .channel-info-content .metadata-layout__support .eDoSGW {
-        height: 1.3em !important;
+        height: 0.1em !important;
     }
     .channel-info-content .hUpFyj {
-        margin-top: 6px !important;
+        margin-top: 8px !important;
+    }
+    .metadata-layout__secondary-button-spacing {
+        margin-top: -15px !important;
     }
 
     /*

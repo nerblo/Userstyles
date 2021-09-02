@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.7.8
+@version        1.7.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -96,6 +96,22 @@ url-prefix("https://dashboard.twitch.tv/")
     }
     .consent-banner {
         display: none !important;
+    }
+    .top-nav button.tw-combo-input__button-icon {
+        height: 20px !important;
+        background: var(--color-background-button-secondary-default);
+    }
+    .top-nav .tw-core-button-icon {
+        width: 1.5rem !important;
+    }
+    .top-nav__search-container__variant1 {
+        flex-basis: 40rem !important;
+    }
+    .top-nav input {
+        border: none !important;
+    }
+    .top-nav input::placeholder {
+        opacity: 0;
     }
 
     /* 

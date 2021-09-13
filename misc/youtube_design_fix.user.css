@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.0.8
+@version        1.0.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -31,13 +31,13 @@
        # Back to Lightgray #
     */
     button.yt-icon-button {
-        color: #909090 !important;
+        color: #cdcccc !important;
     }
     html {
-        --yt-button-icon-button-text-color: #aaa !important;
-        --ytd-video-primary-info-renderer-title-color: #efefef !important;
-        --yt-spec-text-primary: #efefef !important;
-        --yt-spec-icon-disabled: #555 !important;
-        --yt-spec-icon-inactive: #aaa !important;
+        --yt-button-icon-button-text-color: #cdcccc !important;
+        --ytd-video-primary-info-renderer-title-color: #cdcccc !important;
+        --yt-spec-text-primary: #cdcccc !important;
+        --yt-spec-icon-disabled: #5f5e5e !important;
+        --yt-spec-icon-inactive: #cdcccc !important;
     }
 }

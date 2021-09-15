@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Chatmode Display
 @namespace      nerblo
-@version        1.0.6
+@version        1.0.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Move the Chatmode Display below the Chat Input! You should use FFZ!
@@ -10,29 +10,28 @@
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
     .chat-input-tray__clickable {
-        margin-bottom: -100px !important;
-        text-align: right !important;
-        background: none !important;
-        margin-left: 132px !important;
-        width: calc(var(--ffz-chat-width) - 245px) !important;
+        height: 24px;
     }
     .chat-input-tray__clickable p {
-        margin-top: 60px !important;
-        font-size: 10px !important;
-        z-index: -1 !important;
-    }
-    .chat-input-tray__clickable .eVxqWI {
-        background-color: var(--color-background-body) !important;
-        position: relative !important;
-        z-index: 200 !important;
-        padding-left: 20px !important;
+        font-size: 12px !important;
     }
     /* Text Flexbox */
     .chat-input-tray__clickable .hPgapT {
-        margin: 0 !important;
+        height: 20px !important;
+        flex-grow: 0 !important;
+        text-align: right !important;
     }
     /* Hide Icon Div */
     .chat-input-tray__clickable .fzhuql {
-        display: none !important;
+        margin: 2px 0px 2px 104px !important;
+        margin: auto !important;
+        visibility: hidden !important;
+    }
+    .chat-restriction-tray-icon svg {
+        height: 14px !important;
+    }
+    .chat-input-tray__open.chat-input-tray__open--persistent {
+        border: none !important;
+        background: none !important;
     }
 }

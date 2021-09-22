@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.7.9
+@version        1.8.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -18,6 +18,7 @@ url-prefix("https://dashboard.twitch.tv/")
         --scaling-font-size: calc(var(--ffz-chat-font-size) + 0.75vh - 7px);
         --scaling-time-font-size: calc(var(--ffz-chat-font-size) + 0.75vh - 10px);
         --scaling-line-height: calc(var(--ffz-chat-font-size) + 0.75vh + 4px);
+        --scaling-chat-input-size: calc(var(--ffz-chat-font-size) + 0.5px);
     }
     .chat-line__message,
     .ffz-notice-line {
@@ -31,7 +32,9 @@ url-prefix("https://dashboard.twitch.tv/")
     .chat-line__message {
         padding: 0.5rem 1.5rem !important;
     }
-
+    .chat-input textarea[data-a-target="chat-input"] {
+        font-size: var(--scaling-chat-input-size) !important;
+    }
     /*
         ## Video Player ##
     */

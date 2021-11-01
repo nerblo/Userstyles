@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.6.4
+@version        1.6.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -108,8 +108,12 @@
     .search-box input:not(.focus-visible) {
         border-color: var(--color-background-input) !important;
     }
+    body .celebration__overlay,
     .celebration__overlay {
-        display: none !important;
+        display: flex !important;
+        filter: opacity(0) !important;
+        background: none !important;
+        border: none !important;
     }
 
     /*

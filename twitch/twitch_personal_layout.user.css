@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.1
+@version        1.8.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -15,25 +15,23 @@ url-prefix("https://dashboard.twitch.tv/")
         ## Chat ##
     */
     body {
-        --scaling-font-size: calc(var(--ffz-chat-font-size) + 0.75vh - 7px);
-        --scaling-time-font-size: calc(var(--ffz-chat-font-size) + 0.75vh - 10px);
-        --scaling-line-height: calc(var(--ffz-chat-font-size) + 0.75vh + 4px);
-        --scaling-chat-input-size: calc(var(--ffz-chat-font-size) + 0.5px);
+        --mod-time-font-size: calc(var(--ffz-chat-font-size) - 2px);
+        --mod-line-height: calc(var(--ffz-chat-font-size) + 7px);
     }
     .chat-line__message,
     .ffz-notice-line {
-        font-size: var(--scaling-font-size) !important;
-        line-height: var(--scaling-line-height) !important;
+        font-size: var(--mod-font-size) !important;
+        line-height: var(--mod-line-height) !important;
     }
     .chat-line__timestamp {
         font-family: "Source Sans Pro", "Hack", "Source Code Pro", "Consolas", "Courier New", Courier, monospace !important;
-        font-size: var(--scaling-time-font-size) !important;
+        font-size: var(--mod-time-font-size) !important;
     }
     .chat-line__message {
         padding: 0.5rem 1.5rem !important;
     }
     .chat-input textarea[data-a-target="chat-input"] {
-        font-size: var(--scaling-chat-input-size) !important;
+        font-size: var(--mod-chat-input-size) !important;
     }
     /*
         ## Video Player ##

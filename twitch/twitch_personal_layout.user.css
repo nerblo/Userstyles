@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.3
+@version        1.8.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -30,9 +30,7 @@ url-prefix("https://dashboard.twitch.tv/")
     .chat-line__message {
         padding: 0.5rem 1.5rem !important;
     }
-    .chat-input textarea[data-a-target="chat-input"] {
-        font-size: var(--mod-chat-input-size) !important;
-    }
+
     /*
         ## Video Player ##
     */

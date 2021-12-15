@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.6.7
+@version        1.6.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -130,7 +130,9 @@
     .chatter-name {
         word-break: normal !important;
     }
-    .tw-root--theme-dark .tw-textarea {
+    .tw-root--theme-dark .tw-textarea,
+    .tw-root--theme-dark div[data-a-target="chat-input"],
+    .tw-root--theme-dark textarea[data-a-target="chat-input"] {
         background-color: var(--color-background-body) !important;
         filter: brightness(130%);
     }

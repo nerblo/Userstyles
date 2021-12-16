@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.6.8
+@version        1.6.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -135,6 +135,7 @@
     .tw-root--theme-dark textarea[data-a-target="chat-input"] {
         background-color: var(--color-background-body) !important;
         filter: brightness(130%);
+        line-height: calc(var(--ffz-chat-font-size) + 2px) !important;
     }
     .tw-root--theme-dark .tw-textarea.focus-visible {
         filter: brightness(100%);

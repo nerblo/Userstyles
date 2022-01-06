@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        1.6.9
+@version        1.6.10
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -267,17 +267,5 @@
     .ffz-notice-line.ffz--ritual-line .tw-c-text-alt-2 {
         color: #af85ff !important;
         font-weight: bold !important;
-    }
-
-    /*
-        ## Temporary Workaround for Chrome Emoji Bug ##
-            TODO: remove after bugfix
-                chrome:96 2021-11-30
-    **/
-
-    .channel-info-content h2,
-    .live-channel-card h3,
-    .simplebar-content h3 {
-        font-weight: 500 !important;
     }
 }

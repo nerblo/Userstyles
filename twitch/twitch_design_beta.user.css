@@ -1,0 +1,201 @@
+/* ==UserStyle==
+@name           twitch.tv Design Beta
+@namespace      nerblo
+@version        2.0
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    Fix for Twitch latest Design changes, you should use FFZ!
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_design_beta.user.css
+==/UserStyle== */
+@-moz-document domain("twitch.tv") {
+    /*
+        Theme Colors
+    */
+    body,
+    /* Prime Gaming Panel Dropdown */
+    .ksFrFH {
+        --color-background-button-primary-default: #772ce8 !important;
+        --color-background-button-primary-hover: #833eea !important;
+        --old-twitch-color-primary: #784ec6 !important;
+        --old-twitch-color-secondary: #6441a5 !important;
+        --color-background-input: rgba(255, 255, 255, 0.05) !important;
+        --color-text-live: rgb(236, 74, 74) !important;
+        --color-text-accessible-red: var(--color-text-live) !important;
+        --color-background-base: var(--color-background-body) !important;
+        --color-background-interactable-alpha-hover: hsla(0, 0%, 100%, 0.1) !important;
+        --color-text-alt: rgba(255, 255, 255, 0.9) !important;
+        --color-text-alt-2: rgba(255, 255, 255, 0.8) !important;
+        --color-background-alt: var(--color-background-body) !important;
+        --color-border-input-focus: var(--color-background-button-primary-hover) !important;
+        --color-text-link: #a87de8 !important;
+    }
+
+    /* 
+        ## Text Selection ##
+    */
+    ::selection {
+        background: var(--color-background-button-primary-default) !important;
+    }
+
+    /* 
+        ## Backgrounds ##
+    */
+    .video-player__container,
+    .channel-root,
+    .channel-root--home,
+    .channel-root--unanimated {
+        background-color: var(--color-background-body) !important;
+    }
+
+    /* 
+        ## Directory Buttons ##
+    */
+    .twilight-main .vertical-selector__wrapper .vertical-selector {
+        background-color: var(--color-background-button-primary-default) !important;
+    }
+
+    /*
+        ## Tag Background ##
+    */
+    .tw-tag {
+        background: none !important;
+    }
+
+    /* 
+        ## Chat Input ##
+    */
+    .tw-root--theme-dark .tw-textarea,
+    .tw-root--theme-dark div[data-a-target="chat-input"],
+    .tw-root--theme-dark textarea[data-a-target="chat-input"] {
+        background-color: var(--color-background-body) !important;
+        line-height: calc(var(--ffz-chat-font-size) + 3px) !important;
+    }
+    .tw-root--theme-dark .tw-textarea::placeholder {
+        color: #fff9;
+    }
+    .tw-root--theme-dark .tw-textarea.focus-visible::placeholder {
+        color: #fff4;
+    }
+    .user-notice-line {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+    }
+
+    /* 
+        ## Chat Input Chat Badge ##
+    */
+    .chat-input__badge-carousel {
+        padding-left: 0.5rem;
+        padding-top: 0.6rem;
+    }
+
+    /* 
+        ## Host Button ##
+    */
+    .ffz-stat button.ffz-tooltip {
+        border: none !important;
+    }
+
+    /*
+        ## Channel Info Bottom Banner ##
+    */
+    #twilight-sticky-footer-root {
+        display: none !important;
+    }
+
+    /*
+        ## Cookies Banner ##
+    */
+    .consent-banner {
+        display: none !important;
+    }
+
+    /* 
+        ## Channel Rewards ##
+    */
+    .community-points-summary {
+        --color-background-button-success: none !important;
+    }
+    .community-points-summary:hover {
+        --color-background-button-success-hover: #fff2 !important;
+    }
+    .community-points-summary .claimable-bonus__icon {
+        color: var(--color-text-alt-2) !important;
+    }
+
+    /*
+        ### Bugfixes ###
+    */
+    /*
+        ## Celebration Overlay ##
+    */
+    body .celebration__overlay,
+    .celebration__overlay {
+        display: flex !important;
+        filter: opacity(0) !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    /*
+        ### Unsure changes ###
+
+    */
+    /*
+       ## Animated and Follower Emotes Notification ##
+    *
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .cKrHLn,
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .hKoACr,
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] .dlgPzd,
+    .channel-info-content .feIbTB {
+        display: none !important;
+    }
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] {
+        margin: 0 !important;
+    }
+
+    /*
+       ## Cheer Highlight Line ##
+    
+    .ffz-notice-line.ffz--ritual-line .tw-c-text-alt-2 {
+        color: #af85ff !important;
+        font-weight: bold !important;
+    }
+    
+    /*
+    .search-box input:not(.focus-visible) {
+        border-color: var(--color-background-input) !important;
+    }
+    
+    .stream-chat-header,
+    .bits-leaderboard-expanded__header,
+    .bits-leaderboard-expanded__scrollable .tw-border-t,
+    .channel-leaderboard .tw-border-b,
+    .gSGTgD {
+        border: none !important;
+    }
+        
+    /* 
+        ## Hypetrain Color ##
+    *
+    .hype-train-progress-bar-info-view__level-pill,
+    .hype-train-progress-bar__fill,
+    .hype-train-level-up__container,
+    .hype-train-complete__container,
+    .hype-train-start__container {
+        background-color: var(--color-background-button-primary-default) !important;
+    }
+    
+    /*
+        ## Channel Avatar Static ##
+    .user-avatar-animated__halo {
+        animation: none !important;
+    }
+    .user-avatar-animated__live::after {
+        animation: none !important;
+    }
+
+    /* 
+        ----------------------------------------------------------------------------
+    */
+}

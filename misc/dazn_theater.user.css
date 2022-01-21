@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DAZN Theater Mode
 @namespace      nerblo
-@version        1.1.9
+@version        1.2.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    DAZN Theater Mode
@@ -9,16 +9,33 @@
 @updateURL      https://nerblo.github.io/Userstyles/misc/dazn_theater.user.css
 ==/UserStyle== */
 @-moz-document domain("dazn.com") {
-    div[class^="masthead__wrapper-"] {
-        display: none !important;
-    }
+    /*
+        ## Nav Top ##
+    */
     div[class^="app__page"] {
-        margin-top: 0 !important;
+        margin-top: 40px !important;
     }
+    div[class^="masthead__wrapper-"] header,
+    div[class^="masthead__wrapper-"] ul,
+    div[class^="masthead__wrapper-"] li,
+    div[class^="masthead__wrapper-"] button {
+        height: 40px !important;
+        line-height: 30px !important;
+    }
+    nav[class^="header-nav__nav"] {
+        min-height: 40px !important;
+    }
+    a[class^="header-logo__header-logo-"] {
+        top: 3px !important;
+    }
+
+    /*
+        Content
+    */
     div[class^="page-layout__background-element-container"],
     div[class^="video-content__video-content-container"] {
         max-height: calc(100vh) !important;
-        max-width: calc(177.7777vh) !important;
+        max-width: calc(170vh) !important;
     }
     div[class^="main__player-container-"] {
         height: 100vh !important;
@@ -31,14 +48,8 @@
     main[class^="main__player-main-"] {
         width: 100% !important;
     }
-    div[class^="event-options__options-container-"] {
-        display: none !important;
-    }
-    div[class*="video-content__video-content-container-with-panel-"]:not(div[class*="video-content__video-content-container-fullscreen-"]) {
-        height: 100vh !important;
-        width: calc(100vw - 340px) !important;
-    }
     aside[class^="main__player-aside-"] {
         margin: 0 !important;
+        width: 324px !important;
     }
 }

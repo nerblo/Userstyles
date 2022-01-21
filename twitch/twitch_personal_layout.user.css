@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.4
+@version        1.8.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -189,7 +189,7 @@ url-prefix("https://dashboard.twitch.tv/")
         width: 100%;
         font-size: 3px;
         color: var(--color-background-body);
-        background-color: var(--old-twitch-color-primary);
+        background-color: var(--color-background-button-primary-default);
         height: 2px;
     }
 

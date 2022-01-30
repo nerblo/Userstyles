@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Rework
 @namespace      nerblo
-@version        2.0
+@version        2.0.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -15,20 +15,19 @@
     body,
     /* Prime Gaming Panel Dropdown */
     .ksFrFH {
-        --color-background-button-primary-default: #772ce8 !important;
-        --color-background-button-primary-hover: #833eea !important;
-        --old-twitch-color-primary: #784ec6 !important;
-        --old-twitch-color-secondary: #6441a5 !important;
-        --color-background-input: rgba(255, 255, 255, 0.05) !important;
-        --color-text-live: rgb(236, 74, 74) !important;
+        --color-background-button-primary-default: var(--ffz-color-accent-7) !important;
+        --color-text-link: var(--ffz-color-accent-10) !important;
+        --color-background-input: #ffffff0d !important;
+        --color-text-live: #ec4a4a !important;
         --color-text-accessible-red: var(--color-text-live) !important;
         --color-background-base: var(--color-background-body) !important;
-        --color-background-interactable-alpha-hover: hsla(0, 0%, 100%, 0.1) !important;
-        --color-text-alt: rgba(255, 255, 255, 0.9) !important;
-        --color-text-alt-2: rgba(255, 255, 255, 0.8) !important;
+        --color-background-interactable-alpha-hover: #ffffff1a !important;
+        --color-text-alt: #ffffffe6 !important;
+        --color-text-alt-2: #fffc !important;
         --color-background-alt: var(--color-background-body) !important;
-        --color-border-input-focus: var(--color-background-button-primary-hover) !important;
-        --color-text-link: #a87de8 !important;
+        --color-border-input-focus: var(--ffz-color-accent-11) !important;
+        --color-background-progress: var(--ffz-color-accent-11) !important;
+        --color-background-progress-status: #888 !important;
     }
 
     /* 
@@ -58,8 +57,13 @@
     /*
         ## Tag Background ##
     */
-    .tw-tag {
+    .tw-tag,
+    .subscriber-stream-tag {
         background: none !important;
+        border: none !important;
+    }
+    .subscriber-stream-tag {
+        color: #b44 !important;
     }
 
     /* 
@@ -78,7 +82,7 @@
         color: #fff4;
     }
     .user-notice-line {
-        background-color: rgba(255, 255, 255, 0.05) !important;
+        background-color: #ffffff0d !important;
     }
 
     /* 
@@ -121,6 +125,17 @@
     }
     .community-points-summary .claimable-bonus__icon {
         color: var(--color-text-alt-2) !important;
+    }
+
+    /*
+        Animated Emotes Notification
+    */
+    /*  chat-private-callout-queue__callout-container > div */
+    .fNSyNy {
+        display: none !important;
+    }
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] > div {
+        background-color: var(--color-background-button-primary-default) !important;
     }
 
     /*

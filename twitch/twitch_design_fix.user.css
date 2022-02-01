@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.1
+@version        2.0.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -150,6 +150,13 @@
         filter: opacity(0) !important;
         background: none !important;
         border: none !important;
+    }
+
+    /*
+        ## Sub Message Username Word Break ##
+    */
+    .chatter-name {
+        word-break: normal !important;
     }
 
     /* 

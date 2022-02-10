@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.6
+@version        1.8.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -58,17 +58,12 @@ url-prefix("https://dashboard.twitch.tv/")
     .top-nav .search-box .ScIconSVG-sc-1bgeryd-1 {
         transform: scale(0.7) !important;
     }
-    .top-nav .tw-avatar {
-        transform: scale(0.8) !important;
-    }
     .top-nav button[data-a-target="user-menu-toggle"] {
         margin-top: -12px !important;
-    }
-    .top-nav button[data-a-target="user-menu-toggle"] .tw-c-background-base {
-        background: none !important;
+        transform: scale(0.7) !important;
     }
     .tw-animated-glitch-logo {
-        margin-top: -13px !important;
+        margin-top: -12px !important;
         transform: scale(0.7) !important;
     }
     .top-nav .tw-number-badge__badge {
@@ -79,6 +74,9 @@ url-prefix("https://dashboard.twitch.tv/")
         margin-top: 8px !important;
         font-size: 1rem !important;
         padding: 0.3rem !important;
+    }
+    .ffz-top-nav {
+        transform: scale(0.8) !important;
     }
     .top-nav .anon-user button {
         height: 20px !important;

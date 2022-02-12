@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.3
+@version        2.0.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -136,6 +136,10 @@
     }
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] > div {
         background-color: var(--color-background-button-primary-default) !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] {
+        margin: 0 !important;
     }
 
     /*

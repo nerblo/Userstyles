@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.4
+@version        2.0.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -83,6 +83,9 @@
     }
     .user-notice-line {
         background-color: #ffffff0d !important;
+    }
+    .first-message-highlight-line > .user-notice-line {
+        border-left-color: #f8ff1a !important;
     }
 
     /* 

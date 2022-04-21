@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.6
+@version        2.0.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -95,14 +95,14 @@
         padding-left: 0.5rem;
         padding-top: 0.6rem;
     }
- 
+
     /*
         Reply Hover Background Color 
     */
     .chat-line__message:focus-within .chat-line__message-highlight,
     .chat-line__message:focus .chat-line__message-highlight,
     .chat-line__message:hover .chat-line__message-highlight {
-        background-color: hsla(0, 0%, 100%, .05) !important;
+        background-color: hsla(0, 0%, 100%, 0.05) !important;
     }
 
     /* 
@@ -143,7 +143,7 @@
         Animated Emotes Notification
     */
     /*  chat-private-callout-queue__callout-container > div */
-    .gSHKrs {
+    .tEmJK {
         display: none !important;
     }
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] > div {

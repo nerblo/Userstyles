@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.0.9
+@version        1.1.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -39,5 +39,22 @@
         --yt-spec-text-primary: #cdcccc !important;
         --yt-spec-icon-disabled: #5f5e5e !important;
         --yt-spec-icon-inactive: #cdcccc !important;
+    }
+
+    /* 
+       # New Layout Fix #
+    */
+    #comment-teaser.ytd-watch-metadata {
+        display: none !important;
+    }
+    #description-and-actions #description.ytd-watch-metadata {
+        margin-top: 14px !important;
+    }
+    #description-and-actions #actions.ytd-watch-metadata {
+        margin-top: 14px !important;
+    }
+    #owner-and-teaser #owner {
+        margin-top: 30px !important;
+        border: none !important;
     }
 }

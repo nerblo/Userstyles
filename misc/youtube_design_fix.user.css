@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.1.1
+@version        1.1.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -49,6 +49,7 @@
     }
     #description-and-actions #description.ytd-watch-metadata {
         margin-top: 14px !important;
+        min-width: calc(50% - 30px);
     }
     #description-and-actions #actions.ytd-watch-metadata {
         margin-top: 14px !important;

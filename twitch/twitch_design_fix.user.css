@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.10
+@version        2.0.11
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -89,16 +89,10 @@
     }
 
     /*
-        ## First Time Chat ##
+        ## First Time Chat Header ##
     */
-    .dMzWLl {
-        border-radius: 0 !important;
-        border: none !important;
-        /* border-left: 4px solid #f8ff1a !important; */
-        margin: 10px 0px 10px 0px !important;
-    }
-    .gfya-DZ {
-        border-radius: 0 !important;
+    .chat-line__message .gfya-DZ {
+        background: none !important;
     }
 
     /* 

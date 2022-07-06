@@ -1,0 +1,53 @@
+/* ==UserStyle==
+@name           ardmediathek.de Theater
+@namespace      github.com
+@version        1.0.5
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    ARD Mediathek Theater Mode
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/twitch/ard_theater.user.css
+==/UserStyle== */
+@-moz-document domain("ardmediathek.de") {
+    /*
+        ## Ardmediathek Theater 
+    */
+
+    div[class^="PlayerWrapper"] div[class^="Root"] img {
+        display: none !important;
+    }
+
+    div[class^="Root"] {
+        background: #131311 !important;
+    }
+
+    div[class^="PlayerWrapper"] {
+        max-width: 100% !important;
+        max-height: 97vh !important;
+    }
+
+    .ardplayer-background {
+        background: none !important;
+    }
+
+    /* .ToolbarWrapper-sc-3a05hr-1 ccQbLY-hj9jn4-1 */
+    .ccQbLY {
+        padding: 0px !important;
+        height: 30px;
+    }
+
+    /* main #goToContent */
+    .cxMBQC {
+        top: 25px;
+    }
+
+    /* Background-sc-3a05hr-2 hgLIEP */
+    .hgLIEP {
+        display: none !important;
+    }
+
+    /* src__Box-sc-1sbtrzs-0 Column-sc-kxqevx-1 iXNeEo WflTH */
+    .iXNeEo {
+        width: 100% !important;
+    }
+}

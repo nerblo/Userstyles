@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.0.5
+@version        1.0.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
@@ -30,24 +30,29 @@
         background: none !important;
     }
 
-    /* .ToolbarWrapper-sc-3a05hr-1 ccQbLY-hj9jn4-1 */
+    /*  .ToolbarWrapper-sc-3a05hr-1 ccQbLY-hj9jn4-1 */
     .ccQbLY {
         padding: 0px !important;
         height: 30px;
     }
 
-    /* main #goToContent */
+    /*  main #goToContent */
     .cxMBQC {
         top: 25px;
     }
 
-    /* Background-sc-3a05hr-2 hgLIEP */
+    /*  Background-sc-3a05hr-2 hgLIEP */
     .hgLIEP {
         display: none !important;
     }
 
-    /* src__Box-sc-1sbtrzs-0 Column-sc-kxqevx-1 iXNeEo WflTH */
+    /*  src__Box-sc-1sbtrzs-0 Column-sc-kxqevx-1 iXNeEo WflTH */
     .iXNeEo {
         width: 100% !important;
+    }
+
+    /*   ActiveBar-sc-1keqoa8-4 dNxPEU  */
+    .dNxPEU {
+        display: none !important;
     }
 }

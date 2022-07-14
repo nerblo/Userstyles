@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.10
+@version        1.8.11
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -163,6 +163,7 @@ url-prefix("https://dashboard.twitch.tv/")
     }
     .metadata-layout__secondary-button-spacing {
         margin-top: -15px !important;
+        margin-right: 0px !important;
     }
     /* 
         ## Stat Text ##

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.1.5
+@version        1.1.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -61,7 +61,11 @@
     .ytd-metadata-row-container-renderer {
         display: none !important;
     }
-    ytd-video-primary-info-renderer {
-        padding: 12px 0 8px 0 !important;
+    #description.ytd-watch-metadata {
+        min-width: calc(30% - 12px) !important;
+    }
+    #bottom-row #owner,
+    #meta-contents #top-row {
+        margin-top: 32px;
     }
 }

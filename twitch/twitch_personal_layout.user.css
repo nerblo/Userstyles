@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.11
+@version        1.8.12
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -175,23 +175,6 @@ url-prefix("https://dashboard.twitch.tv/")
         font-weight: 400 !important;
         font-family: var(--ffz-chat-font-family), Inter, Roobert, Helvetica Neue, Helvetica, Arial, sans-serif !important;
     }
-
-    /*
-        ## Hosting Diplay ##
-    */
-    .channel-info-content h2[data-a-target="stream-title"] a::before {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        z-index: 0;
-        content: "";
-        width: 100%;
-        font-size: 3px;
-        color: var(--color-background-body);
-        background-color: var(--color-background-button-primary-default);
-        height: 2px;
-    }
-
     /* 
         ## Side-Nav ##
     */

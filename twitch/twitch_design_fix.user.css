@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.12
+@version        2.0.13
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -110,13 +110,6 @@
     .chat-line__message:focus .chat-line__message-highlight,
     .chat-line__message:hover .chat-line__message-highlight {
         background-color: hsla(0, 0%, 100%, 0.05) !important;
-    }
-
-    /* 
-        ## Host Button ##
-    */
-    .ffz-stat button.ffz-tooltip {
-        border: none !important;
     }
 
     /*

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Hide Player Controls
 @namespace      nerblo
-@version        1.0.2
+@version        1.0.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Hide Twitch Player overlay to enable easy Screenshots
@@ -14,10 +14,13 @@
         background: none !important;
     }
     .player-controls [data-a-target="player-seekbar"] {
-        margin-bottom: -50px !important;
+        margin-bottom: 50px !important;
+        bottom: -140px !important;
+        position: relative !important;
     }
     .vod-seekbar-time-labels {
-        margin-bottom: 28px;
+        margin-bottom: -90px;
+        position: relative !important;
     }
     .seekbar-segment {
         background-color: #171717 !important;

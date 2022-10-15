@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.12
+@version        1.8.14
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -190,5 +190,12 @@ url-prefix("https://dashboard.twitch.tv/")
     */
     .radio-content-promo__info-card {
         display: none !important;
+    }
+
+    /*
+        ## Watchparty Mini-Player
+    */
+    div.root[data-a-page-loaded-name="ChannelWatchPartyPage"] .persistent-player {
+        top: 3rem !important;
     }
 }

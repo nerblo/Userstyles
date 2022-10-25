@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.13
+@version        2.0.15
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -60,7 +60,6 @@
     .tw-tag,
     .subscriber-stream-tag {
         background: none !important;
-        border: none !important;
     }
     .subscriber-stream-tag {
         color: #b44 !important;
@@ -69,12 +68,6 @@
     /* 
         ## Chat Input ##
     */
-    .tw-root--theme-dark .tw-textarea,
-    .tw-root--theme-dark div[data-a-target="chat-input"],
-    .tw-root--theme-dark textarea[data-a-target="chat-input"] {
-        background-color: var(--color-background-body) !important;
-        line-height: calc(var(--ffz-chat-font-size) + 3px) !important;
-    }
     .tw-root--theme-dark .tw-textarea::placeholder {
         color: #fff9;
     }

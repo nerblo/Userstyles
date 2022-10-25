@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Personal Layout
 @namespace      nerblo
-@version        1.8.14
+@version        1.8.15
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Personal Layout
@@ -14,18 +14,13 @@ url-prefix("https://dashboard.twitch.tv/")
     /*
         ## Chat ##
     */
-    body {
-        --mod-time-font-size: calc(var(--ffz-chat-font-size) - 2px);
-        --mod-line-height: calc(var(--ffz-chat-font-size) + 7px);
-    }
-    .chat-line__message,
-    .ffz-notice-line {
-        font-size: var(--mod-font-size) !important;
-        line-height: var(--mod-line-height) !important;
-    }
     .chat-line__timestamp {
         font-family: "Source Sans Pro", "Hack", "Source Code Pro", "Consolas", "Courier New", Courier, monospace !important;
-        font-size: var(--mod-time-font-size) !important;
+        font-size: calc(var(--ffz-chat-font-size) - 3px) !important;
+    }
+    .chat-input div[data-a-target="chat-input"],
+    .chat-wysiwyg-input__placeholder {
+        font-size: var(--ffz-chat-font-size) !important;
     }
     .chat-line__message {
         padding: 0.5rem 1.5rem !important;

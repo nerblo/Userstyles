@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.15
+@version        2.0.16
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -93,7 +93,7 @@
     */
     .chat-input__badge-carousel {
         padding-left: 0.5rem;
-        padding-top: 0.6rem;
+        padding-top: calc(var(--ffz-chat-font-size) - 0.9rem);
     }
 
     /*

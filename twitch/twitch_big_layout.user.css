@@ -9,7 +9,8 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_big_layout.user.css
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.twitch.tv"),
-url-prefix("https://dashboard.twitch.tv/") {
+url-prefix("https://dashboard.twitch.tv/")
+{
     /*
         ## Chat ##
     */
@@ -21,8 +22,12 @@ url-prefix("https://dashboard.twitch.tv/") {
     .chat-wysiwyg-input__placeholder {
         font-size: var(--ffz-chat-font-size) !important;
     }
+    .chat-line__message,
+    .ffz-notice-line {
+        line-height: calc(var(--ffz-chat-font-size) + 1.15rem) !important;
+    }
     .chat-line__message {
-        padding: 0.5rem 1.5rem !important;
+        padding: 0.6rem 1.5rem !important;
     }
 
     /*
@@ -38,10 +43,10 @@ url-prefix("https://dashboard.twitch.tv/") {
     .channel-info-content .metadata-layout__support .eNUtIR {
         height: 1.4rem !important;
     }
-    .hcymON{
+    .hcymON {
         margin-top: 1.4rem !important;
     }
-    
+
     /* 
         ## Stat Text ##
     */

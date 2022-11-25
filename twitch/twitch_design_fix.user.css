@@ -9,6 +9,7 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_design_fix.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
+
     /*
         Theme Colors
     */
@@ -61,6 +62,7 @@
     .subscriber-stream-tag {
         background: none !important;
     }
+
     .subscriber-stream-tag {
         color: #b44 !important;
     }
@@ -71,13 +73,16 @@
     .tw-root--theme-dark .tw-textarea::placeholder {
         color: #fff9;
     }
+
     .tw-root--theme-dark .tw-textarea.focus-visible::placeholder {
         color: #fff4;
     }
+
     .user-notice-line {
         background-color: #ffffff0d !important;
     }
-    .first-message-highlight-line > .user-notice-line {
+
+    .first-message-highlight-line>.user-notice-line {
         border-left-color: #f8ff1a !important;
     }
 
@@ -125,9 +130,11 @@
     .community-points-summary {
         --color-background-button-success: none !important;
     }
+
     .community-points-summary:hover {
         --color-background-button-success-hover: #fff2 !important;
     }
+
     .community-points-summary .claimable-bonus__icon {
         color: var(--color-text-alt-2) !important;
     }
@@ -139,10 +146,12 @@
     .dxyVIj {
         display: none !important;
     }
-    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] > div {
+
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"]>div {
         background-color: var(--color-background-button-primary-default) !important;
         margin-bottom: 0.5rem !important;
     }
+
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] {
         margin: 0 !important;
     }

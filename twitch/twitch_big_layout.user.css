@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Big Layout
 @namespace      nerblo
-@version        1.0.3
+@version        1.0.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Big Layout
@@ -43,12 +43,23 @@ url-prefix("https://dashboard.twitch.tv/") {
     /* 
         ## Channel Info ##
     */
-    .channel-info-content .metadata-layout__support .cKyclM {
-        height: 1.4rem !important;
+
+
+    .metadata-layout__secondary-button-spacing {
+        margin-top: -10px !important;
     }
 
     .channel-info-content .kFQuPx {
-        margin-top: 1.4rem !important;
+        margin-top: 10px !important;
+    }
+
+    .channel-info-content .metadata-layout__support {
+        margin-top: -8px !important;
+    }
+
+    .channel-info-content .metadata-layout__support .cKyclM {
+        margin-top: 2.4rem !important;
+        height: 0.8em !important;
     }
 
     .channel-info-content .ffz--links a[href$="/schedule"] {

@@ -180,7 +180,7 @@
     /*
         ## Chat Signup Overlay ##
     */
-    .stream-chat .chat-signup-gate-overlay {
+    .chat-signup-gate-overlay {
         display: none !important;
     }
 

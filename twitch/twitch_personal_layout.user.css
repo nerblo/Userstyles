@@ -190,7 +190,7 @@ url-prefix("https://dashboard.twitch.tv/") {
 
     .metadata-layout__secondary-button-spacing {
         margin-top: -15px !important;
-        margin-right: -5px !important;
+        margin-right: 40px !important;
     }
 
     /* 

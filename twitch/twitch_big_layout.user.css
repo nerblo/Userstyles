@@ -44,9 +44,9 @@ url-prefix("https://dashboard.twitch.tv/") {
         ## Channel Info ##
     */
 
-
     .metadata-layout__secondary-button-spacing {
         margin-top: -10px !important;
+        margin-right: 40px !important;
     }
 
     .channel-info-content .kFQuPx {

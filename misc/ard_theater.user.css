@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.0.7
+@version        1.0.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
@@ -17,7 +17,10 @@
         display: none !important;
     }
 
-    div[class^="Root"] {
+    div[class^="Root"],
+    #root div[class^="Background-sc"],
+    div[class^="NavbarWrapper-"],
+    div[class^="ToolbarBackground-"] {
         background: #131311 !important;
     }
 
@@ -54,5 +57,9 @@
     /*   ActiveBar-sc-1keqoa8-4 dNxPEU  */
     .ActiveBar-sc-1keqoa8-4.jkDGsT {
         display: none !important;
+    }
+
+    :focus-visible {
+        outline: none !important;
     }
 }

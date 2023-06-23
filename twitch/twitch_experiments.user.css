@@ -1,0 +1,93 @@
+/* ==UserStyle==
+@name           twitch.tv Experiments
+@namespace      nerblo
+@version        1.0.0
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    Fix Twitch Features and Hide Useless Features
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_experiments.user.css
+==/UserStyle== */
+@-moz-document domain("twitch.tv") {
+
+    /*
+        ## Hide Focused Items 
+    */
+    :focus-visible {
+        outline: none !important;
+    }
+
+    /*
+        ##  Hide "Manage Your Sub" Button ##
+    */
+    .channel-info-content div[data-target="channel-header-right"] .iCxUqo {
+        display: none !important;
+    }
+
+    /*
+        ##  Hide "Give Feedback" Button ##
+        ##  Hide "React" Button ##
+    */
+    .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-1qn4ixc-0.ffyxRu.bRFHvC,
+    .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-ocjdkq-0.ScCoreButtonText-sc-ocjdkq-3.ibtYyW.rsoRe,
+    .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-ocjdkq-0.ScCoreButtonText-sc-ocjdkq-3.ibtYyW.jYfhUy {
+        visibility: hidden !important;
+    }
+
+    /*
+        ## Chat Flicker Fix ##
+    */
+    .dhKtKO {
+        transition: none !important;
+    }
+
+    /*
+        ##  Twitch Recap Notification  ##
+    */
+    .channel-info-content .knAlKw,
+    .channel-info-content .eEFkwG {
+        display: none !important;
+    }
+
+    /*
+        ##  Hide Twitch Welcome to Chat Message  ##
+    */
+    div[data-a-target="chat-welcome-message"] {
+        display: none !important;
+    }
+
+    /* 
+        ##  Hide New Settings Pink Point  ## 
+    */
+    .Layout-sc-1xcs6mc-0.RiLeZ {
+        display: none !important;
+    }
+
+    /* 
+        ##  Hide the "Get Ad-Free" Button  ## 
+    */
+    .top-nav .irroFV {
+        display: none !important;
+    }
+
+    /*
+        ## Ribbon Add removable ##
+    */
+    .channel-info-content .Layout-sc-1xcs6mc-0.jKUkoE {
+        display: none !important;
+    }
+
+    /*
+        Hide Channel Disclosures
+    */
+    .video-player__overlay #channel-player-disclosures {
+        display: none !important;
+    }
+
+    /*
+        Hide Hype Chat Button
+    */
+    .chat-input button[aria-label="Hype Chat"] {
+        display: none !important;
+    }
+}

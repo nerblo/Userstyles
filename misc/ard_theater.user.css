@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.0.8
+@version        1.0.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
@@ -12,51 +12,38 @@
     /*
         ## Ardmediathek Theater 
     */
-
-    div[class^="PlayerWrapper"] div[class^="Root"] img {
-        display: none !important;
-    }
-
-    div[class^="Root"],
-    #root div[class^="Background-sc"],
-    div[class^="NavbarWrapper-"],
-    div[class^="ToolbarBackground-"] {
-        background: #131311 !important;
-    }
-
-    div[class^="PlayerWrapper"] {
-        max-width: 100% !important;
-        max-height: 97vh !important;
-    }
-
     .ardplayer-background {
         background: none !important;
     }
-
-    /*  .ToolbarWrapper-sc-3a05hr-1 ccQbLY-hj9jn4-1 */
-    .ifulhj {
-        padding: 0 !important;
-        height: 30px;
-    }
-
     /*  main #goToContent */
     main#goToContent {
         top: 25px;
     }
 
-    /* <div class="Background-sc-3a05hr-2 dcGbbE"></div> */
-    .Background-sc-3a05hr-2.dcGbbE {
+    .navbar_activeBar {
         display: none !important;
     }
 
-    /*  src__Box-sc-1sbtrzs-0 Column-sc-kxqevx-1 iXNeEo WflTH */
-    .src__Box-sc-1sbtrzs-0.fRBBdk {
-        width: 100% !important;
+    .b1fv93sw.i91zgel {
+        display: none !important;
     }
 
-    /*   ActiveBar-sc-1keqoa8-4 dNxPEU  */
-    .ActiveBar-sc-1keqoa8-4.jkDGsT {
-        display: none !important;
+    .b16anu48.h8psowo.i3ggzfh {
+        padding: 0 !important;
+        height: 30px;
+    }
+
+    .bb65sj8.b166jgkf {
+        margin-left: 4% !important;
+    }
+
+    .b1ecz7dw {
+        max-width: 100vw !important;
+    }
+
+    .b1y4zfs4 {
+        width: 90.5% !important;
+        max-width: 100vw !important;
     }
 
     :focus-visible {

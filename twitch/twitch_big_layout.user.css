@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Big Layout
 @namespace      nerblo
-@version        1.0.4
+@version        1.0.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Big Layout
@@ -53,12 +53,8 @@ url-prefix("https://dashboard.twitch.tv/") {
         margin-top: 10px !important;
     }
 
-    .channel-info-content .metadata-layout__support {
-        margin-top: -8px !important;
-    }
-
     .channel-info-content .metadata-layout__support .cKyclM {
-        margin-top: 2.4rem !important;
+        margin-top: 1.6rem !important;
         height: 0.8em !important;
     }
 

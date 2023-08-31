@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.18
+@version        2.0.19
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -155,6 +155,14 @@
     .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] {
         margin: 0 !important;
     }
+
+    /* 
+        ## Hide Suptember Banner ##
+    */
+    .subtember-gradient {
+        display: none !important;
+    }
+
 
     /*
         ### Bugfixes ###

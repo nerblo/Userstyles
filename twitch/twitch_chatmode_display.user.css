@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Chatmode Display
 @namespace      nerblo
-@version        1.1.2
+@version        1.1.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Move the Chatmode Display below the Chat Input! You should use FFZ!
@@ -18,14 +18,14 @@
     }
 
     /* Hide Icon Div */
-    .chat-input-tray__clickable .jRzStD {
+    .chat-input-tray__clickable .jTrQGS {
         margin: 2px 0px 2px 104px !important;
         margin: auto !important;
         visibility: hidden !important;
     }
 
     /* Text Flexbox */
-    .chat-input-tray__clickable .IKdfx {
+    .chat-input-tray__clickable .cFftJY {
         height: 20px !important;
         flex-grow: 0 !important;
         text-align: right !important;

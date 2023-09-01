@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.0.1
+@version        1.0.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -42,10 +42,11 @@
     }
 
     /*
-        ##  Twitch Recap Notification  ##
+        ##  Twitch Recap/React Notification  ##
     */
     .channel-info-content .knAlKw,
-    .channel-info-content .eEFkwG {
+    .channel-info-content .eEFkwG,
+    .channel-info-content .ecdmOJ {
         display: none !important;
     }
 
@@ -66,7 +67,7 @@
     /* 
         ##  Hide the "Get Ad-Free" Button  ## 
     */
-    .top-nav .irroFV {
+    .top-nav .dtleLI {
         display: none !important;
     }
 

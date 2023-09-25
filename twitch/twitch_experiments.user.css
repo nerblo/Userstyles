@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.0.3
+@version        1.0.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -60,14 +60,7 @@
     /* 
         ##  Hide New Settings Pink Point  ## 
     */
-    .Layout-sc-1xcs6mc-0.RiLeZ {
-        display: none !important;
-    }
-
-    /* 
-        ##  Hide the "Get Ad-Free" Button  ## 
-    */
-    .top-nav .dtleLI {
+    .Layout-sc-1xcs6mc-0.fncXjI {
         display: none !important;
     }
 

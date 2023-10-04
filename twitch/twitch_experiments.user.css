@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.0.4
+@version        1.0.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -42,10 +42,15 @@
     }
 
     /*
-        ##  Twitch Recap/React Notification  ##
+        ##  Hide Recap Sections  ##
     */
-    .channel-info-content .knAlKw,
-    .channel-info-content .eEFkwG,
+    .channel-info-content .iGEqkf {
+        display: none !important;
+    }
+
+    /*
+        ##  Hide React Button  ##
+    */
     .channel-info-content .ecdmOJ {
         display: none !important;
     }

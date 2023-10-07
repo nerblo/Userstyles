@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.0.5
+@version        1.0.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -44,7 +44,8 @@
     /*
         ##  Hide Recap Sections  ##
     */
-    .channel-info-content .iGEqkf {
+    .channel-info-content .iGEqkf,
+    .channel-info-content .cuptfu {
         display: none !important;
     }
 

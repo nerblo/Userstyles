@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.0.6
+@version        1.0.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -25,12 +25,9 @@
     }
 
     /*
-        ##  Hide "Give Feedback" Button ##
         ##  Hide "React" Button ##
     */
-    .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-1qn4ixc-0.ffyxRu.bRFHvC,
-    .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-ocjdkq-0.ScCoreButtonText-sc-ocjdkq-3.ibtYyW.rsoRe,
-    .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-ocjdkq-0.ScCoreButtonText-sc-ocjdkq-3.ibtYyW.jYfhUy {
+    .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-ocjdkq-0.ScCoreButtonText-sc-ocjdkq-3.bTXTVH.fuXDrj {
         visibility: hidden !important;
     }
 
@@ -44,15 +41,7 @@
     /*
         ##  Hide Recap Sections  ##
     */
-    .channel-info-content .iGEqkf,
-    .channel-info-content .cuptfu {
-        display: none !important;
-    }
-
-    /*
-        ##  Hide React Button  ##
-    */
-    .channel-info-content .ecdmOJ {
+    .channel-info-content .kNyuUv {
         display: none !important;
     }
 

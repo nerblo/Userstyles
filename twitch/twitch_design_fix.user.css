@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.21
+@version        2.0.22
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -138,6 +138,11 @@
 
     .community-points-summary .claimable-bonus__icon {
         color: var(--color-text-alt-2) !important;
+        animation: none !important;
+    }
+
+    .community-points-summary .claimable-bonus__icon svg {
+        fill: #181616 !important;
     }
 
     /*

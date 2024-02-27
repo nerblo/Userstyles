@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Big Layout
 @namespace      nerblo
-@version        1.0.8
+@version        1.0.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Big Layout
@@ -67,7 +67,8 @@ url-prefix("https://dashboard.twitch.tv/") {
     */
     .channel-info-content .tw-animated-number,
     .channel-info-content .ffz-stat-text,
-    .channel-info-content .ffz-i-viewers {
+    .channel-info-content .ffz-i-viewers,
+    .channel-info-content p[data-a-target="animated-channel-viewers-count"] {
         font-size: 1.6rem !important;
         font-weight: 400 !important;
         font-family: var(--ffz-chat-font-family), Inter, Roobert, Helvetica Neue, Helvetica, Arial, sans-serif !important;

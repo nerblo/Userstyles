@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.10.1
+@version        1.10.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -28,7 +28,7 @@
     .ytd-player .ytp-tooltip-title,
     .ytd-player .ytp-tooltip-image,
     .ytd-player .ytp-tooltip-text {
-        filter: drop-shadow(1px 1px 2px #191717);
+        filter: drop-shadow(1px 1px 2px #111010);
     }
 
     .ytd-player .ytp-gradient-bottom,
@@ -40,6 +40,16 @@
         # Background color
     */
     html {
-        --yt-spec-base-background: #121111 !important;
+        --yt-spec-base-background: #111010 !important;
+    }
+
+    #chat {
+        border: none !important;
+    }
+
+    ytd-live-chat-frame[theater-watch-while],
+    yt-live-chat-renderer,
+    yt-live-chat-header-renderer {
+        background: none !important;
     }
 }

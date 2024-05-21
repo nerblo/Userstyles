@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.10.2
+@version        1.10.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -47,9 +47,8 @@
         border: none !important;
     }
 
-    ytd-live-chat-frame[theater-watch-while],
-    yt-live-chat-renderer,
-    yt-live-chat-header-renderer {
-        background: none !important;
+    .ytd-live-chat-frame,
+    ytd-live-chat-frame[theater-watch-while][rounded-container]{
+        border-radius: 0px !important;
     }
 }

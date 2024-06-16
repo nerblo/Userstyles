@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name           zdf.de Livestream Theater
+@name           ZDF Theater
 @namespace      github.com
-@version        2.0.2
+@version        2.0.3
 @author         nerblo
 @license        CC-BY-SA-4.0
-@description    ARD Mediathek Theater Mode
+@description    ZDF Livestream Theater Mode
 @homepageURL    https://github.com/nerblo/Userstyles/
 @updateURL      https://nerblo.github.io/Userstyles/misc/zdf_theater.user.css
 ==/UserStyle== */
@@ -14,29 +14,36 @@
     footer {
         display: none !important;
     }
+
     .b-content-teaser-list,
     .dynamic-epg-program {
         display: none !important;
     }
+
     .grid-container {
         display: none !important;
     }
+
     html,
     body,
     .main {
         padding: 0 !important;
         background: #111010 !important;
     }
+
     .visuallyhidden {
         display: none !important;
     }
+
     .live-tv-slider .b-playerbox:not(.m-active),
     .live-tv-slider .b-ratiobox:not(.m-active) {
         display: none !important;
     }
+
     .scroll-pagination {
         display: none !important;
     }
+
     .livetv-scroller-content {
         transform: none !important;
     }
@@ -49,81 +56,18 @@
     .live-tv-slider-viewport {
         touch-action: none !important;
     }
+
     .live-tv-slider .scroll-arrow {
         display: none !important;
     }
+
     .zdfplayer-app div[class^="top-controls"],
     .zdfplayer-app div[class^="bottom-controls"] {
         background: none !important;
     }
+
     .main {
         overflow: hidden !important;
         max-width: 92% !important;
     }
-
-
-    /*
-    
-    
-    */
-    /*
-    .b-header,
-    .grid-container,
-    footer,
-    article,
-    button,
-    .x-row {
-        display: none;
-    }
-    .m-player-started,
-    .m-player-active {
-        position: absolute;
-        z-index: 199;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    body .main {
-        padding: 0;
-        height: 100%;
-        max-width: 100% !important;
-    }
-    .b-live-tv,
-    .live-tv-slider,
-    .b-playerbox {
-        width: 100%;
-        height: 100%;
-    }
-    .b-live-tv .item {
-        display: block !important;
-        width: 100% !important;
-        height: 100% !important;
-    }
-    html,
-    body {
-        height: 100%;
-        overflow: hidden;
-    }
-    .b-offcanvas-wrap,
-    .page,
-    .live-tv-slider-viewport,
-    .livetv-scroller-content {
-        height: 100% !important;
-    }
-    .b-zdfplayer .zdfplayer-video_wrapper {
-        position: static;
-        width: 100%;
-        padding-top: 0;
-    }
-    .b-ratiobox {
-        padding: 0 0 0;
-    }
-    
-    
-    
-    /*
-    
-    */
 }

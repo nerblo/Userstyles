@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.0.10
+@version        1.0.11
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
@@ -44,11 +44,19 @@
     }
 
     .b1y4zfs4 {
-        width: 90.5% !important;
+        width: 89% !important;
         max-width: 100vw !important;
     }
 
     :focus-visible {
         outline: none !important;
+    }
+
+    .swiper {
+        visibility: hidden !important;
+    }
+
+    .b14iz0pq {
+        display: none !important;
     }
 }

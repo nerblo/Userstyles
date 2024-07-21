@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.0.11
+@version        1.0.12
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
 @homepageURL    https://github.com/nerblo/Userstyles/
 @updateURL      https://nerblo.github.io/Userstyles/misc/ard_theater.user.css
 ==/UserStyle== */
-@-moz-document domain("ardmediathek.de") {
+@-moz-document url-prefix("https://www.ardmediathek.de/live") {
 
     /*
         ## Ardmediathek Theater 

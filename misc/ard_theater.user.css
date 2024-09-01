@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.0.12
+@version        1.0.13
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
@@ -11,52 +11,69 @@
 @-moz-document url-prefix("https://www.ardmediathek.de/live") {
 
     /*
-        ## Ardmediathek Theater 
+        # Overlay Hover Background
     */
     .ardplayer-background {
         background: none !important;
     }
 
-    /*  main #goToContent */
+    /*  
+        # Navigation
+    */
     main#goToContent {
         top: 25px;
     }
 
-    .navbar_activeBar {
-        display: none !important;
-    }
-
-    .b1fv93sw.i91zgel {
-        display: none !important;
-    }
-
-    .b16anu48.h8psowo.i3ggzfh {
+    .b16anu48.h8psowo {
         padding: 0 !important;
         height: 30px;
     }
 
+    /*
+        # Logo #
+    */
+    .brh20tl {
+        height: 42px !important;
+    }
+
+    /*
+        # Player Layout #
+    */
     .bb65sj8.b166jgkf {
         margin-left: 4% !important;
     }
 
     .b1ecz7dw {
-        max-width: 89vw !important;
+        max-width: 100% !important;
     }
 
     .b1y4zfs4 {
-        width: 89% !important;
+        width: 173vh !important;
         max-width: 100vw !important;
     }
 
-    :focus-visible {
-        outline: none !important;
-    }
-
+    /*
+        # Subchanel Swiper below player #
+    */
     .swiper {
         visibility: hidden !important;
     }
 
-    .b14iz0pq {
+    /*
+        # Blue Bar #
+    */
+    .b3ggzfh {
         display: none !important;
+    }
+
+    /*
+        # Live Indicator Bar
+    */
+    .b98rorl span:before {
+        display: none !important;
+    }
+
+    :focus-visible {
+        outline: none !important;
     }
 }

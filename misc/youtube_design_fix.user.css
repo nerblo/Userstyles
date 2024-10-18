@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.10.4
+@version        1.11.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -13,7 +13,8 @@
     /*
         # Disclaimer Banner for public broadcast or health infos
     */
-    ytd-watch-metadata ytd-info-panel-content-renderer {
+    ytd-watch-metadata ytd-info-panel-content-renderer,
+    #clarify-box {
         display: none !important;
     }
 
@@ -48,18 +49,32 @@
     }
 
     .ytd-live-chat-frame,
-    ytd-live-chat-frame[theater-watch-while][rounded-container]{
+    ytd-live-chat-frame[theater-watch-while][rounded-container] {
         border-radius: 0px !important;
     }
-        
+
     /*
-        #   Youtube Design Update
+        # Youtube Design Update
     */
-    
+
     /*
-        #   Progress Bar 
+        # Progress Bar Video
     */
-    .ytp-cairo-refresh-signature-moments .ytp-play-progress{
+    .ytp-cairo-refresh-signature-moments .ytp-play-progress {
         background: linear-gradient(to right, #c10000 80%, #f00 100%);
+    }
+
+    /*
+        # Progress Bar Thumbnail 
+    */
+    ytd-thumbnail-overlay-resume-playback-renderer #progress.ytd-thumbnail-overlay-resume-playback-renderer {
+        background: linear-gradient(to right, #c10000 80%, #f00 100%) !important;
+    }
+
+    /*
+        # Icon
+    */
+    #logo-icon .yt-icon-shape {
+        filter: hue-rotate(8deg);
     }
 }

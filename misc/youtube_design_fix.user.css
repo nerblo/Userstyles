@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.10.3
+@version        1.10.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -50,5 +50,16 @@
     .ytd-live-chat-frame,
     ytd-live-chat-frame[theater-watch-while][rounded-container]{
         border-radius: 0px !important;
+    }
+        
+    /*
+        #   Youtube Design Update
+    */
+    
+    /*
+        #   Progress Bar 
+    */
+    .ytp-cairo-refresh-signature-moments .ytp-play-progress{
+        background: linear-gradient(to right, #c10000 80%, #f00 100%);
     }
 }

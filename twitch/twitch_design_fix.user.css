@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.24
+@version        2.0.25
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -178,25 +178,6 @@
                 var(--ffz-channel-color) 0%,
                 var(--color-background-button-primary-default) 89%);
         transform: rotate(180deg);
-    }
-
-    /*
-        ## Guest Star Thumbnail ##
-    */
-    .guest-star-live-card-border {
-        background: none !important;
-    }
-
-    .guest-star-live-card-branding-image {
-        display: none !important;
-    }
-
-    .guest-star-live-card-clip-corner {
-        mask: none !important;
-    }
-
-    .guest-star-live-card-clip-edge {
-        clip-path: none !important;
     }
 
     /*

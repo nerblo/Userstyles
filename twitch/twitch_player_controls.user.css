@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Player Controls
 @namespace      nerblo
-@version        1.0.9
+@version        1.1.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Player Control Inferface slim clean Desgin
@@ -9,6 +9,7 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_player_controls.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
+
     .pl-controls-top,
     .pl-controls-bottom,
     .player-streamstatus,
@@ -16,25 +17,32 @@
     .top-bar {
         background: none !important;
     }
+
     .pl-controls-bottom .player-button,
     .pl-controls-top,
     .player-controls,
     .pl-controls-bottom .player-volume {
         filter: drop-shadow(2px 2px 1px black);
     }
+
     .player-controls button[aria-label="Soundtrack Info"] {
         display: none !important;
     }
-    .player-controls button[data-a-target="player-clip-button"] {
-        visibility: hidden !important;
-        width: 0 !important;
-    }
+
     .player-controls .tw-pill,
     .player-controls .ffz-stat {
         background-color: #161614 !important;
         color: #fff !important;
     }
+
     .video-player__overlay .tw-transition {
         transition-property: none !important;
+    }
+
+    /*
+        #   Hide Clip Button (new)
+    */
+    .player-controls .dvmIBV {
+        display: none !important;
     }
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.0.13
+@version        1.0.14
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
@@ -50,13 +50,6 @@
     .b1y4zfs4 {
         width: 173vh !important;
         max-width: 100vw !important;
-    }
-
-    /*
-        # Subchanel Swiper below player #
-    */
-    .swiper {
-        visibility: hidden !important;
     }
 
     /*

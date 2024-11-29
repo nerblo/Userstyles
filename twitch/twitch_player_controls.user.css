@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Player Controls
 @namespace      nerblo
-@version        1.1.0
+@version        1.1.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Player Control Inferface slim clean Desgin
@@ -42,7 +42,7 @@
     /*
         #   Hide Clip Button (new)
     */
-    .player-controls .dvmIBV {
+    .player-controls .iwmMBQ {
         display: none !important;
     }
 }

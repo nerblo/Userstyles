@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.0.8
+@version        1.0.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -29,13 +29,6 @@
     */
     .channel-info-content div[data-target="channel-header-right"] .ScCoreButton-sc-ocjdkq-0.ScCoreButtonText-sc-ocjdkq-3.bTXTVH.fuXDrj {
         visibility: hidden !important;
-    }
-
-    /*
-        ## Chat Flicker Fix ##
-    */
-    .dhKtKO {
-        transition: none !important;
     }
 
     /*
@@ -72,5 +65,4 @@
     .video-player__overlay #channel-player-disclosures {
         display: none !important;
     }
-
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DAZN Theater Mode
 @namespace      nerblo
-@version        1.5.0
+@version        1.5.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    DAZN Theater Mode
@@ -9,16 +9,11 @@
 @updateURL      https://nerblo.github.io/Userstyles/misc/dazn_theater.user.css
 ==/UserStyle== */
 @-moz-document domain("dazn.com") {
-    section[class^="main__player-layout"] {
-        width: 100% !important;
-        padding: 0 !important;
-        max-height: none !important;
-        margin: 0 0 200px 0 !important;
-    }
+
 
     main[class^="main__player-main"] {
         max-width: none !important;
-        width: 164vh !important;
+        width: 166vh !important;
         flex: none !important;
     }
 

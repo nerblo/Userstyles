@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.11.0
+@version        1.11.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -60,15 +60,15 @@
     /*
         # Progress Bar Video
     */
-    .ytp-cairo-refresh-signature-moments .ytp-play-progress {
-        background: linear-gradient(to right, #c10000 80%, #f00 100%);
+    .ytp-play-progress {
+        background: linear-gradient(to right, #c91e00 80%, #f00 100%);
     }
 
     /*
         # Progress Bar Thumbnail 
     */
     ytd-thumbnail-overlay-resume-playback-renderer #progress.ytd-thumbnail-overlay-resume-playback-renderer {
-        background: linear-gradient(to right, #c10000 80%, #f00 100%) !important;
+        background: linear-gradient(to right, #c91e00 80%, #f00 100%) !important;
     }
 
     /*

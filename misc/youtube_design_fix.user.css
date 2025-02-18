@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.11.1
+@version        1.11.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -63,6 +63,14 @@
     .ytp-play-progress {
         background: linear-gradient(to right, #c91e00 80%, #f00 100%);
     }
+
+    /*
+        # Progress Bar Shorts
+    */
+    .ytProgressBarLineProgressBarPlayed {
+        background: linear-gradient(to right, #c91e00 80%, #f00 100%);
+    }
+
 
     /*
         # Progress Bar Thumbnail 

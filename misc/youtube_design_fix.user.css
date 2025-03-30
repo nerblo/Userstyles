@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.11.3
+@version        1.11.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -84,13 +84,6 @@
     */
     #logo-icon .yt-icon-shape {
         filter: hue-rotate(8deg);
-    }
-
-    /*
-        #   Layout Width
-    */
-    #columns {
-        --ytd-watch-flexy-max-player-width-wide-screen: 1222px !important;
     }
 
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Big Layout
 @namespace      nerblo
-@version        1.0.10
+@version        1.0.11
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    twitch.tv Big Layout
@@ -43,7 +43,6 @@ url-prefix("https://dashboard.twitch.tv/") {
     /* 
         ## Channel Info ##
     */
-
     .metadata-layout__secondary-button-spacing {
         margin-top: -10px !important;
         margin-right: 40px !important;
@@ -95,8 +94,14 @@ url-prefix("https://dashboard.twitch.tv/") {
     /*
         ## Hide Tiktok Illness on Twitch ##
     */
-    .channel-info-content div[class*='oneTapIngressButton']{
-        display:none !important;
+    .channel-info-content div[class*='oneTapIngressButton'] {
+        display: none !important;
     }
 
+    /*
+        ## Hide Giftbannerad ##
+    */
+    .channel-info-content div[class*='giftExpirationCallout'] {
+        display: none !important;
+    }
 }

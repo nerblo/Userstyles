@@ -238,10 +238,10 @@
     */
     .stream-chat div[class*="bits-leaderboard"] .chatter-name,
     .channel-leaderboard-header-first-entry__username,
-    .channel-leaderboard-header-runner-up-entry__username{
-         font-size: var(--font-size-base) !important;
+    .channel-leaderboard-header-runner-up-entry__username {
+        font-size: var(--font-size-base) !important;
     }
-    
+
 
     /*
         ## Hide Live on Avatar - FFZ Bugged

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.1.1
+@version        1.1.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -100,7 +100,8 @@
     /*
         ## Rounded Buttons Revert
     */
-    button {
+    button,
+    a {
         --button-border-radius-default: 4px !important;
         --button-border-radius-small: 4px !important;
         --button-border-radius-large: 4px !important;
@@ -109,7 +110,4 @@
     .channel-info-content {
         --border-radius-rounded: 4px !important;
     }
-
-
-
 }

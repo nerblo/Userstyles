@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.0.9
+@version        1.1.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
@@ -65,4 +65,51 @@
     .video-player__overlay #channel-player-disclosures {
         display: none !important;
     }
+
+    /*
+        ## End-of-Year Bonus Sub Banner Stream / Following ##
+    */
+    .eya-dcy {
+        display: none !important;
+    }
+
+    .volume-slider__slider-container,
+    .volume-slider__slider-container>div>div {
+        width: 24rem;
+    }
+
+    /*
+        ## Following Headline Removal
+    */
+    .Layout-sc-1xcs6mc-0.iUJbYN {
+        margin-top: 0 !important;
+    }
+
+    .Layout-sc-1xcs6mc-0.iUJbYN h1.lbYztg {
+        display: none !important;
+    }
+
+    /*
+        ## Bits Leaderboard fontsize  
+    */
+    .bits-leaderboard-expanded-top-three-entry__username,
+    .bits-leaderboard-expanded-top-three-entry__marquee-username {
+        font-size: var(--font-size-base) !important;
+    }
+
+    /*
+        ## Rounded Buttons Revert
+    */
+    button {
+        --button-border-radius-default: 4px !important;
+        --button-border-radius-small: 4px !important;
+        --button-border-radius-large: 4px !important;
+    }
+
+    .channel-info-content {
+        --border-radius-rounded: 4px !important;
+    }
+
+
+
 }

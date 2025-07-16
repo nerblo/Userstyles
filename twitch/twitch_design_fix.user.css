@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           twitch.tv Design Fix
 @namespace      nerblo
-@version        2.0.28
+@version        2.0.29
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix for Twitch latest Design changes, you should use FFZ!
@@ -47,6 +47,13 @@
     .channel-root--home,
     .channel-root--unanimated {
         background-color: var(--color-background-body) !important;
+    }
+
+    /* 
+        ## Overflow Scrollbar at High DPI Scaling ##
+    */
+    .simplebar-scroll-content {
+        padding-right: 20px !important
     }
 
     /* 

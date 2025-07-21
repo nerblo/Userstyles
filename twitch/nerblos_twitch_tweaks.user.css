@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           nerblos Twitch Tweaks
 @namespace      nerblo
-@version        1.0.1
+@version        1.0.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -19,7 +19,8 @@
 @var checkbox chatmode "Enhance Chatmode Display" 1
 @var checkbox hide-stories "Hide Stories" 1
 @var checkbox hide-prime "Hide Prime Notification" 1
-@var checkbox welcome "Hide Welcome to Chat Message" 1
+@var checkbox welcome "Hide 'Welcome to Chat' Message" 1
+@var checkbox manage "Hide 'Manage your Sub' Button" 1
 @var checkbox hide-player-controls "Hide Player Controls" 0
 @var checkbox hide-chat-input "Hide Chat Input" 0
 @var checkbox anti-spoiler "Blur Thumbnails / Anti-Spoiler" 0
@@ -465,6 +466,16 @@
     if unfollow {
         .channel-info-content button[data-a-target="unfollow-button"] {
             visibility: hidden !important;
+        }
+    }
+
+
+    /*
+        ##  Hide "Manage Your Sub" Button ##
+    */
+    if manage {
+        .channel-info-content div[data-target="channel-header-right"] button[data-a-target="manage-sub-button"] {
+            display: none !important;
         }
     }
 

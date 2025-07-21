@@ -1,0 +1,623 @@
+/* ==UserStyle==
+@name           nerblos Twitch Tweaks
+@namespace      nerblo
+@version        1.0.0
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/twitch/nerblos_twitch_tweaks.user.css
+@preprocessor   stylus
+
+@var checkbox fix-layout "Fix Layout" 1
+@var checkbox rounded-buttons "Rounded Buttons" 1
+@var checkbox hide-tags "Hide Tags" 1
+@var checkbox unfollow "Hide Unfollow Button" 1
+@var checkbox following "Enhance Following Page" 1
+@var checkbox volume-slider "Enlarge Volume Slider" 1
+@var checkbox player-controls "Enhance Player Controls" 1
+@var checkbox chatmode "Enhance Chatmode Display" 1
+@var checkbox hide-stories "🎞️ Hide Stories" 1
+@var checkbox hide-prime "Hide Prime Notification" 1
+@var checkbox welcome "Hide Welcome to Chat Message" 1
+@var checkbox hide-player-controls "Hide Player Controls" 0
+@var checkbox hide-chat-input "Hide Chat Input" 0
+@var checkbox anti-spoiler "Blur Thumbnails / Anti-Spoiler" 0
+
+==/UserStyle== */
+@-moz-document domain("twitch.tv") {
+
+    /*
+        ## nerblos Twitch Tweaks ##
+    */
+    /*
+        ## Theme Colors ##
+    */
+    body {
+        --color-background-button-primary-default: var(--ffz-color-accent-7) !important;
+        --color-text-link: var(--ffz-color-accent-10) !important;
+        --color-background-input: #ffffff0d !important;
+        --color-text-live: #ec4a4a !important;
+        --color-text-accessible-red: var(--color-text-live) !important;
+        --color-background-base: var(--color-background-body) !important;
+        --color-background-interactable-alpha-hover: #ffffff1a !important;
+        --color-text-alt: #ffffffe6 !important;
+        --color-text-alt-2: #fffc !important;
+        --color-background-alt: var(--color-background-body) !important;
+        --color-border-input-focus: var(--ffz-color-accent-11) !important;
+        --color-background-progress: var(--ffz-color-accent-11) !important;
+        --color-background-progress-status: #888 !important;
+        --color-border-base: rgba(83, 83, 79, .4) !important;
+    }
+
+    /* 
+        ## Text Selection ##
+    */
+    ::selection {
+        background: var(--color-background-button-primary-default) !important;
+    }
+
+    /*
+        ## Hide Focused Items 
+    */
+    :focus-visible {
+        outline: none !important;
+    }
+
+    /* 
+        ## Backgrounds ##
+    */
+    .video-player__container,
+    .channel-root,
+    .channel-root--home,
+    .channel-root--unanimated {
+        background-color: var(--color-background-body) !important;
+    }
+
+    /* 
+        ## Overflow Scrollbar at High DPI Scaling ##
+    */
+    .simplebar-scroll-content {
+        padding-right: 20px !important
+    }
+
+    /* 
+        ## Directory Buttons ##
+    */
+    .twilight-main .vertical-selector__wrapper .vertical-selector {
+        background-color: var(--color-background-button-primary-default) !important;
+    }
+
+    /*
+        ## Tag Background ##
+    */
+    .tw-tag,
+    .subscriber-stream-tag {
+        background: none !important;
+    }
+
+    .subscriber-stream-tag {
+        color: #b44 !important;
+    }
+
+    /* 
+        ## Chat Input ##
+    */
+    .tw-root--theme-dark .tw-textarea::placeholder {
+        color: #fff9;
+    }
+
+    .tw-root--theme-dark .tw-textarea.focus-visible::placeholder {
+        color: #fff4;
+    }
+
+    .user-notice-line {
+        background-color: #ffffff0d !important;
+    }
+
+    .first-message-highlight-line > .user-notice-line {
+        border-left-color: #f8ff1a !important;
+    }
+
+    /*
+        ## First Time Chat Header ##
+    */
+    .chat-scrollable-area__message-container .gfya-DZ {
+        background: none !important;
+    }
+
+    /* 
+        ## Chat Input Chat Badge ##
+    */
+    .chat-input__badge-carousel {
+        padding-left: 0.5rem;
+        padding-top: calc(var(--ffz-chat-font-size) - 0.9rem);
+    }
+
+    /*
+        ## Reply Hover Background Color ##
+    */
+    .chat-line__message:focus-within .chat-line__message-highlight,
+    .chat-line__message:focus .chat-line__message-highlight,
+    .chat-line__message:hover .chat-line__message-highlight {
+        background-color: hsla(0, 0%, 100%, 0.05) !important;
+    }
+
+    /*
+        ## Channel Info Bottom Banner ##
+    */
+    #twilight-sticky-footer-root {
+        display: none !important;
+    }
+
+    /*
+        ## Cookies Banner ##
+    */
+    .consent-banner {
+        display: none !important;
+    }
+
+    /* 
+        ## Channel Rewards ##
+    */
+    .community-points-summary {
+        --color-background-button-success: none !important;
+    }
+
+    .community-points-summary:hover {
+        --color-background-button-success-hover: #fff2 !important;
+    }
+
+    .community-points-summary .claimable-bonus__icon {
+        color: var(--color-text-alt-2) !important;
+        animation: none !important;
+    }
+
+    .community-points-summary .claimable-bonus__icon svg {
+        fill: #181616 !important;
+    }
+
+    /*
+        ## Animated Emotes Notification ##
+    */
+    /*  chat-private-callout-queue__callout-container > div */
+    .dxyVIj {
+        display: none !important;
+    }
+
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] > div {
+        background-color: var(--color-background-button-primary-default) !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] {
+        margin: 0 !important;
+    }
+
+    /* 
+        ## Hide Suptember Banner ##
+    */
+    .subtember-gradient {
+        display: none !important;
+    }
+
+    /*
+        ## Avatar Halo Stories ##
+    */
+    .channel-info-content .halo--FRPlG {
+        background: linear-gradient(to top,
+        var(--color-background-button-primary-default) 1%,
+        var(--ffz-channel-color) 0%,
+        var(--color-background-button-primary-default) 89%);
+        transform: rotate(180deg);
+    }
+
+    /*
+        ## Celebration Overlay ##
+    */
+    body .celebration__overlay,
+    .celebration__overlay {
+        display: flex !important;
+        filter: opacity(0) !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    /*
+        ## Hide Holiday Gradient ##
+    */
+    .holiday-gradient {
+        display: none !important;
+    }
+
+
+    /*
+        ## Sub Message Username Word Break ##
+    */
+    .chatter-name {
+        word-break: normal !important;
+    }
+
+    /*
+        ## Chat Signup Overlay ##
+    */
+    .chat-signup-gate-overlay {
+        display: none !important;
+    }
+
+    /*
+        ## Adblock ##
+    */
+    #directory-banner,
+    #ad {
+        display: none !important;
+    }
+
+    .channel-info-content .jmMgdG {
+        display: none !important;
+    }
+
+    .chat-shell .channel-skins-banner__subd-subs {
+        display: none !important;
+    }
+
+    .player-overlay-background .channel-skins-overlay__interactive {
+        display: none !important;
+    }
+
+    #channel-points-reward-center-body div[class*="bitsRewardListItem"] {
+        display: none !important;
+    }
+
+    /*
+        ## Leaderboard font-size fix
+    */
+    .stream-chat div[class*="bits-leaderboard"] .chatter-name,
+    .channel-leaderboard-header-first-entry__username,
+    .channel-leaderboard-header-runner-up-entry__username {
+        font-size: var(--font-size-base) !important;
+    }
+
+
+    /*
+        ## Hide Live on Avatar - FFZ Bugged
+    */
+    .channel-info-content div[class*="liveIndicator--"] {
+        display: none !important;
+    }
+
+    /*
+        ## Hide Chat Input ##
+    */
+    if hide-chat-input {
+        div.chat-wysiwyg-input__box {
+            display: none !important;
+        }
+    }
+
+    /*
+        ## Anti Spoiler ##
+    */
+    if anti-spoiler {
+        a[data-a-target="preview-card-image-link"] img {
+            -webkit-filter: blur(30px);
+            -moz-filter: blur(30px);
+            -o-filter: blur(30px);
+            -ms-filter: blur(30px);
+            filter: blur(30px);
+            -webkit-transition: 0.2s -webkit-filter ease-out 0.4s;
+            -o-transition: 0.2s -o-filter ease-out 0.4s;
+            transition: 0.2s filter ease-out 0.4s;
+        }
+        a[data-a-target="preview-card-image-link"] img:hover {
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(0px);
+            filter: blur(0px);
+        }
+    }
+
+
+    /*
+        ## Chatmode Display ##
+    */
+    if chatmode {
+        .chat-input-tray__clickable {
+            height: 24px;
+        }
+
+        .chat-input-tray__clickable p {
+            font-size: 12px !important;
+        }
+
+        /* Hide Icon Div */
+        .chat-input-tray__clickable .hVGpxT {
+            margin: 2px 0px 2px 104px !important;
+            margin: auto !important;
+            visibility: hidden !important;
+        }
+
+        /* Text Flexbox */
+        .chat-input-tray__clickable .iYIJSn {
+            height: 20px !important;
+            flex-grow: 0 !important;
+            text-align: right !important;
+        }
+
+        .chat-restriction-tray-icon svg {
+            height: 14px !important;
+        }
+
+        .chat-input-tray__open.chat-input-tray__open--persistent {
+            border: none !important;
+            background: none !important;
+        }
+    }
+
+    /*
+        ## Enhance Player controls ##
+    */
+    if player-controls {
+        .pl-controls-top,
+        .pl-controls-bottom,
+        .player-streamstatus,
+        .player-controls,
+        .top-bar {
+            background: none !important;
+        }
+
+        .pl-controls-bottom .player-button,
+        .pl-controls-top,
+        .player-controls,
+        .pl-controls-bottom .player-volume {
+            filter: drop-shadow(2px 2px 1px black);
+        }
+
+        .player-controls button[aria-label="Soundtrack Info"] {
+            display: none !important;
+        }
+
+        .player-controls .tw-pill,
+        .player-controls .ffz-stat {
+            background-color: #161614 !important;
+            color: #fff !important;
+        }
+
+        .video-player__overlay .tw-transition {
+            transition-property: none !important;
+        }
+    }
+
+    /*
+        ## Enlarge Volume Slider ##
+    */
+    if volume-slider {
+        .volume-slider__slider-container,
+        .volume-slider__slider-container > div > div {
+            width: 24rem;
+        }
+    }
+
+    /*
+        ## Hide Player controls ##
+    */
+    if hide-player-controls {
+        .player-overlay-background:not(.content-overlay-gate) {
+            visibility: hidden !important;
+            background: none !important;
+        }
+        .player-controls [data-a-target="player-seekbar"] {
+            margin-bottom: -51px !important;
+        }
+        .vod-seekbar-time-labels {
+            margin-bottom: 28px;
+        }
+        .seekbar-segment {
+            background-color: #171717 !important;
+        }
+    }
+
+    /*
+        ## Hide Prime Notification ##
+    */
+    if hide-prime {
+        .prime-offers__pill {
+            display: none !important;
+        }
+    }
+
+    /*
+        ##  Hide Twitch Welcome to Chat Message  ##
+    */
+    if welcome {
+        div[data-a-target="chat-welcome-message"] {
+            display: none !important;
+        }
+    }
+
+    /*
+        ## Rounded Buttons Revert
+    */
+    if rounded-buttons {
+        button,
+        a {
+            --button-border-radius-default: 4px !important;
+            --button-border-radius-small: 4px !important;
+            --button-border-radius-large: 4px !important;
+        }
+
+        .channel-info-content {
+            --border-radius-rounded: 4px !important;
+        }
+    }
+
+    /*
+        ## Hide Unfollow Button ##
+    */
+    if unfollow {
+        .channel-info-content button[data-a-target="unfollow-button"] {
+            visibility: hidden !important;
+        }
+    }
+
+    /*
+        ----------------------------------------------------------------------------
+    */
+}
+
+
+/*
+    ## Fix Layout ##
+*/
+if fix-layout {
+    @-moz-document url-prefix("https://www.twitch.tv"),
+    url-prefix("https://dashboard.twitch.tv/") {
+
+        /*
+            ## Fix Layout ##
+        */
+        /*
+            ## Chat ##
+        */
+        .chat-line__timestamp {
+            font-family: "Source Sans Pro", "Hack", "Source Code Pro", "Consolas", "Courier New", Courier, monospace !important;
+            font-size: calc(var(--ffz-chat-font-size) - 3px) !important;
+        }
+
+        .chat-input div[data-a-target="chat-input"],
+        .chat-wysiwyg-input__placeholder {
+            font-size: var(--ffz-chat-font-size) !important;
+        }
+
+        .chat-line__message,
+        .ffz-notice-line {
+            line-height: calc(var(--ffz-chat-font-size) + 1.15rem) !important;
+        }
+
+        .chat-line__message {
+            padding: 0.6rem 1.5rem !important;
+        }
+
+        /*
+            ## Header ##
+        */
+        .consent-banner {
+            display: none !important;
+        }
+
+        /* 
+            ## Channel Info ##
+        */
+        .metadata-layout__secondary-button-spacing {
+            margin-top: -10px !important;
+            margin-right: 40px !important;
+        }
+
+        .channel-info-content .hJHxso {
+            margin-top: 10px !important;
+        }
+
+        .channel-info-content .metadata-layout__support .ccVkYh {
+            margin-top: 1.6rem !important;
+            height: 0.8em !important;
+        }
+
+        .channel-info-content .ffz--links a[href$="/schedule"] {
+            display: none !important;
+        }
+
+        .channel-info-content div[data-target="channel-header-right"] {
+            margin-top: 12px !important;
+        }
+
+
+        /* 
+            ## Stat Text ##
+        */
+        .channel-info-content .tw-animated-number,
+        .channel-info-content .ffz-stat-text,
+        .channel-info-content .ffz-i-viewers,
+        .channel-info-content p[data-a-target="animated-channel-viewers-count"] {
+            font-size: 1.6rem !important;
+            font-weight: 400 !important;
+            font-family: var(--ffz-chat-font-family), Inter, Roobert, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+        }
+
+
+        /* 
+            ## Side-Nav ##
+        */
+        .side-nav--collapsed:not(.side-nav--hover-exp) {
+            width: 4rem !important;
+        }
+
+        .side-nav--collapsed .collapse-toggle button {
+            margin-left: -0.5rem !important;
+        }
+
+        /*
+            ## Soundtrack Display ##
+        */
+        .radio-content-promo__info-card {
+            display: none !important;
+        }
+
+        /*
+            ## Hide Tiktok Illness on Twitch ##
+        */
+        .channel-info-content div[class*='oneTapIngressButton'] {
+            display: none !important;
+        }
+
+        /*
+            ## Hide Giftbannerad ##
+        */
+        .channel-info-content div[class*='giftExpirationCallout'] {
+            display: none !important;
+        }
+    }
+}
+@-moz-document url-prefix("https://www.twitch.tv/directory/following") {
+
+    /*
+         ## Hide Stories ##
+    */
+    if hide-stories {
+        .dKitkM .scrollable-area .fHdBNk {
+            display: none !important;
+        }
+    }
+
+    /*
+         ## Hide Tags ##
+    */
+    if hide-tags {
+        .tw-tag {
+            display: none !important;
+        }
+    }
+
+    /* 
+        ## Following Header Fix ##
+    */
+    if following {
+        .tw-tabs a[data-a-target="following-overview-tab"] {
+            padding-left: 0 !important;
+        }
+        .tw-tabs li[role="presentation"] {
+            padding-left: 0 !important;
+            padding-right: 4px !important;
+        }
+
+        /*
+            ## Following Headline Removal
+        */
+        .Layout-sc-1xcs6mc-0.iUJbYN {
+            margin-top: 0 !important;
+        }
+        .Layout-sc-1xcs6mc-0.iUJbYN h1.lbYztg {
+            display: none !important;
+        }
+    }
+}

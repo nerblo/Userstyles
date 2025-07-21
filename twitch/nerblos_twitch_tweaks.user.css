@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           nerblos Twitch Tweaks
 @namespace      nerblo
-@version        1.0.0
+@version        1.0.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -17,7 +17,7 @@
 @var checkbox volume-slider "Enlarge Volume Slider" 1
 @var checkbox player-controls "Enhance Player Controls" 1
 @var checkbox chatmode "Enhance Chatmode Display" 1
-@var checkbox hide-stories "🎞️ Hide Stories" 1
+@var checkbox hide-stories "Hide Stories" 1
 @var checkbox hide-prime "Hide Prime Notification" 1
 @var checkbox welcome "Hide Welcome to Chat Message" 1
 @var checkbox hide-player-controls "Hide Player Controls" 0
@@ -115,7 +115,7 @@
         background-color: #ffffff0d !important;
     }
 
-    .first-message-highlight-line > .user-notice-line {
+    .first-message-highlight-line>.user-notice-line {
         border-left-color: #f8ff1a !important;
     }
 
@@ -185,7 +185,7 @@
         display: none !important;
     }
 
-    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"] > div {
+    .chat-input div[data-test-selector="chat-private-callout-queue__callout-container"]>div {
         background-color: var(--color-background-button-primary-default) !important;
         margin-bottom: 0.5rem !important;
     }
@@ -206,9 +206,9 @@
     */
     .channel-info-content .halo--FRPlG {
         background: linear-gradient(to top,
-        var(--color-background-button-primary-default) 1%,
-        var(--ffz-channel-color) 0%,
-        var(--color-background-button-primary-default) 89%);
+                var(--color-background-button-primary-default) 1%,
+                var(--ffz-channel-color) 0%,
+                var(--color-background-button-primary-default) 89%);
         transform: rotate(180deg);
     }
 
@@ -309,6 +309,7 @@
             -o-transition: 0.2s -o-filter ease-out 0.4s;
             transition: 0.2s filter ease-out 0.4s;
         }
+
         a[data-a-target="preview-card-image-link"] img:hover {
             -webkit-filter: blur(0px);
             -moz-filter: blur(0px);
@@ -359,6 +360,7 @@
         ## Enhance Player controls ##
     */
     if player-controls {
+
         .pl-controls-top,
         .pl-controls-bottom,
         .player-streamstatus,
@@ -393,8 +395,9 @@
         ## Enlarge Volume Slider ##
     */
     if volume-slider {
+
         .volume-slider__slider-container,
-        .volume-slider__slider-container > div > div {
+        .volume-slider__slider-container>div>div {
             width: 24rem;
         }
     }
@@ -407,12 +410,15 @@
             visibility: hidden !important;
             background: none !important;
         }
+
         .player-controls [data-a-target="player-seekbar"] {
             margin-bottom: -51px !important;
         }
+
         .vod-seekbar-time-labels {
             margin-bottom: 28px;
         }
+
         .seekbar-segment {
             background-color: #171717 !important;
         }
@@ -440,6 +446,7 @@
         ## Rounded Buttons Revert
     */
     if rounded-buttons {
+
         button,
         a {
             --button-border-radius-default: 4px !important;
@@ -471,6 +478,7 @@
     ## Fix Layout ##
 */
 if fix-layout {
+
     @-moz-document url-prefix("https://www.twitch.tv"),
     url-prefix("https://dashboard.twitch.tv/") {
 
@@ -578,6 +586,7 @@ if fix-layout {
         }
     }
 }
+
 @-moz-document url-prefix("https://www.twitch.tv/directory/following") {
 
     /*
@@ -605,6 +614,7 @@ if fix-layout {
         .tw-tabs a[data-a-target="following-overview-tab"] {
             padding-left: 0 !important;
         }
+
         .tw-tabs li[role="presentation"] {
             padding-left: 0 !important;
             padding-right: 4px !important;
@@ -616,6 +626,7 @@ if fix-layout {
         .Layout-sc-1xcs6mc-0.iUJbYN {
             margin-top: 0 !important;
         }
+
         .Layout-sc-1xcs6mc-0.iUJbYN h1.lbYztg {
             display: none !important;
         }

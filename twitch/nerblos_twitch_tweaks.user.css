@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           nerblos Twitch Tweaks
 @namespace      nerblo
-@version        1.0.2
+@version        1.0.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -9,21 +9,21 @@
 @updateURL      https://nerblo.github.io/Userstyles/twitch/nerblos_twitch_tweaks.user.css
 @preprocessor   stylus
 
-@var checkbox fix-layout "Fix Layout" 1
-@var checkbox rounded-buttons "Rounded Buttons" 1
-@var checkbox hide-tags "Hide Tags" 1
-@var checkbox unfollow "Hide Unfollow Button" 1
-@var checkbox following "Enhance Following Page" 1
-@var checkbox volume-slider "Enlarge Volume Slider" 1
-@var checkbox player-controls "Enhance Player Controls" 1
-@var checkbox chatmode "Enhance Chatmode Display" 1
-@var checkbox hide-stories "Hide Stories" 1
-@var checkbox hide-prime "Hide Prime Notification" 1
-@var checkbox welcome "Hide 'Welcome to Chat' Message" 1
-@var checkbox manage "Hide 'Manage your Sub' Button" 1
-@var checkbox hide-player-controls "Hide Player Controls" 0
-@var checkbox hide-chat-input "Hide Chat Input" 0
-@var checkbox anti-spoiler "Blur Thumbnails / Anti-Spoiler" 0
+@var checkbox fix-layout "🪛 Fix Layout 📐" 1
+@var checkbox rounded-buttons "⭕ Rounded Buttons 🔴" 1
+@var checkbox hide-tags "❌ Hide Tags 🎫" 1
+@var checkbox unfollow "❌ Hide Unfollow Button 👍" 1
+@var checkbox volume-slider "↔️ Enlarge Volume Slider 🔊" 1
+@var checkbox player-controls "🔧 Enhance Player Controls 🎛️" 1
+@var checkbox following "🔧 Enhance Following Page 👍" 1
+@var checkbox chatmode "🔧 Enhance Chatmode Display 🖥️" 1
+@var checkbox hide-stories "❌ Hide Stories 🎞️" 1
+@var checkbox hide-prime "❌ Hide Prime Notification 🪙" 1
+@var checkbox welcome "❌ Hide 'Welcome to Chat' Message 🙋" 1
+@var checkbox manage "❌ Hide 'Manage your Sub' Button 🔔" 1
+@var checkbox hide-player-controls "❌ Hide Player Controls 🎛️" 0
+@var checkbox hide-chat-input "❌ Hide Chat Input 🔤" 0
+@var checkbox anti-spoiler "❌ Blur Thumbnails / Anti-Spoiler 👍" 0
 
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
@@ -131,8 +131,8 @@
         ## Chat Input Chat Badge ##
     */
     .chat-input__badge-carousel {
-        padding-left: 0.5rem;
-        padding-top: calc(var(--ffz-chat-font-size) - 0.9rem);
+        padding-left: 0.5rem !important;
+        padding-top: calc(var(--ffz-chat-font-size) - 0.9rem) !important;
     }
 
     /*
@@ -291,7 +291,7 @@
         ## Hide Chat Input ##
     */
     if hide-chat-input {
-        div.chat-wysiwyg-input__box {
+        .chat-input__textarea {
             display: none !important;
         }
     }

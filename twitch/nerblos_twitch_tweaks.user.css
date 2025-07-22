@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           nerblos Twitch Tweaks
 @namespace      nerblo
-@version        1.0.3
+@version        1.0.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -155,6 +155,13 @@
         ## Cookies Banner ##
     */
     .consent-banner {
+        display: none !important;
+    }
+
+    /*
+        Hide Channel Disclosures
+    */
+    .video-player__overlay #channel-player-disclosures {
         display: none !important;
     }
 

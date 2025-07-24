@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           nerblos Twitch Tweaks
 @namespace      nerblo
-@version        1.0.5
+@version        1.0.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -24,7 +24,7 @@
 @var checkbox hide-player-controls "❌ Hide Player Controls 🎛️" 0
 @var checkbox hide-chat-input "❌ Hide Chat Input 🔤" 0
 @var checkbox anti-spoiler "❌ Blur Thumbnails / Anti-Spoiler 👍" 0
-
+@var checkbox captions "❌ Hide Captions (Exp) ☎️" 0
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
 
@@ -491,6 +491,18 @@
         }
     }
 
+    /* 
+        ## Hide Captions Button ##
+    */
+    if captions {
+        div[data-a-target="player-settings-menu"] div:nth-of-type(4) {
+            display: none !important;
+        }
+    }
+
+
+
+
     /*
         ----------------------------------------------------------------------------
     */
@@ -512,7 +524,7 @@ if fix-layout {
             ## Chat ##
         */
         .chat-line__timestamp {
-            font-family: "Source Sans Pro", "Hack", "Source Code Pro", "Consolas", "Courier New", Courier, monospace !important;
+            font-family: "Source Sans Pro", "Hack", "Source Code Pro", "Consolas", Courier, monospace !important;
             font-size: calc(var(--ffz-chat-font-size) - 3px) !important;
         }
 
@@ -572,7 +584,7 @@ if fix-layout {
         .channel-info-content p[data-a-target="animated-channel-viewers-count"] {
             font-size: 1.6rem !important;
             font-weight: 400 !important;
-            font-family: var(--ffz-chat-font-family), Inter, Roobert, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+            font-family: var(--ffz-chat-font-family), Inter, Roobert, Helvetica Neue, Arial, sans-serif !important;
         }
 
 

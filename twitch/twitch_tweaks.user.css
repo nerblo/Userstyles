@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.7
+@version        1.0.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -25,6 +25,7 @@
 @var checkbox hide-chat-input "❌ Hide Chat Input 🔤" 0
 @var checkbox anti-spoiler "❌ Blur Thumbnails / Anti-Spoiler 👍" 0
 @var checkbox captions "❌ Hide Captions (Exp) ☎️" 0
+@var checkbox bits "❌ Hide Get Bits Button (Exp) 🪙" 0
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
 
@@ -500,8 +501,14 @@
         }
     }
 
-
-
+    /* 
+        ## Hide Get Bits Button ##
+    */
+    if bits {
+        .channel-info-content button[data-a-target="top-nav-get-bits-button"] {
+            display: none !important;
+        }
+    }
 
     /*
         ----------------------------------------------------------------------------

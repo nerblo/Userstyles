@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.9
+@version        1.0.10
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -213,7 +213,7 @@
     /*
         ##  Hide Recap Sections  ##
     */
-    .channel-info-content .iHfEta {
+    .channel-info-content .gcyYdE {
         display: none !important;
     }
 

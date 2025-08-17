@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.10
+@version        1.0.11
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -349,7 +349,7 @@
         }
 
         /* Hide Icon Div */
-        .chat-input-tray__clickable .hVGpxT {
+        .chat-input-tray__clickable .jxZjLz {
             margin: 2px 0px 2px 104px !important;
             margin: auto !important;
             visibility: hidden !important;

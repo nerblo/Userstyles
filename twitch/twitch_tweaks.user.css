@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.11
+@version        1.0.12
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -595,6 +595,7 @@ if fix-layout {
         .channel-info-content .tw-animated-number,
         .channel-info-content .ffz-stat-text,
         .channel-info-content .ffz-i-viewers,
+        .ffz--native-viewers-container,
         .channel-info-content p[data-a-target="animated-channel-viewers-count"] {
             font-size: 1.6rem !important;
             font-weight: 400 !important;

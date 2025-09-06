@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.15
+@version        1.0.16
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -475,14 +475,17 @@
     */
     if rounded-buttons {
 
-        button,
-        a {
+        button {
             --button-border-radius-default: 4px !important;
             --button-border-radius-small: 4px !important;
             --button-border-radius-large: 4px !important;
         }
 
-        .channel-info-content {
+        .channel-info-content .dCFkna,
+        .channel-info-content .hSUuOs,
+        .channel-info-content .gMErFN,
+        .channel-info-content .dcNXJO,
+        .dcNXJO {
             --border-radius-rounded: 4px !important;
         }
     }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.14
+@version        1.0.15
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -35,7 +35,7 @@
     /*
         ## Theme Colors ##
     */
-    *,
+
     body {
         --color-background-button-primary-default: var(--ffz-color-accent-7) !important;
         --color-text-link: var(--ffz-color-accent-10) !important;
@@ -213,7 +213,7 @@
     }
 
     .subtember2025-button {
-        background-color: var(--color-background-button-primary-default) !important;
+        background-color: var(--color-background-button-secondary-default) !important;
         color: inherit !important;
     }
 

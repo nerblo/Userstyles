@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.16
+@version        1.0.17
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -128,6 +128,14 @@
     .chat-scrollable-area__message-container .gfya-DZ {
         background: none !important;
     }
+
+    /*
+        ## FFZ Sub Notice Info Line ##
+    */
+    .ffz--subscribe-line.ffz-notice-line.user-notice-line {
+        padding-left: 12px !important;
+    }
+
 
     /* 
         ## Chat Input Chat Badge ##

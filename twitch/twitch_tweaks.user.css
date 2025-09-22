@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.0.17
+@version        1.0.18
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -132,7 +132,7 @@
     /*
         ## FFZ Sub Notice Info Line ##
     */
-    .ffz--subscribe-line.ffz-notice-line.user-notice-line {
+    .ffz-notice-line.user-notice-line {
         padding-left: 12px !important;
     }
 

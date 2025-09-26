@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.1.0
+@version        1.1.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -10,7 +10,6 @@
 @preprocessor   stylus
 
 @var checkbox fix-layout "🪛 Fix Layout 📐" 1
-@var checkbox rounded-buttons "⭕ Rounded Buttons 🔴" 1
 @var checkbox hide-tags "❌ Hide Tags 🎫" 1
 @var checkbox unfollow "❌ Hide Unfollow Button 👍" 1
 @var checkbox volume-slider "↔️ Enlarge Volume Slider 🔊" 1
@@ -21,10 +20,9 @@
 @var checkbox hide-prime "❌ Hide Prime Notification 🪙" 1
 @var checkbox welcome "❌ Hide 'Welcome to Chat' Message 🙋" 1
 @var checkbox manage "❌ Hide 'Manage your Sub' Button 🔔" 1
-@var checkbox hide-player-controls "❌ Hide Player Controls 🎛️" 0
+@var checkbox captions "❌ Hide Captions (Exp) ☎️" 1
 @var checkbox hide-chat-input "❌ Hide Chat Input 🔤" 0
 @var checkbox anti-spoiler "❌ Blur Thumbnails / Anti-Spoiler 👍" 0
-@var checkbox captions "❌ Hide Captions (Exp) ☎️" 0
 @var checkbox bits "❌ Hide Get Bits Button (Exp) 🪙" 0
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
@@ -445,23 +443,6 @@
         }
     }
 
-    /*
-        ## Hide Player controls ##
-    */
-    if hide-player-controls {
-        .player-overlay-background:not(.content-overlay-gate) {
-            visibility: hidden !important;
-            background: none !important;
-        }
-
-        .player-controls [data-a-target="player-seekbar"] {
-            margin-bottom: -51px !important;
-        }
-
-        .vod-seekbar-time-labels {
-            margin-bottom: 28px;
-        }
-    }
 
     /*
         ## Hide Prime Notification ##

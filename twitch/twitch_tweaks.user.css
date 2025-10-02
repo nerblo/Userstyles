@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.1.4
+@version        1.1.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -297,7 +297,7 @@
     /*
         ## Clip Banner ##
     */
-    .channel-info-content .bnofRP {
+    .channel-info-content .jIREuE {
         display: none !important;
     }
 

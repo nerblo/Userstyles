@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.1.5
+@version        1.1.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -20,7 +20,6 @@
 @var checkbox hide-prime "❌ Hide Prime Notification 🪙" 1
 @var checkbox welcome "❌ Hide 'Welcome to Chat' Message 🙋" 1
 @var checkbox manage "❌ Hide 'Manage your Sub' Button 🔔" 1
-@var checkbox captions "❌ Hide Captions (Exp) ☎️" 1
 @var checkbox hide-chat-input "❌ Hide Chat Input 🔤" 0
 @var checkbox anti-spoiler "❌ Blur Thumbnails / Anti-Spoiler 👍" 0
 @var checkbox bits "❌ Hide Get Bits Button (Exp) 🪙" 0
@@ -484,15 +483,6 @@
     */
     if manage {
         .channel-info-content div[data-target="channel-header-right"] button[data-a-target="manage-sub-button"] {
-            display: none !important;
-        }
-    }
-
-    /* 
-        ## Hide Captions Button ##
-    */
-    if captions {
-        div[data-a-target="player-settings-menu"] div:nth-of-type(4) {
             display: none !important;
         }
     }

@@ -138,7 +138,7 @@
         ## Chat Input Chat Badge ##
     */
     .chat-input__badge-carousel {
-        padding-top: calc((((10px + var(--ffz-chat-font-size)) * 1.6) / 2) - 16px) !important;
+        padding-top: calc((((10px + var(--ffz-chat-font-size)) * 1.6) / 2) - 15.4px) !important;
     }
 
     /*

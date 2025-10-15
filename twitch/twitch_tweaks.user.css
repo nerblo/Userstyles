@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.1.6
+@version        1.1.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -138,8 +138,7 @@
         ## Chat Input Chat Badge ##
     */
     .chat-input__badge-carousel {
-        padding-left: 0.5rem !important;
-        padding-top: calc(var(--ffz-chat-font-size) - 0.9rem) !important;
+        padding-top: calc((((10px + var(--ffz-chat-font-size)) * 1.6) / 2) - 16px) !important;
     }
 
     /*

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.1.7
+@version        1.1.8
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -527,7 +527,7 @@ if fix-layout {
 
         .chat-line__message,
         .ffz-notice-line {
-            line-height: calc(var(--ffz-chat-font-size) + 1.15rem) !important;
+            line-height: calc(var(--ffz-chat-font-size) * 1.69) !important;
         }
 
         .chat-line__message {

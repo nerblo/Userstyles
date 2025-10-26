@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.1.8
+@version        1.1.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -319,11 +319,10 @@
         font-size: var(--font-size-base) !important;
     }
 
-
     /*
         ## Hide Live on Avatar - FFZ Bugged
     */
-    .channel-info-content div[class*="liveIndicator--"] {
+    .channel-info-content .tw-channel-status-text-indicator{
         display: none !important;
     }
 

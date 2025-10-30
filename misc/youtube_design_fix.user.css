@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.12.1
+@version        1.12.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
@@ -40,6 +40,7 @@
     html,
     html[dark] {
         --yt-spec-base-background: #111010 !important;
+        --yt-frosted-glass-desktop: #111010 !important;
     }
 
     #chat {

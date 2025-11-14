@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.1.9
+@version        1.2.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -322,7 +322,7 @@
     /*
         ## Hide Live on Avatar - FFZ Bugged
     */
-    .channel-info-content .tw-channel-status-text-indicator{
+    .channel-info-content .tw-channel-status-text-indicator {
         display: none !important;
     }
 
@@ -543,28 +543,13 @@ if fix-layout {
         /* 
             ## Channel Info ##
         */
-        .metadata-layout__secondary-button-spacing {
-            margin-top: -10px !important;
-            margin-right: 40px !important;
-        }
-
-        .channel-info-content .hJHxso {
-            margin-top: 10px !important;
-        }
-
-        .channel-info-content .metadata-layout__support .ccVkYh {
-            margin-top: 1.6rem !important;
-            height: 0.8em !important;
-        }
-
         .channel-info-content .ffz--links a[href$="/schedule"] {
             display: none !important;
         }
 
-        .channel-info-content div[data-target="channel-header-right"] {
-            margin-top: 12px !important;
+        .channel-info-content .metadata-layout__support {
+            margin-top: 10px !important;
         }
-
 
         /* 
             ## Stat Text ##

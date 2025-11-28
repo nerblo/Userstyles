@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           YouTube Design Fix
 @namespace      github.com/nerblo/Userstyles
-@version        1.12.2
+@version        1.12.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    YouTube Design Fix
 @homepageURL    https://github.com/nerblo/Userstyles/
 @updateURL      https://nerblo.github.io/Userstyles/misc/youtube_design_fix.user.css
 ==/UserStyle== */
-@-moz-document domain("youtube.com") {
+@-moz-document url-prefix("https://www.youtube.com/") {
 
     /*
         # Disclaimer Banner for public broadcast or health infos

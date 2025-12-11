@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.2.0
+@version        1.2.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -48,6 +48,7 @@
         --color-background-progress: var(--ffz-color-accent-11) !important;
         --color-background-progress-status: #888 !important;
         --color-border-base: rgba(83, 83, 79, .4) !important;
+        --color-fill-new-item-indicator: rgba(0, 0, 0, .0) !important;
     }
 
     /* 

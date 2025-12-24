@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.2.1
+@version        1.2.2
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -22,7 +22,8 @@
 @var checkbox manage "❌ Hide 'Manage your Sub' Button 🔔" 1
 @var checkbox hide-chat-input "❌ Hide Chat Input 🔤" 0
 @var checkbox anti-spoiler "❌ Blur Thumbnails / Anti-Spoiler 👍" 0
-@var checkbox bits "❌ Hide Get Bits Button (Exp) 🪙" 0
+@var checkbox bits "❌ Hide Get Bits Button 🪙" 0
+@var checkbox newitem "❌ Hide New Item Indicator 🪙" 1
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
 
@@ -491,6 +492,16 @@
     */
     if bits {
         .channel-info-content button[data-a-target="top-nav-get-bits-button"] {
+            display: none !important;
+        }
+    }
+
+
+    /*
+        ## Hide New Item Indicator ##
+    */
+    if newitem {
+        .tw-new-item-indicator__container {
             display: none !important;
         }
     }

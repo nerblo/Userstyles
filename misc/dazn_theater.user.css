@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DAZN Theater Mode
 @namespace      nerblo
-@version        1.5.2
+@version        1.5.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    DAZN Theater Mode
@@ -52,5 +52,11 @@
     .player-ui div[data-test-id^="FRAME"] span[aria-hidden="true"],
     .player-ui div[data-test-id^="FRAME"] div[aria-hidden="true"] {
         display: none !important;
+    }
+
+    ._3g507d0:not(._3g507d1):hover ._3g507d5,
+    ._3g507d2 ._3g507d5,
+    ._3g507d3 ._3g507d5 {
+        width: 360px !important;
     }
 }

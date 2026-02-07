@@ -295,6 +295,13 @@
     }
 
     /*
+        ## Roblox Ad Headline Removal ##
+    */
+    .top-nav a[data-a-target="roblox-link"] {
+        display: none !important;
+    }
+
+    /*
         ## Clip Banner ##
     */
     .channel-info-content .jIREuE {
@@ -652,13 +659,6 @@ if fix-layout {
         }
 
         .Layout-sc-1xcs6mc-0.iUJbYN h1.lbYztg {
-            display: none !important;
-        }
-
-        /*
-            ## Roblox Ad Headline Removal ##
-        */
-        .top-nav a[data-a-target="roblox-link"] {
             display: none !important;
         }
     }

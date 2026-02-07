@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.2.2
+@version        1.2.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -645,13 +645,20 @@ if fix-layout {
         }
 
         /*
-            ## Following Headline Removal
+            ## Following Headline Removal ##
         */
         .Layout-sc-1xcs6mc-0.iUJbYN {
             margin-top: 0 !important;
         }
 
         .Layout-sc-1xcs6mc-0.iUJbYN h1.lbYztg {
+            display: none !important;
+        }
+
+        /*
+            ## Roblox Ad Headline Removal ##
+        */
+        .top-nav a[data-a-target="roblox-link"] {
             display: none !important;
         }
     }

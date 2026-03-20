@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           twitch.tv Anti Spoiler
 @namespace      nerblo
-@version        1.2.2
+@version        1.2.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Anti Spoiler - Blur Thumbnails with Transitions
 @homepageURL    https://github.com/nerblo/Userstyles/
-@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_anti_spoiler.user.css
+@updateURL      https://nerblo.github.io/Userstyles/twitch/legacy_unsupported/twitch_anti_spoiler.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
     a[data-a-target="preview-card-image-link"] img {

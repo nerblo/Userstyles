@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           twitch.tv Hide Channel Buttons
 @namespace      nerblo
-@version        1.0.11
+@version        1.0.12
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Hide Channel Button - Follow and Celebration
 @homepageURL    https://github.com/nerblo/Userstyles/
-@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_hide_channel_buttons.user.css
+@updateURL      https://nerblo.github.io/Userstyles/twitch/legacy_unsupported/twitch_hide_channel_buttons.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
     .channel-info-content button[data-a-target="unfollow-button"] {

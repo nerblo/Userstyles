@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           twitch.tv Experiments
 @namespace      nerblo
-@version        1.1.2
+@version        1.1.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Fix Twitch Features and Hide Useless Features
 @homepageURL    https://github.com/nerblo/Userstyles/
-@updateURL      https://nerblo.github.io/Userstyles/twitch/twitch_experiments.user.css
+@updateURL      https://nerblo.github.io/Userstyles/twitch/legacy_unsupported/twitch_experiments.user.css
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
 

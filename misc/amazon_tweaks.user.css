@@ -1,0 +1,34 @@
+/* ==UserStyle==
+@name           Amazon Tweaks
+@namespace      nerblo
+@version        1.1.0
+@author         nerblo
+@license        CC-BY-SA-4.0
+@description    Amazon Tweaks
+@homepageURL    https://github.com/nerblo/Userstyles/
+@updateURL      https://nerblo.github.io/Userstyles/misc/amazon_tweaks.user.css
+@preprocessor   stylus
+
+@var checkbox hide-adress "❌ Hide Adress 🪙" 1
+@var checkbox hide-black "❌ Hide Prime Background 🪙" 1
+==/UserStyle== */
+@-moz-document domain("www.amazon.de"),
+domain("www.amazon.com") {
+
+    if hide-adress {
+
+        #nav-global-location-slot,
+        #nav-link-accountList-nav-line-1 {
+            visibility: hidden !important;
+        }
+    }
+
+    if hide-black {
+
+        .fpqiyer .f8hspre,
+        .fpqiyer .f8hspre .fvtlr3b,
+        .fpqiyer .f8hspre .f10i0hvc {
+            background: none !important;
+        }
+    }
+}

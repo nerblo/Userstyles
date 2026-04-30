@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.2.4
+@version        1.2.5
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -311,7 +311,7 @@
     /*
         ## Player ##
     */
-    .player-controls .seekbar-segment {
+    .player-controls .seekbar-segment:nth-of-type(1) {
         background-color: var(--color-text-link) !important;
     }
 

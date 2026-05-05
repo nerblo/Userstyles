@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.2.5
+@version        1.2.6
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -373,9 +373,6 @@
         ## Chatmode Display ##
     */
     if chatmode {
-        .chat-input-tray__clickable {
-            height: 24px;
-        }
 
         .chat-input-tray__clickable p {
             font-size: 12px !important;
@@ -393,10 +390,6 @@
             height: 20px !important;
             flex-grow: 0 !important;
             text-align: right !important;
-        }
-
-        .chat-restriction-tray-icon svg {
-            height: 14px !important;
         }
 
         .chat-input-tray__open.chat-input-tray__open--persistent {

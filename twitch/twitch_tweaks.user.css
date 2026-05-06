@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.2.6
+@version        1.2.7
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -654,5 +654,13 @@ if fix-layout {
         .Layout-sc-1xcs6mc-0.iUJbYN h1.lbYztg {
             display: none !important;
         }
+
+        /*
+            ## Top Spacing ##
+        */
+        .Layout-sc-1xcs6mc-0 .iHfEta {
+            margin-block-end: 14px !important;
+        }
+
     }
 }

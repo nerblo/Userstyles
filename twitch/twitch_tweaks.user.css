@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.2.8
+@version        1.2.9
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -512,17 +512,15 @@
 }
 
 
-/*
-    ## Fix Layout ##
-*/
-if fix-layout {
 
-    @-moz-document url-prefix("https://www.twitch.tv"),
-    url-prefix("https://dashboard.twitch.tv/") {
+@-moz-document url-prefix("https://www.twitch.tv"),
+url-prefix("https://dashboard.twitch.tv/") {
 
-        /*
-            ## Fix Layout ##
-        */
+    /*
+        ## Fix Layout ##
+    */
+    if fix-layout {
+
         /*
             ## Chat ##
         */

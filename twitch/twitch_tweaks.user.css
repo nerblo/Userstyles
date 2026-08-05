@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.3.0
+@version        1.3.1
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -645,11 +645,11 @@ url-prefix("https://dashboard.twitch.tv/") {
         /*
             ## Following Headline Removal ##
         */
-        .Layout-sc-1xcs6mc-0.iUJbYN {
+        .Layout-sc-1xcs6mc-0.ezqWaZ {
             margin-top: 0 !important;
         }
 
-        .Layout-sc-1xcs6mc-0.iUJbYN h1.lbYztg {
+        .Layout-sc-1xcs6mc-0.ezqWaZ h1.hqxAFh {
             display: none !important;
         }
 

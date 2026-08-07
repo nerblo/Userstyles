@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DAZN Theater Mode
 @namespace      nerblo
-@version        1.6.2
+@version        1.6.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    DAZN Theater Mode
@@ -47,5 +47,12 @@
     .player-ui div[data-portal-name="FANZONE"],
     .player-ui div[data-portal-name="PAUSE_ADS"] {
         display: none !important;
+    }
+
+    /*
+        # Main Player #
+    */
+    section[class^="main__player-layout_"] {
+        width: 76vw !important;
     }
 }

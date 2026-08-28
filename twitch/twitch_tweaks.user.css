@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.3.2
+@version        1.3.3
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -611,6 +611,13 @@ url-prefix("https://dashboard.twitch.tv/") {
             ## Hide Channel Banner Ads ##
         */
         .channel-info-content div[data-test-selector^="channel-skins-ribbon"] {
+            display: none !important;
+        }
+
+        /*
+            ## Hide Navigation Bar Ads ##
+        */
+        a[data-a-target="pokemon-worlds-2026-link"] {
             display: none !important;
         }
     }

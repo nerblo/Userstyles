@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ardmediathek.de Theater
 @namespace      github.com
-@version        1.2.3
+@version        1.2.4
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    ARD Mediathek Theater Mode
@@ -15,22 +15,15 @@
     /*
             # Blue Bar #
     */
-    .h1s8xhz8::after {
+    .h1dzlpvw ::after {
         display: none !important;
     }
 
     /*
             # Menu #
     */
-    .hgwjpfv {
-        height: 28px;
-    }
-
-    /*
-            # Logo #
-    */
-    .b1jxixgx {
-        height: 36px !important;
+    .h1dzlpvw {
+        height: 24px;
     }
 
     /*

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.3.9
+@version        1.3.10
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -213,8 +213,10 @@
     /* 
         ## Hide Suptember Banner ##
     */
-    .subtember-gradient,
-    .channel-info-content .bQBtBr {
+    .channel-info-content .bQBtBr,
+    .channel-info-content .subtember-callout-wrapper,
+    .channel-info-content .subtember-wide,
+    .channel-info-content .subtember-promo-image {
         display: none !important;
     }
 

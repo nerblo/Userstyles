@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Tweaks
 @namespace      nerblo
-@version        1.3.10
+@version        1.4.0
 @author         nerblo
 @license        CC-BY-SA-4.0
 @description    Twitch Tweaks for latest Design changes, needs FrankerFaceZ
@@ -528,7 +528,6 @@ url-prefix("https://dashboard.twitch.tv/") {
         */
         .chat-line__timestamp {
             font-family: "Source Sans Pro", "Hack", "Source Code Pro", "Consolas", Courier, monospace !important;
-            font-size: calc(var(--ffz-chat-font-size) - 3px) !important;
         }
 
         .chat-input div[data-a-target="chat-input"],
